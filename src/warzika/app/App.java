@@ -14,9 +14,6 @@ public class App {
 	
 	
 	
-	
-	
-	
 	control = criador.newControl();
 	
 	control.comeco();

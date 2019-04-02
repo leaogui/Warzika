@@ -1,5 +1,7 @@
 package warzika.app;
 
+import warzika.funcs.Dados;
+
 public class Creator {
 
 	
@@ -14,6 +16,14 @@ public class Creator {
 	}
 	
 	
+	public Dados newDado() {
+		
+		Dados dado = new Dados();
+			
+		
+		return dado;
+	}
+		
 	
 	
 	

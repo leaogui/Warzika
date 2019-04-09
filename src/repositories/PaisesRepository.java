@@ -1,12 +1,13 @@
 package repositories;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
+
+import geo.Pais;
 
 public class PaisesRepository {
 	
-		
-	 List<PaisesRepository> listaPaises = new ArrayList<PaisesRepository>();	
 	
+	 Set<Pais> listaPaises = new HashSet<Pais>();
 
 }

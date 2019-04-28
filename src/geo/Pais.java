@@ -15,7 +15,6 @@ public class Pais {
 
 	public void add(String linha) {
 		Pais.Nome = linha;
-		
 	}
 	
 

@@ -2,7 +2,6 @@ Brasil
 Argentina
 Venezuela
 Peru
-América do Norte
 México
 Califórnia
 Nova York
@@ -19,7 +18,6 @@ Alemanha
 França
 Polônia
 Moscou
-África 
 Argélia
 Egito
 Congo

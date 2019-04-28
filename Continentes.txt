@@ -1,0 +1,6 @@
+América do Sul|4
+América do Norte|9
+Europa|7
+África|6
+Ásia|12
+Oceania|4

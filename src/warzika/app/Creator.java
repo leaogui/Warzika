@@ -1,5 +1,6 @@
 package warzika.app;
 
+import geo.Continente;
 import geo.Pais;
 import warzika.funcs.Dados;
 
@@ -30,5 +31,9 @@ public class Creator {
 		return pais;
 	}
 	
+	public Continente newContinente() {
+		Continente conti = new Continente();
+		return conti;
+	}
 	
 }

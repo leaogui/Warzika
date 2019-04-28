@@ -1,5 +1,6 @@
 package warzika.app;
 
+import geo.Pais;
 import warzika.funcs.Dados;
 
 public class Creator {
@@ -24,7 +25,10 @@ public class Creator {
 		return dado;
 	}
 		
-	
+	public Pais newPais() {
+		Pais pais = new Pais();
+		return pais;
+	}
 	
 	
 }

@@ -1,5 +1,10 @@
 package warzika.app;
 
+import java.io.*;
+
+import javax.swing.JOptionPane;
+
+import geo.Pais;
 import warzika.funcs.Dados;
 
 public class Controller {
@@ -30,12 +35,23 @@ public class Controller {
 		
 	}
 	
-	
-	
-	}
+	Pais pais = criador.newPais();
+	try {   
+        FileReader ler = new FileReader("Paises.txt");
+        BufferedReader reader = new BufferedReader(ler);  
+        String linha;
+        while( (linha = reader.readLine()) != null ){
+            pais.add(linha);
+            System.out.println(linha);
+        }
+
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
 	
 	
 	
 	
 	
 }
+	}

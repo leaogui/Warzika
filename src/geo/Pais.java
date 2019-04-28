@@ -5,13 +5,18 @@ import java.util.List;
 
 public class Pais {
 	
-	public String Nome;
+	public static String Nome;
 	
 	public int exercito;
 	
 	public int joadorAtual;
 	
 	List<String> fronteiras = new ArrayList<String>();
+
+	public void add(String linha) {
+		Pais.Nome = linha;
+		
+	}
 	
 
 	

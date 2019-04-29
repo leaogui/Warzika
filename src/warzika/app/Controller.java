@@ -10,16 +10,6 @@ import warzika.funcs.Dados;
 
 public class Controller {
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	public void comeco() {
 	
 	Creator criador = new Creator();
@@ -45,15 +35,15 @@ public class Controller {
         String lpais = leitor2.readLine();
         while( (lconti = leitor1.readLine()) != null ){
         	int x = 0;
-        	Continente conti = criador.newContinente();
         	String nome = lconti.substring(0, lconti.indexOf('|'));
         	String num = lconti.substring(lconti.lastIndexOf('|') + 1, lconti.length());
+        	Continente conti = criador.newContinente(nome);
         	int quant = Integer.parseInt(num);
         	System.out.println(nome+quant);
 	        do{
 	        	Pais pais = criador.newPais();
 	            pais.add(lpais);
-	            System.out.println(lpais);
+	            conti.adicionar(pais);
 	            x++;
         }while( (lpais = leitor2.readLine()) != null  && x < quant);
 	        }

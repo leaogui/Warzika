@@ -1,42 +1,42 @@
-Brasil
-Argentina
-Venezuela
-Peru
-México
-Califórnia
-Nova York
-Labrador
-Ottawa
-Vancouver
-Mackenzie
-Alasca
-Groenlândia
-Islândia
-Inglaterra
-Suécia
-Alemanha
-França
-Polônia
-Moscou
-Argélia
-Egito
-Congo
-Sudão
-Madagascar
-África do Sul
-Oriente Médio
-Aral
-Omsk
-Dudinka
-Sibéria
-Tchita
-Mongólia
-Vladivostok
-China
-Índia
-Japão
-Vietnã
-Bornéu
-Sumatra
-Nova Guiné
-Austrália
+Brasil|4
+Argentina|2
+Venezuela|3
+Peru|3
+México|3
+Califórnia|4
+Nova York|4
+Labrador|3
+Ottawa|5
+Vancouver|4
+Mackenzie|4
+Alasca|3
+Groenlândia|3
+Islândia|2
+Inglaterra|4
+Suécia|2
+Alemanha|2
+França|3
+Polônia|4
+Moscou|
+Argélia|
+Egito|
+Congo|
+Sudão|
+Madagascar|
+África do Sul|
+Oriente Médio|
+Aral|
+Omsk|
+Dudinka|
+Sibéria|
+Tchita|
+Mongólia|
+Vladivostok|
+China|
+Índia|
+Japão|
+Vietnã|
+Bornéu|
+Sumatra|
+Nova Guiné|
+Austrália|

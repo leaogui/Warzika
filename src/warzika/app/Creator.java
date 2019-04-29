@@ -31,8 +31,8 @@ public class Creator {
 		return pais;
 	}
 	
-	public Continente newContinente() {
-		Continente conti = new Continente();
+	public Continente newContinente(String nome) {
+		Continente conti = new Continente(nome);
 		return conti;
 	}
 	

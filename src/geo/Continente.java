@@ -5,15 +5,17 @@ import java.util.Set;
 
 public class Continente {
 
-	public String Nome;
-	
-	public int QuantPaises;
+	public static String Nome;
 	
 	
 	
 	Set<Pais> paises = new HashSet<Pais>();
 	
-	public void adicionar(String nome, int quant) {
-		
+	public Continente(String nome) {
+		Continente.Nome = nome;
+	}
+	
+	public void adicionar(Pais pais) {
+		paises.add(pais);
 	}
 }

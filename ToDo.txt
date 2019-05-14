@@ -1,0 +1,2 @@
+Metodos de atacar/defender (no jogador ou no país?)
+Clonar coleções para distribuir (Set para ArrayList)

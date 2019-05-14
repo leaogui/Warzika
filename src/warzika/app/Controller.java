@@ -1,6 +1,7 @@
 package warzika.app;
 
 import java.io.*;
+import java.util.Collections;
 
 import javax.swing.JOptionPane;
 
@@ -25,6 +26,8 @@ public class Controller {
 		System.out.println(dado.valor);
 		
 	}
+
+	
 	
 	try {   
 		FileReader arq1 = new FileReader("Continentes.txt");
@@ -51,10 +54,6 @@ public class Controller {
     } catch (IOException e) {
         e.printStackTrace();
     }
-	
-	
-	
-	
 	
 }
 	}

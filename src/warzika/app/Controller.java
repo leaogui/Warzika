@@ -45,7 +45,7 @@ public class Controller {
         	System.out.println(nome+quant);
 	        do{
 	        	Pais pais = criador.newPais();
-	            pais.add(lpais);
+	            pais.fronteiras(lpais);
 	            conti.adicionar(pais);
 	            x++;
         }while( (lpais = leitor2.readLine()) != null  && x < quant);
@@ -56,4 +56,5 @@ public class Controller {
     }
 	
 }
+	
 	}

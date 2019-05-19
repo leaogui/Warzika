@@ -1,42 +1,42 @@
-Brasil|4
-Argentina|2
-Venezuela|3
-Peru|3
-México|3
-Califórnia|4
-Nova York|4
-Labrador|3
-Ottawa|5
-Vancouver|4
-Mackenzie|4
-Alasca|3
-Groenlândia|3
-Islândia|2
-Inglaterra|4
-Suécia|2
-Alemanha|2
-França|3
-Polônia|4
-Moscou|
-Argélia|
-Egito|
-Congo|
-Sudão|
-Madagascar|
-África do Sul|
-Oriente Médio|
-Aral|
-Omsk|
-Dudinka|
-Sibéria|
-Tchita|
-Mongólia|
-Vladivostok|
-China|
-Índia|
-Japão|
-Vietnã|
-Bornéu|
-Sumatra|
-Nova Guiné|
-Austrália|
+Brasil|4|Argentina|Venezuela|Peru|Argélia
+Argentina|2|Brasil|Peru
+Venezuela|3|Brasil|México|Peru
+Peru|3|Brasil|Peru|Venezuela
+México|3|Nova York|Califórnia|Venezuela
+Califórnia|4|Nova York|México|Vancouver|Ottawa
+Nova York|4|México|Califórnia|Ottawa|Labrador
+Labrador|3|Groenlândia|Ottawa|Nova York
+Ottawa|5|Labrador|Nova York|California|Vancouver|Mackenzie
+Vancouver|4|Mackenzie|Alaska|Califórnia|Ottawa
+Mackenzie|4|Groenlândia|Ottawa|Vancouver|Alaska
+Alaska|3|Vancouver|Mackenzie|Vladivostok
+Groenlândia|3|Labrador|Mackenzie|Islândia
+Islândia|2|Groelândia|Inglaterra
+Inglaterra|4|Islândia|Alemanha|Suécia|França
+Suécia|2|Moscou|Inglaterra
+Alemanha|3|França|Polônia|Inglaterra
+França|5|Argélia|Egito|Alemanha|Polônia|Inglaterra
+Polônia|5|Egito|Moscou|Alemanha|França|Oriente Médio
+Moscou|5|OMSK|Aral|Oriente Médio|Suécia|Polônia
+Argélia|5|Egito|Sudão|Congo|Brasil|França
+Egito|5|Sudão|Argélia|Oriente Médio|França|Polônia
+Congo|3|África do Sul|Sudão|Argélia
+Sudão|5|Madagascar|África do Sul|Congo|Argélia|Egito
+Madagascar|2|Sudão|África do Sul
+África do Sul|3|Madagascar|Congo|Sudão
+Oriente Médio|5|Índia|Aral|Moscou|Polônia|Egito
+Aral|5|Índia|Oriente Médio|China|OMSK|Moscou
+OMSK|5|Moscou|Aral|Dudinka|Mongólia|China
+Dudinka|4|Sibéria|Tchita|Mongólia|OMSK
+Sibéria|3|Vladivostok|Tchita|Dudinka
+Tchita|5|Sibéria|Dudinka|Mongólia|China|Vladivostok
+Mongólia|4|China|Tchita|Dudinka|OMSK
+Vladivostok|5|Japão|China|Tchita|Sibéria|Alaska
+China|8|Japão|Vladivostok|Mongólia|Vietnã|Índia|Aral|OMSK|Tchita
+Índia|5|Vietnã|China|Aral|Oriente Médio|Sumatra
+Japão|2|Vladivostok|China
+Vietnã|3|Borneo|China|Índia
+Borneo|3|Austrália|Vietnã|Nova Guiné
+Sumatra|2|Índia|Austrália
+Nova Guiné|2|Borneo|Austrália
+Austrália|3|Borneo|Nova Guiné|Sumatra

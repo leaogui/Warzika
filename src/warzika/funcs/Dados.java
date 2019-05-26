@@ -10,11 +10,15 @@ public class Dados{
 	
 	
 	
-	public void rolar() {
+	public void rolar(int numDados) {
 	
+		for(int i = 0;i == numDados;i++) {
+		
 		Random rand = new Random();
 		
 		this.valor = rand.nextInt(6) + 1;
+		
+		}
 	}
 	
 	

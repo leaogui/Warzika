@@ -21,7 +21,7 @@ public class Controller {
 	
 	for(int i = 0; i < 6; i++) {
 		
-		dado.rolar();
+		dado.rolar(5);
 		
 		System.out.println(dado.valor);
 		

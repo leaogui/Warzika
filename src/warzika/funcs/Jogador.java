@@ -1,5 +1,6 @@
 package warzika.funcs;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -13,12 +14,22 @@ public class Jogador {
 	
 	Creator criador = new Creator();
 	
-	public Jogador(){
+	public int id;
+	
+	public int exercito; // todo jogador começa com o mesmo número de tropas?
+	
+	private String nome;
+	
+	public Jogador(String Nome, int id){
+		
+		this.id = id;
+		this.nome = Nome;
 		
 		Pais pais = criador.newPais();
 		
 		paises.add(pais);
 	}
+	
 	
 	public void atacarPais(Pais pais, Scanner scan, Dados dado) {
 		System.out.println("Quantas tropas irão atacar");
@@ -31,7 +42,16 @@ public class Jogador {
 		
 		pais.exercito = pais.exercito - ntropas;
 		for(int cont = 0; ntropas < cont; cont++) {
-			dado.rolar();
+			dado.rolar(); // dúvidas se é melhor fazer desse jeito ou como implementei nos dados
 		}
 	}
+	
+	// metodo para retornar os países que ele possui
+	
+	// metodo para retirar e adicionar um país dele
+	
+	// metodo para adicionar varios paises (sobrecarga)
+	
+	
+	
 }

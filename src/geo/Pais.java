@@ -1,7 +1,6 @@
 package geo;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Pais {
 	
@@ -9,12 +8,21 @@ public class Pais {
 	
 	public int exercito;
 	
-	public int joadorAtual;
+	public boolean temJogador;
 	
-	public List<String> fronteiras = new ArrayList<String>();
+	public int jogadorAtual;
+	
+	public ArrayList<String> fronteiras = new ArrayList<String>();
 
 	public void add(String linha) {
 		Pais.Nome = linha;
+	}
+	
+	public Pais() {
+		this.exercito = 0;
+		this.temJogador = false;
+		
+		
 	}
 	
 	
@@ -56,6 +64,43 @@ public class Pais {
 		}
 	}
 
+	public void setAtual(int Jogador) {
+		temJogador = true;
+		this.jogadorAtual = Jogador;
+	}
+	
+	public int getAtual() {
+		return jogadorAtual;
+    }
+	
+	public void setTropas(int Tropas) {
+		
+		this.exercito = Tropas;
+		
+	}
+	
+	
+	public void addTropas(int numTropas) {
+		exercito = exercito + numTropas;
+		System.out.println(" Foram adicionadas " + numTropas + " em " + Nome);
+	}
+	
+	public void removerTropas(int numTropas) {
+		exercito = exercito - numTropas;
+		System.out.println(" Foram retiradas " + numTropas + " de " + Nome);
+	}
+	
+	public int getTropas(){
+		
+		return exercito;
+	}
+	
+	public ArrayList<String> getFronteiras(){
+		
+		return fronteiras;
+		
+	}
+	
 //	pais.add(lpais);
 //    conti.adicionar(pais);
 		// usar o split() com ; para separar fronteiras e nome.

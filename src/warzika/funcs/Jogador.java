@@ -52,6 +52,8 @@ public class Jogador {
 	
 	// metodo para adicionar varios paises (sobrecarga)
 	
+	// provavelmente passar de set para hashmap, provavelmente ajudaria a transpor (provavelmente = talvez)
+	
 	
 	
 }

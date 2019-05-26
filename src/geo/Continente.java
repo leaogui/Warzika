@@ -18,4 +18,9 @@ public class Continente {
 	public void adicionar(Pais pais) {
 		paises.add(pais);
 	}
+	
+	public String getNome() {
+		
+		return Nome;
+	}
 }

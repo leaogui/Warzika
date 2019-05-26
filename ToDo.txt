@@ -4,3 +4,4 @@ Comentários na classe jogador
 Definir melhor onde criar jogador
 Começar a pensar como começar/terminar o jogo (start e quit)
 Dar um jeito de fazer o mapa (provavelmente vou ter que desenhar, fuk)
+Algo me faz questionar se os repositorios realmente  precisam existir, precisamos conversar depois sobre isso

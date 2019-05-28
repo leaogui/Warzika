@@ -1,6 +1,7 @@
 package warzika.app;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
@@ -9,12 +10,15 @@ import javax.swing.JOptionPane;
 import geo.Continente;
 import geo.Pais;
 import warzika.funcs.Dados;
+import warzika.funcs.Jogador;
 
 public class Controller {
 
 	public int numJogInt = 0;
 	public String numJog;
 	public String Nome = null;
+	
+	public ArrayList<Jogador> players = new ArrayList<Jogador>();
 	
 	public void comeco() {
 	
@@ -51,10 +55,13 @@ public class Controller {
 	for(int i=1;i<=numJogInt;i++) {
 		System.out.println("Digite o nome do jogador: ");
 		Nome = sc1.nextLine();
-		criador.newJogador(Nome, i);
+		Jogador player = criador.newJogador(Nome, i);
 		System.out.println("Jogador "+i+" criado, nome: "+Nome);
+		players.add(player);
 		Nome = null;
 	}
+	
+	
 	
 		
 	/*Dados dado = criador.newDado();	
@@ -66,6 +73,8 @@ public class Controller {
 		System.out.println(dado.valor);
 		
 	}*/ // teste fora do lugar
+	
+	
 
 	
 	

@@ -11,9 +11,8 @@ public class Continente {
 	
 	Set<Pais> paises = new HashSet<Pais>();
 	
-	public Continente(String nome, Set<Pais> paises) {
+	public Continente(String nome) {
 		Continente.Nome = nome;
-		this.paises = paises; //adicionando países no construtor ou já fazer com países direto?
 	}
 	
 	public void adicionar(Pais pais) {

@@ -27,8 +27,9 @@ public class Pais {
 	
 	
 	public void fronteiras(String lpais) {
-		Nome = lpais.substring(0, lpais.indexOf('|'));
-		String num = lpais.substring(0, lpais.indexOf('|') + 1);
+		Nome = lpais.substring(0, lpais.indexOf('|') + 1);
+		String num = lpais.substring(lpais.lastIndexOf('|') + 1, lpais.indexOf('|'));
+		System.out.println(num);
 		int quant = Integer.parseInt(num);
 		if(quant==2) {
 			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
@@ -100,6 +101,11 @@ public class Pais {
 		return fronteiras;
 		
 	}
+	
+	public void distribuirPaises(){
+		
+	}
+	
 	
 //	pais.add(lpais);
 //    conti.adicionar(pais);

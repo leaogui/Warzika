@@ -24,10 +24,6 @@ public class Jogador {
 		
 		this.id = id;
 		this.nome = Nome;
-		
-		Pais pais = criador.newPais();
-		
-		paises.add(pais);
 	}
 	
 	
@@ -41,9 +37,8 @@ public class Jogador {
 		// ver como vai ser visto as fronteiras para o jogador
 		
 		pais.exercito = pais.exercito - ntropas;
-		for(int cont = 0; ntropas < cont; cont++) {
-			dado.rolar(); // dúvidas se é melhor fazer desse jeito ou como implementei nos dados
-		}
+			dado.rolar(ntropas); // dúvidas se é melhor fazer desse jeito ou como implementei nos dados
+		
 	}
 	
 	// metodo para retornar os países que ele possui

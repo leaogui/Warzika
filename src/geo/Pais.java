@@ -27,42 +27,52 @@ public class Pais {
 	
 	
 	public void fronteiras(String lpais) {
-		Nome = lpais.substring(0, lpais.indexOf('|') + 1);
-		String num = lpais.substring(lpais.lastIndexOf('|') + 1, lpais.indexOf('|'));
-		System.out.println(num);
-		int quant = Integer.parseInt(num);
-		if(quant==2) {
-			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
-			fronteiras.add(lpais.substring(0, lpais.lastIndexOf('|') + 1));
-		}
-		if(quant==3) {
-			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
-			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
-			fronteiras.add(lpais.substring(0, lpais.lastIndexOf('|') + 1));
-		}
-		if(quant==4) {
-			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
-			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
-			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
-			fronteiras.add(lpais.substring(0, lpais.lastIndexOf('|') + 1));
-		}
-		if(quant==5) {
-			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
-			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
-			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
-			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
-			fronteiras.add(lpais.substring(0, lpais.lastIndexOf('|') + 1));
-		}
-		if(quant==8) {
-			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
-			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
-			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
-			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
-			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
-			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
-			fronteiras.add(lpais.substring(0, lpais.indexOf('|') + 1));
-			fronteiras.add(lpais.substring(0, lpais.lastIndexOf('|') + 1));
-		}
+		
+		String[] array = lpais.split("[|]");
+	    String Nome = array[1];
+	    String num = array[1];
+	    int quant = Integer.parseInt(num);
+	    if(quant == 2) {
+	    	fronteiras.add(array[2]);
+	    	System.out.println(array[2]);
+	    	fronteiras.add(array[3]);
+	    	System.out.println(array[3]);
+	    }
+	    
+	    if(quant == 3) {
+	    	fronteiras.add(array[2]);
+	    	System.out.println(array[2]);
+	    	fronteiras.add(array[3]);
+	    	System.out.println(array[3]);
+	    	fronteiras.add(array[4]);
+	    	System.out.println(array[4]);
+	    }
+	    
+	    if(quant == 4) {
+	    	fronteiras.add(array[2]);
+	    	fronteiras.add(array[3]);
+	    	fronteiras.add(array[4]);
+	    	fronteiras.add(array[5]);
+	    }
+	    
+	    if(quant == 5) {
+	    	fronteiras.add(array[2]);
+	    	fronteiras.add(array[3]);
+	    	fronteiras.add(array[4]);
+	    	fronteiras.add(array[5]);
+	    	fronteiras.add(array[6]);
+	    }
+	    
+	    if(quant == 8) {
+	    	fronteiras.add(array[2]);
+	    	fronteiras.add(array[3]);
+	    	fronteiras.add(array[4]);
+	    	fronteiras.add(array[5]);
+	    	fronteiras.add(array[6]);
+	    	fronteiras.add(array[7]);
+	    	fronteiras.add(array[8]);
+	    	fronteiras.add(array[9]);
+	    }
 	}
 
 	public void setAtual(int Jogador) {

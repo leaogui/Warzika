@@ -86,21 +86,18 @@ public class Controller {
         String lconti;
         String lpais = leitor2.readLine();
         while( (lconti = leitor1.readLine()) != null ){
-        	int x = 0;
-        	String[] nome = lconti.split( "|");
-        	System.out.println(nome[0]);
-//        	
-//        	String nome = lconti.substring(0, lconti.indexOf('|'));
-//        	String num = lconti.substring(lconti.lastIndexOf('|') + 1, lconti.length());
-//        	Continente conti = criador.newContinente(nome);
-//        	int quant = Integer.parseInt(num);
-//        	System.out.println(nome+quant);
-//	        do{
-//	        	Pais pais = criador.newPais();
-//	            pais.fronteiras(lpais);
-//	            conti.adicionar(pais);
-//	            x++;
-//        }while( (lpais = leitor2.readLine()) != null  && x < quant);
+        	int x = 0;      	
+        	String nome = lconti.substring(0, lconti.indexOf('|'));
+        	String num = lconti.substring(lconti.lastIndexOf('|') + 1, lconti.length());
+        	Continente conti = criador.newContinente(nome);
+        	int quant = Integer.parseInt(num);
+        	System.out.println(nome+quant);
+	        do{
+	        	Pais pais = criador.newPais();
+	            pais.fronteiras(lpais);
+	            conti.adicionar(pais);
+	            x++;
+        }while( (lpais = leitor2.readLine()) != null  && x < quant);
       }
 
     } catch (IOException e) {

@@ -7,8 +7,6 @@ public class Continente {
 
 	public static String Nome;
 	
-	
-	
 	Set<Pais> paises = new HashSet<Pais>();
 	
 	public Continente(String nome) {

@@ -16,7 +16,7 @@ public class Jogador {
 	
 	public int id;
 	
-	public int exercito; // todo jogador começa com o mesmo número de tropas?
+	public int exercito; // todo jogador começa com o mesmo número de tropas? -- teria que começar com o mesmo numero e escolher aonde colocar, em quais paises
 	
 	private String nome;
 	
@@ -43,7 +43,25 @@ public class Jogador {
 	
 	// metodo para retornar os países que ele possui
 	
+	public void getPaises() {
+		for(Pais a : paises) {
+			System.out.println(a);
+		}
+	}
+	
+	
 	// metodo para retirar e adicionar um país dele
+	public void retirarPais(Pais pais) {
+		for(Pais a : paises) {
+			if(a.equals(pais)) {
+				paises.remove(a); // para se retirar seria um pais seria necessario algo parecido com isso
+			}
+		}
+	}
+	
+	public void adicionarPais(Pais pais) {
+		paises.add(pais);
+	}
 	
 	// metodo para adicionar varios paises (sobrecarga)
 	

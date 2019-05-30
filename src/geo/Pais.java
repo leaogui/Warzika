@@ -21,12 +21,10 @@ public class Pais {
 	public Pais() {
 		this.exercito = 0;
 		this.temJogador = false;
-		
-		
 	}
 	
 	
-	public void fronteiras(String lpais) {
+	public void fronteiras(String lpais) {	// falar as fronteiras que tem em cada pais
 		
 		String[] array = lpais.split("[|]");
 	    String Nome = array[1];
@@ -34,18 +32,13 @@ public class Pais {
 	    int quant = Integer.parseInt(num);
 	    if(quant == 2) {
 	    	fronteiras.add(array[2]);
-	    	System.out.println(array[2]);
 	    	fronteiras.add(array[3]);
-	    	System.out.println(array[3]);
 	    }
 	    
 	    if(quant == 3) {
 	    	fronteiras.add(array[2]);
-	    	System.out.println(array[2]);
 	    	fronteiras.add(array[3]);
-	    	System.out.println(array[3]);
 	    	fronteiras.add(array[4]);
-	    	System.out.println(array[4]);
 	    }
 	    
 	    if(quant == 4) {

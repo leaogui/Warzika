@@ -2,6 +2,7 @@ package warzika.app;
 
 import geo.Continente;
 import geo.Pais;
+import repositories.PaisesRepository;
 import warzika.funcs.Dados;
 import warzika.funcs.Jogador;
 
@@ -39,11 +40,13 @@ public class Creator {
 	
 	public Jogador newJogador(String Nome, int id) {
 		Jogador player = new Jogador(Nome, id);
-		
 		return player;
 	}
 	
-	 
+	 public PaisesRepository newPaisesRepositorios(){
+		 PaisesRepository paisrep = new PaisesRepository();
+		 return paisrep;
+	 }
 	
 	
 }

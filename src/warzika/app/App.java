@@ -15,8 +15,12 @@ public class App {
 	
 	Controller control = criador.newControl();
 	
-	control.comeco();
+	int numJog = control.comeco();
+	
+	control.territorios();
 		
+	// control.distribuirPaises(numJog);
+	
 	}
 
 }

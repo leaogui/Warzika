@@ -8,6 +8,11 @@ import geo.Pais;
 public class PaisesRepository {
 	
 	
-	 Set<Pais> listaPaises = new HashSet<Pais>();
+	 public Set<Pais> listaPaises = new HashSet<Pais>();
 
+	 
+//	 public void addPaises(Pais pais) {
+//		listaPaises.add(pais);
+//	 }
+	 
 }

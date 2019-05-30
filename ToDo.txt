@@ -1,9 +1,9 @@
-Metodos de atacar/defender (no jogador ou no país?)
-Clonar coleções para distribuir (Set para ArrayList)
+Metodos de atacar/defender (no jogador ou no pais?)
+Clonar coleções para distribuir (Set para ArrayList) // talvez usar os repositorios para isso 
 Comentários na classe jogador
-Definir melhor onde criar jogador
+Definir melhor onde criar jogador // acho q ta feito essa parte de criar jogador
 Começar a pensar como começar/terminar o jogo (start e quit)
 Dar um jeito de fazer o mapa (provavelmente vou ter que desenhar, fuk)
 Algo me faz questionar se os repositorios realmente  precisam existir, precisamos conversar depois sobre isso
 Confirmar se o nome do cara é nulo, isso vai quebrar 
-Usar shuffle para distribuir os paises para os jogadores
+N�o da para usar o shuffle para embaralhar itens usando o set, somente o list

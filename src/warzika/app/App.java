@@ -19,7 +19,11 @@ public class App {
 	
 	control.territorios();
 		
-	// control.distribuirPaises(numJog);
+	control.distribuirPaises();
+	
+	control.escolherordem(); // buguei como fazer isso exatamente
+	
+	
 	
 	}
 

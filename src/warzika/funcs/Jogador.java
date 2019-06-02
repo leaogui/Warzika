@@ -20,6 +20,8 @@ public class Jogador {
 	
 	private String nome;
 	
+	public int ordem; 
+	
 	public Jogador(String Nome, int id){
 		
 		this.id = id;

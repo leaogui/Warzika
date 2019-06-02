@@ -106,19 +106,31 @@ public class Controller {
     }
 }
 	
-	public void distribuirPaises(int idJoga){ // esse metodo ira receber o numero de jogadores e distribuir igualmente os paises a todos
-		int a = 24/idJoga; // esse 24 representa a quantidade total de paises que tem q ter no jogo, eu acho q é essa quantidade
+	public void distribuirPaises(){ // esse metodo ira receber o numero de jogadores e distribuir igualmente os paises a todos
+		int a = 42/numJogInt; // esse 24 representa a quantidade total de paises que tem q ter no jogo, eu acho q é essa quantidade
 		int cont1 = 0;
 		Collections.shuffle(paisrep); // lista de paises foi embaralhada
-		for(int i=0;i<idJoga;i++) {
-			
+		for(int i=0;i<numJogInt;i++) {
+			Jogador isso = players.get(i);
 			for(int cont = 0; cont < a; cont++) {
-				
+				Pais pais = paisrep.get(cont1);
+				isso.adicionarPais(pais);
 				cont1++;
 			}
 		}
-		if(cont1 != 24) { // quando não der para dividir igualmente os paises para os players vai ser feito isso
-			
+		if(cont1 != 42) { // quando não der para dividir igualmente os paises para os players vai ser feito isso
+			System.out.println("vai ter"+ (cont1 - 42) + "de paises sem ser dado para os jogadores");
+		}
+	}
+	
+	public void escolherordem() { // saber quem será q vai jogar primeiro
+		Dados dado = criador.newDado();
+		int[] a;
+		a = new int[6];
+		a = dado.rolar(numJogInt);
+		for(int i=0;i < numJogInt; i++) {
+			Jogador jog = players.get(i);
+			jog.ordem = a[i];
 		}
 	}
 	

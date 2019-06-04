@@ -25,7 +25,7 @@ public class Controller {
 	public ArrayList<Pais> paisrep = new ArrayList<Pais>();
 	//PaisesRepository paisrep = criador.newPaisesRepositorios();
 	
-	public int comeco() {
+	public void comeco() {
 	Scanner sc = new Scanner(System.in);
 	Scanner sc1 = new Scanner(System.in);
 		
@@ -37,14 +37,14 @@ public class Controller {
 	
 	
 	numJog = sc.nextLine();
-	if("2".equals(numJog) || "3".equals(numJog) || "4".equals(numJog) || "5".equals(numJog) || "6".equals(numJog)) {
+	if(/*"2".equals(numJog) ||*/ "3".equals(numJog) || "4".equals(numJog) || "5".equals(numJog) || "6".equals(numJog)) { // tem que ser de no minimo 3 e no máximo 6
 	
 		
 		break;
 				
 		}
 	else {
-		System.out.println("Só podem existir 6 jogadores, e devem existir no mínimo 2.");
+		System.out.println("Só podem existir 6 jogadores, e devem existir no mínimo 3.");
 	}
 	
 	}
@@ -61,7 +61,6 @@ public class Controller {
 		Nome = null;
 	}
 	
-	return numJogInt;
 	}
 		
 	/*Dados dado = criador.newDado();	
@@ -91,7 +90,6 @@ public class Controller {
         	String num = lconti.substring(lconti.lastIndexOf('|') + 1, lconti.length());
         	Continente conti = criador.newContinente(nome);
         	int quant = Integer.parseInt(num);
-        	//System.out.println(nome+quant);
 	        do{
 	        	Pais pais = criador.newPais();
 	            pais.fronteiras(lpais);
@@ -111,10 +109,10 @@ public class Controller {
 		int cont1 = 0;
 		Collections.shuffle(paisrep); // lista de paises foi embaralhada
 		for(int i=0;i<numJogInt;i++) {
-			Jogador isso = players.get(i);
+			Jogador jog = players.get(i);
 			for(int cont = 0; cont < a; cont++) {
 				Pais pais = paisrep.get(cont1);
-				isso.adicionarPais(pais);
+				jog.adicionarPais(pais);
 				cont1++;
 			}
 		}
@@ -125,12 +123,40 @@ public class Controller {
 	
 	public void escolherordem() { // saber quem será q vai jogar primeiro
 		Dados dado = criador.newDado();
-		int[] a;
+		int[] a; // valor do dado
 		a = new int[6];
+		int []b;
+		b = new int[6]; //ordem de jogada
 		a = dado.rolar(numJogInt);
-		for(int i=0;i < numJogInt; i++) {
-			Jogador jog = players.get(i);
-			jog.ordem = a[i];
+		
+		for(int cont = 0;cont < numJogInt; cont++) {
+			
+			for(int cont1 = cont; cont1 < numJogInt; cont1++) {
+				b[cont] = cont + 1;
+				if(a[cont]< a[cont1]) {
+					b[cont] = b[cont] + 1;
+				}
+			}
+		}
+		for(int cont = 0;cont < numJogInt; cont++) {
+			Jogador jog = players.get(cont);
+			jog.ordem = a[cont];		
+//			System.out.println(a[cont]);
+//			System.out.println(b[cont]);
+		}
+	}
+	
+	public void mostrarseuspaises() {
+		Scanner sc = new Scanner(System.in);
+		int cont = 0;
+		Jogador jog = players.get(cont);
+		while(true) {
+			jog.getPaises();
+		
+			int a = sc.nextInt();
+			if(a == 1) {
+				break;
+			}
 		}
 	}
 	

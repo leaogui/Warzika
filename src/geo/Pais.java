@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Pais {
 	
-	public static String Nome;
+	public String Nome;
 	
 	public int exercito;
 	
@@ -12,11 +12,8 @@ public class Pais {
 	
 	public int jogadorAtual;
 	
-	public ArrayList<String> fronteiras = new ArrayList<String>();
+	ArrayList<String> fronteiras = new ArrayList<String>();
 
-	public void add(String linha) {
-		Pais.Nome = linha;
-	}
 	
 	public Pais() {
 		this.exercito = 0;
@@ -27,7 +24,7 @@ public class Pais {
 	public void fronteiras(String lpais) {	// falar as fronteiras que tem em cada pais
 		
 		String[] array = lpais.split("[|]");
-	    String Nome = array[1];
+	    String Nome = array[0];
 	    String num = array[1];
 	    int quant = Integer.parseInt(num);
 	    if(quant == 2) {

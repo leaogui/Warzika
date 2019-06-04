@@ -47,7 +47,7 @@ public class Jogador {
 	
 	public void getPaises() {
 		for(Pais a : paises) {
-			System.out.println(a);
+			System.out.println(a.Nome);
 		}
 	}
 	

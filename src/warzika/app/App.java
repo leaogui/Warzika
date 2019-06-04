@@ -15,15 +15,15 @@ public class App {
 	
 	Controller control = criador.newControl();
 	
-	int numJog = control.comeco();
+	control.comeco();
 	
 	control.territorios();
 		
 	control.distribuirPaises();
 	
-	control.escolherordem(); // buguei como fazer isso exatamente
+	control.escolherordem();
 	
-	
+	control.mostrarseuspaises();
 	
 	}
 

@@ -43,16 +43,6 @@ public class Controller {
 	
 	}
 		
-	/*Dados dado = criador.newDado();	
-	
-	for(int i = 0; i < 6; i++) {
-		
-		dado.rolar(5);
-		
-		System.out.println(dado.valor);
-		
-	}*/ // teste fora do lugar
-	
 	
 	public void criarJog() {
 		

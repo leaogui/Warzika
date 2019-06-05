@@ -26,40 +26,20 @@ public class Controller {
 	//PaisesRepository paisrep = criador.newPaisesRepositorios();
 	
 	public void comeco() {
-	Scanner sc = new Scanner(System.in);
-	Scanner sc1 = new Scanner(System.in);
+	
 		
 	System.out.println("Bem vindo ao Warzika");	
 	
 
-	while(true) {	
-	System.out.println("Número de jogadores: ");
+	this.criarJog();
 	
+	this.territorios();
 	
-	numJog = sc.nextLine();
-	if(/*"2".equals(numJog) ||*/ "3".equals(numJog) || "4".equals(numJog) || "5".equals(numJog) || "6".equals(numJog)) { // tem que ser de no minimo 3 e no máximo 6
+	this.distribuirPaises();
 	
-		
-		break;
-				
-		}
-	else {
-		System.out.println("Só podem existir 6 jogadores, e devem existir no mínimo 3.");
-	}
+	this.escolherordem();
 	
-	}
-	
-	
-	numJogInt = Integer.parseInt(numJog);
-	
-	for(int i=1;i<=numJogInt;i++) {
-		System.out.println("Digite o nome do jogador: ");
-		Nome = sc1.nextLine();
-		Jogador player = criador.newJogador(Nome, i);
-		System.out.println("Jogador "+i+" criado, nome: "+Nome);
-		players.add(player);
-		Nome = null;
-	}
+	this.mostrarseuspaises();
 	
 	}
 		
@@ -72,6 +52,44 @@ public class Controller {
 		System.out.println(dado.valor);
 		
 	}*/ // teste fora do lugar
+	
+	
+	public void criarJog() {
+		
+		Scanner sc = new Scanner(System.in);
+		Scanner sc1 = new Scanner(System.in);
+		
+		while(true) {	
+			System.out.println("Número de jogadores: ");
+			
+			
+			numJog = sc.nextLine();
+			if(/*"2".equals(numJog) ||*/ "3".equals(numJog) || "4".equals(numJog) || "5".equals(numJog) || "6".equals(numJog)) { // tem que ser de no minimo 3 e no máximo 6
+			
+				
+				break;
+						
+				}
+			else {
+				System.out.println("Só podem existir 6 jogadores, e devem existir no mínimo 3.");
+			}
+			
+			}
+			
+			
+			numJogInt = Integer.parseInt(numJog);
+			
+			for(int i=1;i<=numJogInt;i++) {
+				System.out.println("Digite o nome do jogador: ");
+				Nome = sc1.nextLine();
+				Jogador player = criador.newJogador(Nome, i);
+				System.out.println("Jogador "+i+" criado, nome: "+Nome);
+				players.add(player);
+				Nome = null;
+			}
+		
+		
+	}
 	
 	
 	// dividi os dois por não terem nada um haver com o outro

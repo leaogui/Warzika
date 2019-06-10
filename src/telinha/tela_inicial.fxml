@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
@@ -13,14 +15,31 @@
             <Image url="@../imagens/slide-war1.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="116.0" layoutY="49.0" prefHeight="90.0" prefWidth="368.0" text="Bem Vindo ao Warzika" textFill="#1722f5">
+      <Label layoutX="116.0" layoutY="49.0" prefHeight="90.0" prefWidth="368.0" text="Bem Vindo ao Warzika" textFill="#f5f5f5">
          <font>
             <Font size="36.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+         <effect>
+            <Shadow blurType="ONE_PASS_BOX" />
+         </effect>
       </Label>
       <Button layoutX="197.0" layoutY="147.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="207.0" text="Iniciar" />
       <Button layoutX="197.0" layoutY="202.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="207.0" text="Regras" />
       <Button layoutX="197.0" layoutY="262.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="207.0" text="Sair" />
-      <Label layoutX="7.0" layoutY="316.0" prefHeight="17.0" prefWidth="278.0" text="Feito por Gustavo Pereira Barbosa e Guilherme Leão" textFill="#2110c7" />
+      <Label layoutX="7.0" layoutY="316.0" prefHeight="17.0" prefWidth="278.0" text="Feito por Gustavo Pereira Barbosa e Guilherme Leão" textFill="#f8f8f8" />
+      <Label layoutX="116.0" layoutY="49.0" prefHeight="90.0" prefWidth="368.0" text="Bem Vindo ao Warzika" textFill="#f5f5f5">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

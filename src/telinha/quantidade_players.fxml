@@ -5,7 +5,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorTelinhas.tela2Controller">
    <children>
       <ChoiceBox fx:id="choice1" layoutX="134.0" layoutY="188.0" prefHeight="25.0" prefWidth="326.0" />
       <Label layoutX="121.0" layoutY="114.0" text="Escolha quantidade de Jogadores">
@@ -13,5 +13,6 @@
             <Font size="24.0" />
          </font>
       </Label>
+      <Button fx:id="button" layoutX="476.0" layoutY="188.0" mnemonicParsing="false" onAction="#confirmar" prefHeight="25.0" prefWidth="73.0" text="Confirmar" />
    </children>
 </AnchorPane>

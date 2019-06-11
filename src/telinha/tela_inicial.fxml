@@ -27,8 +27,8 @@
          </effect>
       </Label>
       <Button layoutX="197.0" layoutY="147.0" mnemonicParsing="false" onAction="#button1Action" prefHeight="44.0" prefWidth="207.0" text="Iniciar" />
-      <Button fx:id="button2" layoutX="197.0" layoutY="202.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="207.0" text="Regras" />
-      <Button fx:id="button3" layoutX="197.0" layoutY="262.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="207.0" text="Sair" />
+      <Button layoutX="197.0" layoutY="202.0" mnemonicParsing="false" onAction="#button2Action" prefHeight="44.0" prefWidth="207.0" text="Regras" />
+      <Button layoutX="197.0" layoutY="262.0" mnemonicParsing="false" onAction="#button3Action" prefHeight="44.0" prefWidth="207.0" text="Sair" />
       <Label layoutX="7.0" layoutY="316.0" prefHeight="17.0" prefWidth="278.0" text="Feito por Gustavo Pereira Barbosa e Guilherme Leão" textFill="#f8f8f8" />
       <Label layoutX="116.0" layoutY="49.0" prefHeight="90.0" prefWidth="368.0" text="Bem Vindo ao Warzika" textFill="#f5f5f5">
          <cursor>

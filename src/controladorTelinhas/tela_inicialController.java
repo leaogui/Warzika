@@ -22,14 +22,19 @@ public class tela_inicialController implements Initializable {
 		IniciodoProcesso.ChangeScreen("quant");
 	}
 	
+	@FXML
 	private void button2Action(ActionEvent event) {
 		
+	}
+	
+	@FXML
+	private void button3Action(ActionEvent event) {
+		IniciodoProcesso.Fechar();
 	}
 	
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
 		// TODO Auto-generated method stub
-		
 	}
 	
 	

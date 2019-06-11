@@ -12,6 +12,7 @@ public class IniciodoProcesso extends Application{
 	
 	private static Scene pritela;
 	private static Scene quantijog;
+	private static Scene nome;
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
@@ -23,7 +24,13 @@ public class IniciodoProcesso extends Application{
 		pritela = new Scene(inicio);
 		
 		Parent jog = FXMLLoader.load(getClass().getResource("../telinha/quantidade_players.fxml"));
+		
 		quantijog = new Scene(jog);
+		
+		FXMLLoader loader = new FXMLLoader();
+		Parent nomePlayer = FXMLLoader.load(getClass().getResource("../telinha/Nome Jogador.fxml").openStream());
+		tela_nomesController nomeController = (tela_nomesController)loader.getController();
+		nome = new Scene(nomePlayer);
 		
 		primaryStage.setScene(pritela);
 		primaryStage.show();	
@@ -38,6 +45,9 @@ public class IniciodoProcesso extends Application{
 			case "quant":
 				stage.setScene(quantijog);
 				break;
+			case "nome":
+				stage.setScene(nome);
+				break;
 		}
 	}
 	
@@ -45,4 +55,8 @@ public class IniciodoProcesso extends Application{
 		launch(args);
 	}
 
+	public static void Fechar() {
+		stage.close();
+		//primaryStage.close();
+	}
 }

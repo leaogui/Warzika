@@ -10,6 +10,7 @@ import javax.swing.JOptionPane;
 
 import geo.Continente;
 import geo.Pais;
+import javafx.event.ActionEvent;
 import repositories.PaisesRepository;
 import warzika.funcs.Dados;
 import warzika.funcs.Jogador;
@@ -44,7 +45,7 @@ public class Controller {
 	}
 		
 	
-	public void criarJog() {
+	public void criarJog(/*ActionEvent event*/) {
 		
 		Scanner sc = new Scanner(System.in);
 		Scanner sc1 = new Scanner(System.in);

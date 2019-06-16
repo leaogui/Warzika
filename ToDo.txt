@@ -1,4 +1,4 @@
-Metodos de atacar/defender (no jogador ou no pais?)
+﻿Metodos de atacar/defender (no jogador ou no pais?)
 Clonar coleÃ§Ãµes para distribuir (Set para ArrayList)
 ComentÃ¡rios na classe jogador
 Definir melhor onde criar jogador // acho q ta feito essa parte de criar jogador
@@ -7,3 +7,8 @@ Dar um jeito de fazer o mapa (provavelmente vou ter que desenhar, fuk)
 Algo me faz questionar se os repositorios realmente  precisam existir, precisamos conversar depois sobre isso
 Confirmar se o nome do cara Ã© nulo, isso vai quebrar 
 Não da para usar o shuffle para embaralhar itens usando o set, somente o list // dei um jeito nisso
+Discutir se vai mostrar as tropas só quando escolher o país ou vai mostrar no botão sla (n tem espaço pra escrever embaixo, só se deixar o negócio gigantesco)
+Tentar mover mais ou menos os botões pq quando eu tentava o scene builder deixava tudo branco (tive q refazer a tela principal 2 vezes por isso, vai tomar no cu escrever em tanto botão 3 vezes)
+Provavelmente você já sabe mas como colocar valor de variável nas labels?
+
+

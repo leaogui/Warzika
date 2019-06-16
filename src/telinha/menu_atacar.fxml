@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea layoutX="14.0" layoutY="42.0" prefHeight="200.0" prefWidth="200.0" text="                        País&#10;XXXXXXXXXXXXXXXXXXXXXXXXX&#10;                    Jogador&#10;XXXXXXXXXXXXXXXXXXXXXXXXX&#10;                     Tropas&#10;XXXXXXXXXXXXXXXXXXXXXXXXX&#10;&#10;&#10;&#10;" />
+      <Button layoutX="82.0" layoutY="200.0" mnemonicParsing="false" text="ATACAR!" />
+   </children>
+</Pane>

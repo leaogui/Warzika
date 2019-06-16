@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
@@ -7,7 +8,12 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorTelinhas.tela_nomesController">
    <children>
-      <Label layoutX="203.0" layoutY="115.0" text="Digite o seu nome">
+      <ImageView fitHeight="410.0" fitWidth="611.0" layoutX="-7.0" layoutY="-6.0">
+         <image>
+            <Image url="@../imagens/fundoguerra.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="203.0" layoutY="115.0" text="Digite o seu nome" textFill="#c30000">
          <font>
             <Font size="24.0" />
          </font>

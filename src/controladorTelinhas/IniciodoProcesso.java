@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import warzika.app.Controller;
 
 public class IniciodoProcesso extends Application{
 
@@ -13,6 +14,7 @@ public class IniciodoProcesso extends Application{
 	private static Scene pritela;
 	private static Scene quantijog;
 	private static Scene nome;
+	private static Scene sobre;
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
@@ -22,6 +24,9 @@ public class IniciodoProcesso extends Application{
 		
 		Parent inicio = FXMLLoader.load(getClass().getResource("../telinha/tela_inicial.fxml"));
 		pritela = new Scene(inicio);
+		
+		Parent sobre1 = FXMLLoader.load(getClass().getResource("../telinha/tela_sobre.fxml"));
+		sobre = new Scene(sobre1);
 		
 		Parent jog = FXMLLoader.load(getClass().getResource("../telinha/quantidade_players.fxml"));
 		
@@ -45,17 +50,20 @@ public class IniciodoProcesso extends Application{
 			case "nome":
 				stage.setScene(nome);
 				break;
-//			case "1":
-//				stage.setScene(value);
+			case "sobre":
+				stage.setScene(sobre);
 		}
 	}
 	
 	public static void main(String[] args) {
 		launch(args);
+		Controller control = new Controller();
+		control.comeco();
 	}
 
 	public static void Fechar() {
 		stage.close();
 		//primaryStage.close();
 	}
+	
 }

@@ -24,7 +24,7 @@ public class tela_inicialController implements Initializable {
 	
 	@FXML
 	private void button2Action(ActionEvent event) {
-		
+		IniciodoProcesso.ChangeScreen("sobre");
 	}
 	
 	@FXML

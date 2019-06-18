@@ -8,7 +8,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorTelinhas.tela_inicialController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorTelinhas.tela_sobreController">
    <children>
       <ImageView fitHeight="427.0" fitWidth="800.0" layoutX="1.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-15.0" AnchorPane.topAnchor="0.0">
          <image>
@@ -16,6 +16,6 @@
          </image>
       </ImageView>
       <TextArea editable="false" layoutX="24.0" layoutY="33.0" prefHeight="356.0" prefWidth="701.0" text="Warzika&#10;&#10;Warzika é um jogo feito pelos alunos Gustavo Pereira e Guilherme Leão, do 3º semestre do curso de&#10;análise e desenvolvimento de sistemas do Instituto Federal de São Paulo.&#10;&#10;O jogo é inspirado no jogo de tabuleiro WAR.&#10;&#10;Objetivo: &#10;&#10;O objetivo do jogo é conquistar o todo o mundo (territórios).&#10;Todo jogador começa com um número de territórios e tropas neles, que podem ser utilizadas para &#10;atacar outro território de outro jogador. O ataque é baseado em uma rolagem de dados, se o &#10;jogador atacante ganhar a rolagem, ele remove uma tropa inimiga. Se o jogador defensor ganhar a rolagem,&#10;ele mantém sua tropa. Quando todas as tropas inimigas são removidas, o jogador atacante pode mover um número&#10;de tropas para  o outro território.  Apenas territórios que fazem fronteira com outro podem ser atacados.&#10;&#10;" />
-      <Button layoutX="32.0" layoutY="389.0" mnemonicParsing="false" text="Voltar" />
+      <Button fx:id="bt1" layoutX="32.0" layoutY="389.0" mnemonicParsing="false" onAction="#voltar" text="Voltar" />
    </children>
 </AnchorPane>

@@ -32,15 +32,15 @@ public class Controller {
 	System.out.println("Bem vindo ao Warzika");	
 	
 
-	this.criarJog();
+	//this.criarJog();
 	
 	this.territorios();
 	
 	this.distribuirPaises();
 	
-	this.escolherordem();
+	//this.escolherordem();
 	
-	this.mostrarseuspaises();
+	//this.mostrarseuspaises();
 	
 	}
 		

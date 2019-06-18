@@ -28,9 +28,6 @@ public class IniciodoProcesso extends Application{
 		quantijog = new Scene(jog);
 		
 		FXMLLoader loader = new FXMLLoader();
-		Parent nomePlayer = FXMLLoader.load(getClass().getResource("../telinha/Nome Jogador.fxml").openStream());
-		tela_nomesController nomeController = (tela_nomesController)loader.getController();
-		nome = new Scene(nomePlayer);
 		
 		primaryStage.setScene(pritela);
 		primaryStage.show();	
@@ -48,6 +45,8 @@ public class IniciodoProcesso extends Application{
 			case "nome":
 				stage.setScene(nome);
 				break;
+//			case "1":
+//				stage.setScene(value);
 		}
 	}
 	

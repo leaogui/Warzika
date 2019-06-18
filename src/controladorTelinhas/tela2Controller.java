@@ -1,17 +1,20 @@
 package controladorTelinhas;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class tela2Controller implements Initializable{
@@ -20,9 +23,9 @@ public class tela2Controller implements Initializable{
 	public ChoiceBox<String> choice1;
 	public Label label1;
 	
-	static ObservableList<String> list = FXCollections.observableArrayList();	
+	ObservableList<String> list = FXCollections.observableArrayList();	
 	
-	public static void valores_choiceBox() {
+	public void valores_choiceBox() {
 		//ChoiceBox<String> choicebox = new Choicebox<>;
 		list.removeAll();
 		String a = "3";
@@ -45,8 +48,17 @@ public class tela2Controller implements Initializable{
 		choice1.setValue("3");
 	}
 
-	public String pegarDados() {
-		return choice1.getValue();
+	
+	public void TrocaEvent(ActionEvent event)throws IOException{
+		Stage stage = (Stage) choice1.getScene().getWindow();
+		FXMLLoader loader  = new FXMLLoader();
+		Pane root = loader.load(getClass().getResource("../telinha/NomeJogador.fxml").openStream());
+		tela_nomesController nome = (tela_nomesController)loader.getController();
+		nome.i = Integer.parseInt(choice1.getValue());
+		Scene scene = new Scene(root);
+		stage.setScene(scene);
+		stage.setResizable(false);
+		stage.show();
 	}
 	
 

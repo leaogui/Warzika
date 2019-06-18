@@ -20,5 +20,6 @@
          </font>
       </Label>
       <Button fx:id="button" layoutX="476.0" layoutY="188.0" mnemonicParsing="false" onAction="#TrocaEvent" prefHeight="25.0" prefWidth="73.0" text="Confirmar" />
+      <Button layoutX="36.0" layoutY="327.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="98.0" text="Voltar" />
    </children>
 </AnchorPane>

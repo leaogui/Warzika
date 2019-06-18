@@ -42,17 +42,14 @@
       <Button layoutX="206.0" layoutY="423.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Chile" />
       <Button layoutX="531.0" layoutY="80.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Islandia" />
       <Button layoutX="499.0" layoutY="124.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Inglaterra" />
-      <Button layoutX="558.0" layoutY="174.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Portugal" />
-      <Button layoutX="571.0" layoutY="143.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Espanha" />
-      <Button layoutX="579.0" layoutY="118.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="França" />
+      <Button layoutX="571.0" layoutY="137.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="França" />
       <Button layoutX="644.0" layoutY="99.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Alemanha" />
       <Button layoutX="629.0" layoutY="162.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Italia" />
       <Button layoutX="644.0" layoutY="59.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Suecia" />
       <Button layoutX="759.0" layoutY="93.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Moscou" />
       <Button layoutX="662.0" layoutY="130.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Polonia" />
       <Button layoutX="687.0" layoutY="162.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Iugoslavia" />
-      <Button layoutX="571.0" layoutY="210.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Argelia" />
-      <Button layoutX="590.0" layoutY="248.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Nigeria" />
+      <Button layoutX="571.0" layoutY="223.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Argelia" />
       <Button layoutX="687.0" layoutY="199.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Egito" />
       <Button layoutX="728.0" layoutY="248.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Sudão" />
       <Button layoutX="677.0" layoutY="314.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Congo" />
@@ -72,7 +69,7 @@
       <Button layoutX="1255.0" layoutY="162.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Japão" />
       <Button layoutX="1089.0" layoutY="248.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Vietna" />
       <Button layoutX="1058.0" layoutY="314.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Sumatra" />
-      <Button layoutX="1145.0" layoutY="298.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Borneu" />
+      <Button layoutX="1145.0" layoutY="298.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Borneo" />
       <Button layoutX="1255.0" layoutY="347.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Nova Guine" />
       <Button layoutX="1139.0" layoutY="411.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Australia" />
       <ImageView fitHeight="108.0" fitWidth="116.0" layoutX="79.0" layoutY="525.0">

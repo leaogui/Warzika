@@ -39,7 +39,7 @@
       <Button layoutX="206.0" layoutY="423.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Chile" />
       <Button layoutX="531.0" layoutY="80.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Islandia" />
       <Button layoutX="499.0" layoutY="124.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Inglaterra" />
-      <Button layoutX="571.0" layoutY="137.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="França" />
+      <Button layoutX="571.0" layoutY="137.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Portugal" />
       <Button layoutX="644.0" layoutY="99.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Alemanha" />
       <Button layoutX="629.0" layoutY="162.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Italia" />
       <Button layoutX="644.0" layoutY="59.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Suecia" />
@@ -108,5 +108,12 @@
       <Label layoutX="315.0" layoutY="719.0" text="Países:" />
       <Label layoutX="778.0" layoutY="711.0" text="Países:" />
       <Label layoutX="1193.0" layoutY="719.0" text="Países:" />
+      <Button layoutX="611.0" layoutY="758.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="132.0" text=" Próximo turno" />
+      <Button layoutX="517.0" layoutY="758.0" mnemonicParsing="false" text="Ver Países" />
+      <Button layoutX="298.0" layoutY="767.0" mnemonicParsing="false" text="Ver Países" />
+      <Button layoutX="80.0" layoutY="767.0" mnemonicParsing="false" text="Ver Países" />
+      <Button layoutX="780.0" layoutY="767.0" mnemonicParsing="false" text="Ver Países" />
+      <Button layoutX="990.0" layoutY="767.0" mnemonicParsing="false" text="Ver Países" />
+      <Button layoutX="1193.0" layoutY="771.0" mnemonicParsing="false" text="Ver Países" />
    </children>
 </AnchorPane>

@@ -13,14 +13,14 @@
          </image>
       </ImageView>
       <Label layoutX="100.0" layoutY="647.0" prefHeight="21.0" prefWidth="96.0" text="Jogador " />
-      <Label layoutX="922.0" layoutY="648.0" prefHeight="21.0" prefWidth="96.0" text="Jogador " />
+      <Label layoutX="864.0" layoutY="648.0" prefHeight="21.0" prefWidth="96.0" text="Jogador " />
       <Label layoutX="628.0" layoutY="648.0" prefHeight="21.0" prefWidth="96.0" text="Jogador " />
       <Label layoutX="99.0" layoutY="679.0" text="Tropas:" />
       <Label layoutX="625.0" layoutY="679.0" text="Tropas:" />
-      <Label layoutX="925.0" layoutY="680.0" text="Tropas:" />
+      <Label layoutX="868.0" layoutY="679.0" text="Tropas:" />
       <Label layoutX="101.0" layoutY="710.0" text="Países:" />
       <Label layoutX="627.0" layoutY="711.0" text="Países:" />
-      <Label layoutX="927.0" layoutY="710.0" text="Países:" />
+      <Label layoutX="870.0" layoutY="710.0" text="Países:" />
       <Button layoutX="67.0" layoutY="46.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Alaska" />
       <Button layoutX="173.0" layoutY="59.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Mackenzie" />
       <Button layoutX="115.0" layoutY="92.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Vancouver" />
@@ -39,7 +39,7 @@
       <Button layoutX="206.0" layoutY="423.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Chile" />
       <Button layoutX="531.0" layoutY="80.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Islandia" />
       <Button layoutX="499.0" layoutY="124.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Inglaterra" />
-      <Button layoutX="571.0" layoutY="137.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="França" />
+      <Button layoutX="571.0" layoutY="137.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Portugal" />
       <Button layoutX="644.0" layoutY="99.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Alemanha" />
       <Button layoutX="629.0" layoutY="162.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Italia" />
       <Button layoutX="644.0" layoutY="59.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Suecia" />
@@ -84,21 +84,27 @@
             <Image url="@../imagens/Screenshot_71.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="108.0" fitWidth="116.0" layoutX="902.0" layoutY="526.0">
+      <ImageView fitHeight="108.0" fitWidth="116.0" layoutX="843.0" layoutY="531.0">
          <image>
             <Image url="@../imagens/Screenshot_1.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="118.0" fitWidth="140.0" layoutX="1172.0" layoutY="521.0">
+      <ImageView fitHeight="108.0" fitWidth="122.0" layoutX="1052.0" layoutY="531.0">
          <image>
             <Image url="@../imagens/Screenshot_2.png" />
          </image>
       </ImageView>
-      <Label layoutX="1194.0" layoutY="648.0" prefHeight="21.0" prefWidth="96.0" text="Jogador " />
+      <Label layoutX="1074.0" layoutY="648.0" prefHeight="21.0" prefWidth="96.0" text="Jogador " />
       <Label layoutX="346.0" layoutY="648.0" prefHeight="21.0" prefWidth="96.0" text="Jogador " />
       <Label layoutX="349.0" layoutY="680.0" text="Tropas:" />
-      <Label layoutX="1191.0" layoutY="688.0" text="Tropas:" />
+      <Label layoutX="1071.0" layoutY="688.0" text="Tropas:" />
       <Label layoutX="354.0" layoutY="710.0" text="Países:" />
-      <Label layoutX="1193.0" layoutY="719.0" text="Países:" />
+      <Label layoutX="1072.0" layoutY="719.0" text="Países:" />
+      <Button layoutX="1189.0" layoutY="751.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="132.0" text=" Próximo turno" />
+      <Button layoutX="1062.0" layoutY="760.0" mnemonicParsing="false" text="Ver Países" />
+      <Button layoutX="866.0" layoutY="760.0" mnemonicParsing="false" text="Ver Países" />
+      <Button layoutX="617.0" layoutY="760.0" mnemonicParsing="false" text="Ver Países" />
+      <Button layoutX="353.0" layoutY="760.0" mnemonicParsing="false" text="Ver Países" />
+      <Button layoutX="80.0" layoutY="760.0" mnemonicParsing="false" text="Ver Países" />
    </children>
 </AnchorPane>

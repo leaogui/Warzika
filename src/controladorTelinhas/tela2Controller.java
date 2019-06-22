@@ -12,6 +12,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
@@ -27,7 +28,6 @@ public class tela2Controller implements Initializable{
 	ObservableList<String> list = FXCollections.observableArrayList();	
 	
 	public void valores_choiceBox() {
-		//ChoiceBox<String> choicebox = new Choicebox<>;
 		list.removeAll();
 		String a = "3";
 		String b = "4";
@@ -35,11 +35,6 @@ public class tela2Controller implements Initializable{
 		String d = "6";
 		list.addAll(a,b,c,d);
 		choice1.getItems().addAll(list);
-	}
-
-	public void confirmar() {
-		IniciodoProcesso.ChangeScreen("nome");
-		String a = choice1.getValue();
 	}
 	
 	@Override
@@ -62,7 +57,7 @@ public class tela2Controller implements Initializable{
 		stage.show();
 	}
 	
-	public void voltar() throws IOException {
+	public void voltar(ActionEvent event) throws IOException {
 		Stage stage = (Stage) choice1.getScene().getWindow();
 		Parent voltar = FXMLLoader.load(getClass().getResource("../telinha/tela_inicial.fxml"));
 		Scene scene = new Scene(voltar);

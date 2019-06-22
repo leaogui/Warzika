@@ -19,7 +19,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="button" layoutX="476.0" layoutY="188.0" mnemonicParsing="false" onAction="#TrocaEvent" prefHeight="25.0" prefWidth="73.0" text="Confirmar" />
-      <Button layoutX="36.0" layoutY="327.0" mnemonicParsing="false" onAction="#voltar" prefHeight="59.0" prefWidth="98.0" text="&lt; Voltar" />
+      <Button fx:id="bt2" layoutX="476.0" layoutY="188.0" mnemonicParsing="false" onAction="#TrocaEvent" prefHeight="25.0" prefWidth="73.0" text="Confirmar" />
+      <Button fx:id="bt1" layoutX="36.0" layoutY="327.0" mnemonicParsing="false" onAction="#voltar" prefHeight="59.0" prefWidth="98.0" text="&lt; Voltar" />
    </children>
 </AnchorPane>

@@ -122,6 +122,7 @@ public class Controller {
 			for(int cont = 0; cont < a; cont++) {
 				Pais pais = paisrep.get(cont1);
 				jog.adicionarPais(pais);
+				jog.quantpais = cont;
 				cont1++;
 			}
 		}

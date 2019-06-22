@@ -18,9 +18,11 @@ public class Jogador {
 	
 	public int exercito; // todo jogador começa com o mesmo número de tropas? -- teria que começar com o mesmo numero e escolher aonde colocar, em quais paises
 	
-	private String nome;
+	public String nome;
 	
 	public int ordem; 
+	
+	public int quantpais;
 	
 	public Jogador(String Nome, int id){
 		

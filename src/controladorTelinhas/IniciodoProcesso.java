@@ -57,8 +57,8 @@ public class IniciodoProcesso extends Application{
 	
 	public static void main(String[] args) {
 		launch(args);
-		Controller control = new Controller();
-		control.comeco();
+		FXMLLoader loader  = new FXMLLoader();
+		telaMapaController isso = (telaMapaController)loader.getController(); 
 	}
 
 	public static void Fechar() {

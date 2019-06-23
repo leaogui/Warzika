@@ -87,8 +87,8 @@
       <Button layoutX="93.0" layoutY="764.0" mnemonicParsing="false" text="Ver Países" />
       <Button layoutX="569.0" layoutY="764.0" mnemonicParsing="false" text="Ver Países" />
       <Button layoutX="998.0" layoutY="764.0" mnemonicParsing="false" text="Ver Países" />
-      <Button layoutX="1204.0" layoutY="681.0" mnemonicParsing="false" prefHeight="108.0" prefWidth="116.0" text=" Próximo turno" />
+      <Button layoutX="1204.0" layoutY="681.0" mnemonicParsing="false" onAction="#trocarTurno" prefHeight="108.0" prefWidth="116.0" text=" Próximo turno" />
       <Button fx:id="atacar" layoutX="1204.0" layoutY="520.0" mnemonicParsing="false" onAction="#atacar" prefHeight="63.0" prefWidth="116.0" text="Atacar" />
-      <Button layoutX="1204.0" layoutY="602.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="116.0" text="Colocar tropas" />
+      <Button fx:id="ctropas" layoutX="1204.0" layoutY="602.0" mnemonicParsing="false" onAction="#colocarTropas" prefHeight="63.0" prefWidth="116.0" text="Colocar tropas" />
    </children>
 </AnchorPane>

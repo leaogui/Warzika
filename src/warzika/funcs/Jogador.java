@@ -1,6 +1,7 @@
 package warzika.funcs;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -10,7 +11,7 @@ import warzika.app.Creator;
 
 public class Jogador {
 	
-	Set<Pais> paises = new HashSet<Pais>();
+	public Set<Pais> paises = new HashSet<Pais>();
 	
 	Creator criador = new Creator();
 	
@@ -47,10 +48,14 @@ public class Jogador {
 	
 	// metodo para retornar os países que ele possui
 	
-	public void getPaises() {
+	public  String getPaises(int i) {
+		int cont = 0;
+		String[] pais = new String [42];
 		for(Pais a : paises) {
-			System.out.println(a.Nome);
+			pais[cont] = a.Nome;
+			cont++;
 		}
+		return pais[i];
 	}
 	
 	
@@ -66,6 +71,7 @@ public class Jogador {
 	public void adicionarPais(Pais pais) {
 		paises.add(pais);
 	}
+	
 	
 	// metodo para adicionar varios paises (sobrecarga)
 	

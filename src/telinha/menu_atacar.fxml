@@ -4,10 +4,12 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="258.0" prefWidth="202.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorTelinhas.ControladorAtack">
    <children>
-      <TextArea layoutX="14.0" layoutY="42.0" prefHeight="200.0" prefWidth="200.0" text="                        País&#10;XXXXXXXXXXXXXXXXXXXXXXXXX&#10;                    Jogador&#10;XXXXXXXXXXXXXXXXXXXXXXXXX&#10;                     Tropas&#10;XXXXXXXXXXXXXXXXXXXXXXXXX&#10;&#10;&#10;&#10;" />
-      <Button layoutX="82.0" layoutY="200.0" mnemonicParsing="false" text="ATACAR!" />
+      <TextArea editable="false" layoutX="1.0" prefHeight="261.0" prefWidth="200.0" text="                País de Origem&#10;&#10;                    &#10;&#10;                País de Destino&#10;&#10;&#10;&#10;                     Tropas&#10;&#10;&#10;&#10;&#10;" />
+      <Button layoutX="69.0" layoutY="201.0" mnemonicParsing="false" onAction="#ataque" text="ATACAR!" />
+      <TextField fx:id="quantTropas" layoutX="27.0" layoutY="163.0" />
+      <ComboBox fx:id="choice1" layoutX="26.0" layoutY="35.0" onAction="#valores_choiceBox2" prefWidth="150.0" />
+      <ComboBox fx:id="choice2" layoutX="26.0" layoutY="106.0" prefWidth="150.0" />
    </children>
 </Pane>

@@ -1,7 +1,7 @@
 Brasil|4|Argentina|Venezuela|Peru|Argélia
 Argentina|2|Brasil|Peru
 Venezuela|3|Brasil|México|Peru
-Peru|3|Brasil|Peru|Venezuela
+Peru|3|Brasil|Argentina|Venezuela
 México|3|Nova York|Califórnia|Venezuela
 Califórnia|4|Nova York|México|Vancouver|Ottawa
 Nova York|4|México|Califórnia|Ottawa|Labrador

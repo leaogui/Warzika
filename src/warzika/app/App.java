@@ -23,7 +23,7 @@ public class App {
 	
 	control.escolherordem();
 	
-	control.mostrarseuspaises();
+	//control.mostrarseuspaises();
 	
 	}
 

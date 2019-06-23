@@ -10,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -22,25 +23,44 @@ import warzika.funcs.Jogador;
 public class telaMapaController implements Initializable {
 
 	
+	Scene atacar;
+	
 	@FXML
-	private Label nome1;
-	private Label nome2;
-	private Label nome3;
-	private Label nome4;
-	private Label nome5;
-	private Label nome6;
-	private Label t1;
-	private Label t2;
-	private Label t3;
-	private Label t4;
-	private Label t5;
-	private Label t6;
-	private Label p1;
-	private Label p2;
-	private Label p3;
-	private Label p4;
-	private Label p5;
-	private Label p6;
+	public Label nome1;
+	@FXML
+	public Label nome2;
+	@FXML
+	public Label nome3;
+	@FXML
+	public Label nome4;
+	@FXML
+	public Label nome5;
+	@FXML
+	public Label nome6;
+	@FXML
+	public Label t1;
+	@FXML
+	public Label t2;
+	@FXML
+	public Label t3;
+	@FXML
+	public Label t4;
+	@FXML
+	public Label t5;
+	@FXML
+	public Label t6;
+	@FXML
+	public Label p1;
+	@FXML
+	public Label p2;
+	@FXML
+	public Label p3;
+	@FXML
+	public Label p4;
+	@FXML
+	public Label p5;
+	@FXML
+	public Label p6;
 	public Button Brasil;
 	public Button Argentina;
 	public Button Venezuela;
@@ -87,59 +107,85 @@ public class telaMapaController implements Initializable {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		System.out.println("oi");
-		for(int i = 1; i< IniciodoProcesso.quantJog; i++) {
+		for(int i = 0; i< IniciodoProcesso.quantJog; i++) {
 			Jogador jog = IniciodoProcesso.getPlayers(i);
-			if(i==1) {
+			if(i==0) {
+				System.out.println("Nome:" + jog.nome);
+				System.out.println("Exercito:"+Integer.toString(jog.exercito));
+				System.out.println("Paises:" + Integer.toString(jog.quantpais));
 				nome1.setText("Nome:" + jog.nome);
 				t1.setText("Exercito:"+Integer.toString(jog.exercito));
 				p1.setText("Paises:" + Integer.toString(jog.quantpais));
 			}
-			if(i==2) {
+			if(i==1) {
 				nome2.setText("Nome:" + jog.nome);
 				t2.setText("Exercito:"+Integer.toString(jog.exercito));
 				p2.setText("Paises:" + Integer.toString(jog.quantpais));
 			}
-			if(i==3) {
+			if(i==2) {
 				nome3.setText("Nome:" + jog.nome);
 				t3.setText("Exercito:"+Integer.toString(jog.exercito));
 				p3.setText("Paises:" + Integer.toString(jog.quantpais));
 			}
-			if(i==4) {
+			if(i==3) {
 				nome4.setText("Nome:" + jog.nome);
 				t4.setText("Exercito:"+Integer.toString(jog.exercito));
 				p4.setText("Paises:" + Integer.toString(jog.quantpais));
 			}
-			if(i==5) {
+			if(i==4) {
 				nome5.setText("Nome:" + jog.nome);
 				t5.setText("Exercito:"+Integer.toString(jog.exercito));
 				p5.setText("Paises:" + Integer.toString(jog.quantpais));
 			}
-			if(i==6) {
+			if(i==5) {
 				nome6.setText("Nome:"+ jog.nome);
 				t6.setText("Exercito:"+Integer.toString(jog.exercito));
 				p6.setText("Paises:" + Integer.toString(jog.quantpais));
 			}
 		}
 	}
-	
-//	@Override
-//	public void start(Stage arg0) throws Exception {
-//			
-//		while(true) {
-//			
-//		}
-//	}
+
 	
 	@FXML
-	public void atacar(ActionEvent event) throws IOException{//esse vai para a tela atavar sem fechar a anterior
-		
-//		try {
-//	        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../telinha/menu_atacar.fxml"));
-//	        fxmlLoader.setController(this);
-//	        Node n = (Node) fxmlLoader.load();
-//	        anchoPane.getChildren().add(n);
-//	    } catch (Exception ex) {
-//	    }
+	protected void atacar(ActionEvent event) throws IOException{//esse vai para a tela atacar sem fechar a anterior
+		try {
+
+			Parent root = FXMLLoader.load(getClass().getResource("../telinha/menu_atacar.fxml"));
+			Stage stage = new Stage();
+			Scene scene = new Scene(root);
+			stage.setScene(scene);
+			stage.show();
+
+			} catch (IOException e) {
+			e.printStackTrace();
+			}
 	}
+	
+	@FXML
+	protected void trocarTurno(ActionEvent event) {
+		if(IniciodoProcesso.controller.jogador == (IniciodoProcesso.controller.numJogInt - 1)) {
+			IniciodoProcesso.controller.jogador = 0;
+		}
+		else {
+		IniciodoProcesso.controller.jogador+=1;
+		System.out.println(IniciodoProcesso.controller.jogador);
+		}
+	}
+	
+	@FXML
+	protected void colocarTropas(ActionEvent event)throws IOException {
+		try {
+
+			Parent root = FXMLLoader.load(getClass().getResource("../telinha/ColocarTropas.fxml"));
+			Stage stage = new Stage();
+			Scene scene = new Scene(root);
+			stage.setScene(scene);
+			stage.show();
+
+			} catch (IOException e) {
+			e.printStackTrace();
+			}
+	}
+
 
 }

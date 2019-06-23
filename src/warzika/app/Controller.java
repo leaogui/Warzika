@@ -17,8 +17,13 @@ import warzika.funcs.Jogador;
 
 public class Controller {
 
+	public int jogador = 0;
 	public int numJogInt = 0;
 	public String numJog;
+	public int turno = 1;
+	public int dado1;
+	public int dado2;
+	public Pais pais;
 	
 	public ArrayList<Jogador> players = new ArrayList<Jogador>();
 	Creator criador = new Creator();
@@ -35,6 +40,8 @@ public class Controller {
 	this.territorios();
 	
 	this.distribuirPaises();
+	
+	this.distribuirTropas();
 	
 	//this.escolherordem();
 	
@@ -116,19 +123,21 @@ public class Controller {
 		}
 	}
 	
-	public void mostrarseuspaises() {
-		Scanner sc = new Scanner(System.in);
-		int cont = 0;
-		Jogador jog = players.get(cont);
-		while(true) {
-			jog.getPaises();
-		
-			int a = sc.nextInt();
-			if(a == 1) {
-				break;
+	public void distribuirTropas() {
+		if(turno == 1) {
+			for(int i = 0; i < numJogInt; i++) {
+				Jogador jog = players.get(i);
+				jog.exercito = jog.quantpais/2;
+			}
+		}
+		else {
+			for(int i = 0; i < numJogInt; i++) {
+				Jogador jog = players.get(i);
+				jog.exercito = jog.quantpais/2;
 			}
 		}
 	}
+	
 	
 	
 	}

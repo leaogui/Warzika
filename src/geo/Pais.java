@@ -6,13 +6,13 @@ public class Pais {
 	
 	public String Nome;
 	
-	public int exercito;
+	public int exercito = 0;
 	
 	public boolean temJogador;
 	
 	public int jogadorAtual;
 	
-	ArrayList<String> fronteiras = new ArrayList<String>();
+	public ArrayList<String> fronteiras = new ArrayList<String>();
 
 	
 	public Pais() {
@@ -24,7 +24,7 @@ public class Pais {
 	public void fronteiras(String lpais) {	// falar as fronteiras que tem em cada pais
 		
 		String[] array = lpais.split("[|]");
-	    String Nome = array[0];
+	    Nome = array[0];
 	    String num = array[1];
 	    int quant = Integer.parseInt(num);
 	    if(quant == 2) {
@@ -96,15 +96,17 @@ public class Pais {
 		return exercito;
 	}
 	
-	public ArrayList<String> getFronteiras(){
-		
-		return fronteiras;
+	public String getFronteiras(int i){
+		int cont = 0;
+		String[] front = new String [42];
+		for(String a : fronteiras) {
+			front[cont] = a;
+			cont++;
+		}
+		return front[i];
 		
 	}
 	
-	public void distribuirPaises(){
-		
-	}
 	
 	
 //	pais.add(lpais);

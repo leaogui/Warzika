@@ -9,7 +9,7 @@
    <children>
       <ImageView fitHeight="499.0" fitWidth="1352.0" layoutY="-13.0">
          <image>
-            <Image url="@Fotomapa.png" />
+            <Image url="@../imagens/Fotomapa.png" />
          </image>
       </ImageView>
       <Label fx:id="nome1" layoutX="99.0" layoutY="636.0" prefHeight="21.0" prefWidth="96.0" text="Jogador " />
@@ -71,17 +71,17 @@
       <Button layoutX="1139.0" layoutY="411.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Australia" />
       <ImageView fitHeight="108.0" fitWidth="116.0" layoutX="79.0" layoutY="525.0">
          <image>
-            <Image url="@Screenshot_73.png" />
+            <Image url="@../imagens/Screenshot_73.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="108.0" fitWidth="122.0" layoutX="555.0" layoutY="520.0">
          <image>
-            <Image url="@Screenshot_72.png" />
+            <Image url="@../imagens/Screenshot_72.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="108.0" fitWidth="122.0" layoutX="975.0" layoutY="520.0">
          <image>
-            <Image url="@Screenshot_71.png" />
+            <Image url="@../imagens/Screenshot_71.png" />
          </image>
       </ImageView>
       <Button layoutX="93.0" layoutY="764.0" mnemonicParsing="false" text="Ver Países" />

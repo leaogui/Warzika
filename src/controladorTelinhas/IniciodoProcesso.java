@@ -6,8 +6,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import warzika.app.Controller;
+import warzika.funcs.Jogador;
 
 public class IniciodoProcesso extends Application{
+	
+	public static int quantJog;
+	public static Controller controller = new Controller();
 
 	private static Stage stage;
 	
@@ -15,6 +19,16 @@ public class IniciodoProcesso extends Application{
 	private static Scene quantijog;
 	private static Scene nome;
 	private static Scene sobre;
+	private static Scene mapas;
+	
+	public void addPlayer(Jogador jog){
+		controller.players.add(jog);
+	}
+	
+	public static Jogador getPlayers(int cont) {
+		Jogador jog = controller.players.get(cont);
+		return jog;
+	}
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
@@ -36,10 +50,9 @@ public class IniciodoProcesso extends Application{
 		
 		primaryStage.setScene(pritela);
 		primaryStage.show();	
-		
 	}
 	
-	public static void ChangeScreen(String scr) {
+	public static void ChangeScreen(String scr,Parent scene) {
 		switch (scr) {
 			case "main":
 				stage.setScene(pritela);
@@ -48,10 +61,15 @@ public class IniciodoProcesso extends Application{
 				stage.setScene(quantijog);
 				break;
 			case "nome":
+				nome = new Scene(scene);
 				stage.setScene(nome);
 				break;
 			case "sobre":
 				stage.setScene(sobre);
+				break;
+			case "mapas":
+				mapas = new Scene(scene);
+				stage.setScene(mapas);
 		}
 	}
 	

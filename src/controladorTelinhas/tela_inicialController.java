@@ -17,14 +17,15 @@ public class tela_inicialController implements Initializable {
 
 	
 	@FXML
-	protected void button1Action(ActionEvent event){	
-		
-		IniciodoProcesso.ChangeScreen("quant");
+	protected void button1Action(ActionEvent event) throws IOException{	
+		Parent quant = FXMLLoader.load(getClass().getResource("../telinha/quantidade_players.fxml"));
+		IniciodoProcesso.ChangeScreen("quant",quant);
 	}
 	
 	@FXML
-	private void button2Action(ActionEvent event) {
-		IniciodoProcesso.ChangeScreen("sobre");
+	private void button2Action(ActionEvent event) throws IOException {
+		Parent sobre = FXMLLoader.load(getClass().getResource("../telinha/tela_sobre.fxml"));
+		IniciodoProcesso.ChangeScreen("sobre",sobre);
 	}
 	
 	@FXML

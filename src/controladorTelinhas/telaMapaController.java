@@ -1,11 +1,14 @@
 package controladorTelinhas;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -16,13 +19,10 @@ import javafx.stage.Stage;
 import warzika.app.Controller;
 import warzika.funcs.Jogador;
 
-public class telaMapaController extends Application {
+public class telaMapaController implements Initializable {
 
-	Controller control;
-	public int quantJog;
 	
 	@FXML
-	AnchorPane anchoPane;
 	private Label nome1;
 	private Label nome2;
 	private Label nome3;
@@ -85,10 +85,10 @@ public class telaMapaController extends Application {
 	public Button Australia;
 	
 	@Override
-	public void start(Stage arg0) throws Exception {
-			
-		for(int i = 1; i< quantJog; i++) {
-			Jogador jog = control.players.get(i);
+	public void initialize(URL location, ResourceBundle resources) {
+		System.out.println("oi");
+		for(int i = 1; i< IniciodoProcesso.quantJog; i++) {
+			Jogador jog = IniciodoProcesso.getPlayers(i);
 			if(i==1) {
 				nome1.setText("Nome:" + jog.nome);
 				t1.setText("Exercito:"+Integer.toString(jog.exercito));
@@ -120,20 +120,26 @@ public class telaMapaController extends Application {
 				p6.setText("Paises:" + Integer.toString(jog.quantpais));
 			}
 		}
-		while(true) {
-			
-		}
 	}
+	
+//	@Override
+//	public void start(Stage arg0) throws Exception {
+//			
+//		while(true) {
+//			
+//		}
+//	}
 	
 	@FXML
 	public void atacar(ActionEvent event) throws IOException{//esse vai para a tela atavar sem fechar a anterior
-		try {
-	        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../telinha/menu_atacar.fxml"));
-	        fxmlLoader.setController(this);
-	        Node n = (Node) fxmlLoader.load();
-	        anchoPane.getChildren().add(n);
-	    } catch (Exception ex) {
-	    }
+		
+//		try {
+//	        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../telinha/menu_atacar.fxml"));
+//	        fxmlLoader.setController(this);
+//	        Node n = (Node) fxmlLoader.load();
+//	        anchoPane.getChildren().add(n);
+//	    } catch (Exception ex) {
+//	    }
 	}
 
 }

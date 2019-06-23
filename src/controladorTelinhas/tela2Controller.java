@@ -21,6 +21,9 @@ import javafx.stage.Stage;
 
 public class tela2Controller implements Initializable{
 	
+	
+	Scene nome;
+	Scene pritela;
 	@FXML
 	public ChoiceBox<String> choice1;
 	public Label label1;
@@ -47,23 +50,37 @@ public class tela2Controller implements Initializable{
 	
 	public void TrocaEvent(ActionEvent event)throws IOException{
 		Stage stage = (Stage) choice1.getScene().getWindow();
-		FXMLLoader loader  = new FXMLLoader();
-		Pane root = loader.load(getClass().getResource("../telinha/NomeJogador.fxml").openStream());
-		tela_nomesController nome = (tela_nomesController)loader.getController();
-		nome.i = Integer.parseInt(choice1.getValue());
-		Scene scene = new Scene(root);
-		stage.setScene(scene);
-		stage.setResizable(false);
+		IniciodoProcesso.quantJog = Integer.parseInt(choice1.getValue());
+		Parent nomeJog = FXMLLoader.load(getClass().getResource("../telinha/NomeJogador.fxml"));
+		nome = new Scene(nomeJog);
+		stage.setScene(nome);
 		stage.show();
+		
+//		Stage stage = (Stage) choice1.getScene().getWindow();
+//		FXMLLoader loader  = new FXMLLoader();
+//		Pane root = loader.load(getClass().getResource("../telinha/NomeJogador.fxml").openStream());
+//		tela_nomesController nome = (tela_nomesController)loader.getController();
+//		nome.i = Integer.parseInt(choice1.getValue());
+//		Scene scene = new Scene(root);
+//		stage.setScene(scene);
+//		stage.setResizable(false);
+//		stage.show();
 	}
 	
 	public void voltar(ActionEvent event) throws IOException {
-		Stage stage = (Stage) choice1.getScene().getWindow();
-		Parent voltar = FXMLLoader.load(getClass().getResource("../telinha/tela_inicial.fxml"));
-		Scene scene = new Scene(voltar);
-		stage.setScene(scene);
-		stage.setResizable(false);
-		stage.show();
+
+//		Parent main = FXMLLoader.load(getClass().getResource("../telinha/tela_inicial.fxml"));
+//		IniciodoProcesso.ChangeScreen("pritela",main);
+//		pritela = new Scene(main);
+//		stage.setScene(pritela);
+//		stage.show();
+//		
+//		Stage stage = (Stage) choice1.getScene().getWindow();
+//		Parent voltar = FXMLLoader.load(getClass().getResource("../telinha/tela_inicial.fxml"));
+//		Scene scene = new Scene(voltar);
+//		stage.setScene(scene);
+//		stage.setResizable(false);
+//		stage.show();
 	}
 
 

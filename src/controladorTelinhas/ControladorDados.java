@@ -4,6 +4,7 @@ import java.net.URL;
 import java.util.Random;
 import java.util.ResourceBundle;
 
+import geo.Pais;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -151,12 +152,22 @@ public class ControladorDados implements Initializable{
 		else {
 			win++;
 		}
+		if(defeat!=0) {
+			win = win - defeat;
+		}
 		if(win>defeat) {
-			Jogador jog = IniciodoProcesso.controller.players.get(IniciodoProcesso.controller.jogador);
 			for(int i = 0; i< IniciodoProcesso.controller.numJogInt;i++) {
-				
+				Jogador jog = IniciodoProcesso.controller.players.get(IniciodoProcesso.controller.jogador);
+				for(Pais isso: jog.paises) {
+					if(isso.Nome.equals(IniciodoProcesso.controller.pais.Nome)) {
+						jog.retirarPais(isso);
+						Jogador jog1 = IniciodoProcesso.controller.players.get(IniciodoProcesso.controller.jogador);
+						jog1.adicionarPais(isso);
+					}
+				}
 			}
-			jog.adicionarPais(IniciodoProcesso.controller.pais);
+			
+			//jog.adicionarPais(IniciodoProcesso.controller.pais);
 		}
 	}
 

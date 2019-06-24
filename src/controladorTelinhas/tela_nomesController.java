@@ -41,7 +41,6 @@ public class tela_nomesController implements Initializable {
 		text1.clear();
 		if(cont == i) {
 			Stage stage = (Stage) text1.getScene().getWindow();
-			//System.out.println(i);
 			if(i == 3) {
 				IniciodoProcesso.controller.comeco();
 				Parent mapa3 = FXMLLoader.load(getClass().getResource("../telinha/tela_3jogadores.fxml"));

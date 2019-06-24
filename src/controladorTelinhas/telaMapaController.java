@@ -25,6 +25,10 @@ public class telaMapaController implements Initializable {
 	
 	Scene vitoria;
 	
+	Scene atu;
+	
+	Stage stage;
+	
 	@FXML
 	public Label nome1;
 	@FXML
@@ -106,7 +110,15 @@ public class telaMapaController implements Initializable {
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		System.out.println("oi");
+		try {
+			inicio();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void inicio() throws IOException {
 		for(int i = 0; i< IniciodoProcesso.quantJog; i++) {
 			Jogador jog = IniciodoProcesso.getPlayers(i);
 			if(i==0) {
@@ -155,7 +167,8 @@ public class telaMapaController implements Initializable {
 			Scene scene = new Scene(root);
 			stage.setScene(scene);
 			stage.show();
-
+			Scene isso = FXMLLoader.load(getClass().getResource("../telinha/tela_3jogadores.fxml"));
+			IniciodoProcesso.controller.stage.setScene(isso);
 			} catch (IOException e) {
 			e.printStackTrace();
 			}
@@ -178,14 +191,17 @@ public class telaMapaController implements Initializable {
 		}
 		else {
 		IniciodoProcesso.controller.jogador+=1;
+		if(IniciodoProcesso.controller.players.get(IniciodoProcesso.controller.jogador).quantpais == 0) {
+			IniciodoProcesso.controller.jogador+=1;
+		}
 		System.out.println(IniciodoProcesso.controller.jogador);
 		}
+		inicio();
 	}
 	
 	@FXML
 	protected void colocarTropas(ActionEvent event)throws IOException {
 		try {
-
 			Parent root = FXMLLoader.load(getClass().getResource("../telinha/ColocarTropas.fxml"));
 			Stage stage = new Stage();
 			Scene scene = new Scene(root);
@@ -195,6 +211,16 @@ public class telaMapaController implements Initializable {
 			} catch (IOException e) {
 			e.printStackTrace();
 			}
+	}
+	
+	protected void atualizar() throws IOException {
+		//Stage stage = (Stage) nome1.getScene().getWindow();
+//		Parent atualizar = FXMLLoader.load(getClass().getResource("../telinha/tela_3jogadores.fxml"));
+//		Stage stage = new Stage();
+//		atu = new Scene(atualizar);
+//		stage.setScene(atu);
+//		stage.show();
+//		stage.close();
 	}
 
 }

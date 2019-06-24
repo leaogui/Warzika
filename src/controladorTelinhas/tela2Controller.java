@@ -68,12 +68,12 @@ public class tela2Controller implements Initializable{
 	}
 	
 	public void voltar(ActionEvent event) throws IOException {
-
-//		Parent main = FXMLLoader.load(getClass().getResource("../telinha/tela_inicial.fxml"));
-//		IniciodoProcesso.ChangeScreen("pritela",main);
-//		pritela = new Scene(main);
-//		stage.setScene(pritela);
-//		stage.show();
+		Stage stage = (Stage) choice1.getScene().getWindow();
+		Parent main = FXMLLoader.load(getClass().getResource("../telinha/tela_inicial.fxml"));
+		IniciodoProcesso.ChangeScreen("pritela",main);
+		pritela = new Scene(main);
+		stage.setScene(pritela);
+		stage.show();
 //		
 //		Stage stage = (Stage) choice1.getScene().getWindow();
 //		Parent voltar = FXMLLoader.load(getClass().getResource("../telinha/tela_inicial.fxml"));

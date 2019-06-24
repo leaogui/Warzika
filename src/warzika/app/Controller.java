@@ -11,6 +11,7 @@ import javax.swing.JOptionPane;
 import geo.Continente;
 import geo.Pais;
 import javafx.event.ActionEvent;
+import javafx.stage.Stage;
 import repositories.PaisesRepository;
 import warzika.funcs.Dados;
 import warzika.funcs.Jogador;
@@ -24,6 +25,8 @@ public class Controller {
 	public int dado1;
 	public int dado2;
 	public Pais pais;
+	
+	public Stage stage;
 	
 	public ArrayList<Jogador> players = new ArrayList<Jogador>();
 	Creator criador = new Creator();

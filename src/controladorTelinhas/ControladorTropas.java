@@ -70,8 +70,8 @@ public class ControladorTropas implements Initializable{
 		}
 		jog.exercito = jog.exercito - tropas;
 		Stage stage = (Stage) comb.getScene().getWindow();
-//		telaMapaController isso =  new telaMapaController();
-//		isso.initialize(new Stage());
+		telaMapaController isso =  new telaMapaController();
+		isso.atualizar();
 		stage.close();
 		}
 	}

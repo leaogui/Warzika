@@ -92,7 +92,7 @@
       <Button layoutX="97.0" layoutY="765.0" mnemonicParsing="false" text="Ver Países" />
       <Button fx:id="ctropas" layoutX="1218.0" layoutY="591.0" mnemonicParsing="false" onAction="#colocarTropas" prefHeight="95.0" prefWidth="109.0" text="Colocar Tropas" />
       <Button fx:id="atacar" layoutX="1223.0" layoutY="498.0" mnemonicParsing="false" onAction="#atacar" prefHeight="82.0" prefWidth="102.0" text="Atacar" />
-      <Button layoutX="601.0" layoutY="436.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="122.0" text="Listar Países" />
+      <Button layoutX="601.0" layoutY="436.0" mnemonicParsing="false" onAction="#listarPaisestotal" prefHeight="40.0" prefWidth="122.0" text="Listar Países" />
       <Label fx:id="nome1" layoutX="93.0" layoutY="639.0" prefHeight="21.0" prefWidth="96.0" text="Jogador  1" />
       <Label fx:id="nome11" layoutX="410.0" layoutY="639.0" prefHeight="21.0" prefWidth="96.0" text="Jogador 2" />
       <Label fx:id="nome12" layoutX="759.0" layoutY="649.0" prefHeight="21.0" prefWidth="96.0" text="Jogador 3" />

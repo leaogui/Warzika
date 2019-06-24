@@ -25,6 +25,7 @@ public class Controller {
 	public int dado1;
 	public int dado2;
 	public Pais pais;
+	public int paisestj = 0;
 	
 	public Stage stage;
 	

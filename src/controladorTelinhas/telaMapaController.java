@@ -30,6 +30,8 @@ public class telaMapaController implements Initializable {
 	Stage stage;
 	
 	@FXML
+	public Button b22;
+	@FXML
 	public Label nome1;
 	@FXML
 	public Label nome2;
@@ -167,8 +169,6 @@ public class telaMapaController implements Initializable {
 			Scene scene = new Scene(root);
 			stage.setScene(scene);
 			stage.show();
-			Scene isso = FXMLLoader.load(getClass().getResource("../telinha/tela_3jogadores.fxml"));
-			IniciodoProcesso.controller.stage.setScene(isso);
 			} catch (IOException e) {
 			e.printStackTrace();
 			}
@@ -221,6 +221,20 @@ public class telaMapaController implements Initializable {
 //		stage.setScene(atu);
 //		stage.show();
 //		stage.close();
+	}
+	
+	public void listarPaisestotal(ActionEvent event) {
+		try {
+			IniciodoProcesso.controller.paisestj = 1;
+			Parent root = FXMLLoader.load(getClass().getResource("../telinha/mostrarPaises.fxml"));
+			Stage stage = new Stage();
+			Scene scene = new Scene(root);
+			stage.setScene(scene);
+			stage.show();
+
+			} catch (IOException e) {
+			e.printStackTrace();
+			}
 	}
 
 }

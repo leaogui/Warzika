@@ -236,5 +236,42 @@ public class telaMapaController implements Initializable {
 			e.printStackTrace();
 			}
 	}
+	
+	public void listaJogador1() {
+		try {
+			Parent root = FXMLLoader.load(getClass().getResource("../telinha/mostrarPaises.fxml"));
+			Stage stage = new Stage();
+			Scene scene = new Scene(root);
+			stage.setScene(scene);
+			stage.show();
 
+			} catch (IOException e) {
+			e.printStackTrace();
+			}
+	}
+
+	public void listaJogador2() {
+		try {
+			Parent root = FXMLLoader.load(getClass().getResource("../telinha/mostrarPaises.fxml"));
+			Stage stage = new Stage();
+			Scene scene = new Scene(root);
+			stage.setScene(scene);
+			stage.show();
+
+			} catch (IOException e) {
+			e.printStackTrace();
+			}
+		}
+	public void listaJogador3() {
+		try {
+			Parent root = FXMLLoader.load(getClass().getResource("../telinha/mostrarPaises.fxml"));
+			Stage stage = new Stage();
+			Scene scene = new Scene(root);
+			stage.setScene(scene);
+			stage.show();
+
+			} catch (IOException e) {
+			e.printStackTrace();
+			}
+	}
 }

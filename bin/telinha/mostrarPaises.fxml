@@ -5,7 +5,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorTelinhas.ControllerMPaises">
    <children>
       <Label fx:id="l1" layoutX="14.0" layoutY="14.0" text="Alaska: Tropas : x, Jogador x" />
       <Label fx:id="l2" layoutX="3.0" layoutY="37.0" text="Mackenzie: Tropas : x, Jogador x" />
@@ -17,7 +17,7 @@
       <Label fx:id="l9" layoutX="9.0" layoutY="217.0" text="Groenlandia: Tropas : x, Jogador x" />
       <Label fx:id="l10" layoutX="19.0" layoutY="242.0" text="Brasil: Tropas : x, Jogador x" />
       <Label fx:id="l11" layoutX="14.0" layoutY="273.0" text="Venezuela: Tropas : x, Jogador x" />
-      <Label fx:id="l12" layoutX="21.0" layoutY="298.0" prefHeight="17.0" prefWidth="138.0" text="Peru: Tropas : x, Jogador x" />
+      <Label fx:id="l12" layoutX="21.0" layoutY="298.0" prefHeight="17.0" prefWidth="151.0" text="Peru: Tropas : x, Jogador x" />
       <Label fx:id="l13" layoutX="15.0" layoutY="326.0" text="Argentina: Tropas : x, Jogador x" />
       <Label fx:id="l14" layoutX="21.0" layoutY="351.0" text="Islandia: Tropas : x, Jogador x" />
       <Label fx:id="l15" layoutX="199.0" layoutY="14.0" text="Inglaterra: Tropas : x, Jogador x" />
@@ -54,6 +54,6 @@
             <Image url="@../imagens/flafla.png" />
          </image>
       </ImageView>
-      <Button layoutX="519.0" layoutY="364.0" mnemonicParsing="false" text="Voltar" />
+      <Button fx:id="bt22" layoutX="519.0" layoutY="364.0" mnemonicParsing="false" onAction="#Voltar" text="Voltar" />
    </children>
 </Pane>

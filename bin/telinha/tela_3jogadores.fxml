@@ -77,9 +77,9 @@
             <Image url="@../imagens/Screenshot_71.png" />
          </image>
       </ImageView>
-      <Button layoutX="123.0" layoutY="670.0" mnemonicParsing="false" text="Ver Países" />
-      <Button layoutX="569.0" layoutY="670.0" mnemonicParsing="false" text="Ver Países" />
-      <Button layoutX="935.0" layoutY="670.0" mnemonicParsing="false" text="Ver Países" />
+      <Button layoutX="123.0" layoutY="670.0" mnemonicParsing="false" onAction="#listaJogador1" text="Ver Países" />
+      <Button layoutX="569.0" layoutY="670.0" mnemonicParsing="false" onAction="#listaJogador2" text="Ver Países" />
+      <Button layoutX="935.0" layoutY="670.0" mnemonicParsing="false" onAction="#listaJogador3" text="Ver Países" />
       <Button layoutX="1091.0" layoutY="606.0" mnemonicParsing="false" onAction="#trocarTurno" prefHeight="83.0" prefWidth="96.0" text=" Próximo turno" />
       <Button fx:id="atacar" layoutX="1091.0" layoutY="500.0" mnemonicParsing="false" onAction="#atacar" prefHeight="40.0" prefWidth="96.0" text="Atacar" />
       <Button fx:id="ctropas" layoutX="1091.0" layoutY="550.0" mnemonicParsing="false" onAction="#colocarTropas" prefHeight="48.0" prefWidth="96.0" text="Colocar tropas" />

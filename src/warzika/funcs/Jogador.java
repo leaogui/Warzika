@@ -32,19 +32,7 @@ public class Jogador {
 	}
 	
 	
-	public void atacarPais(Pais pais, Scanner scan, Dados dado) {
-		System.out.println("Quantas tropas irão atacar");
-		int ntropas = scan.nextInt();
-		if(ntropas < pais.exercito) {
-			// vai dar algum erro
-		}
-		System.out.println("Escolha aonde deseja atacar:");
-		// ver como vai ser visto as fronteiras para o jogador
-		
-		pais.exercito = pais.exercito - ntropas;
-			dado.rolar(ntropas); // dúvidas se é melhor fazer desse jeito ou como implementei nos dados
-		
-	}
+
 	
 	// metodo para retornar os países que ele possui
 	

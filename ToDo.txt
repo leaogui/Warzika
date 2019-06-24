@@ -18,4 +18,45 @@ Não pode atacar com menos de 2 tropas
 Quando acabar tropas do jogador ele deve ser eliminado do jogo (um if(tropas == 0){ pularTurno();}) (ou ele simplesmente pode não poder atacar e a única coisa que ele pode fazer é passar o turno)
 
 
-
+l1
+l2
+l3
+l4
+l5
+l6
+l7
+l8
+l9
+l10
+l11
+l12
+l13
+l14
+l15
+l16
+l17
+l18
+l19
+l20
+l21
+l22
+l23
+l24
+l25
+l26
+l27
+l28
+l29
+l30
+l31
+l32
+l33
+l34
+l35
+l36
+l37
+l38
+l39
+l40
+l41
+l42

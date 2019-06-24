@@ -15,6 +15,7 @@ Provavelmente você já sabe mas como colocar valor de variável nas labels?
 Não pode criar jogador com nome nulo
 Não pode atacar um país que não faça fronteira com outro
 Não pode atacar com menos de 2 tropas
+Quando acabar tropas do jogador ele deve ser eliminado do jogo (um if(tropas == 0){ pularTurno();}) (ou ele simplesmente pode não poder atacar e a única coisa que ele pode fazer é passar o turno)
 
 
 

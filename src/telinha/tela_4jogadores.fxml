@@ -97,5 +97,7 @@
       <Button layoutX="743.0" layoutY="765.0" mnemonicParsing="false" text="Ver Países" />
       <Button layoutX="395.0" layoutY="765.0" mnemonicParsing="false" text="Ver Países" />
       <Button layoutX="97.0" layoutY="765.0" mnemonicParsing="false" text="Ver Países" />
+      <Button layoutX="1218.0" layoutY="591.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="109.0" text="Colocar Tropas" />
+      <Button layoutX="1223.0" layoutY="498.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="102.0" text="Atacar" />
    </children>
 </AnchorPane>

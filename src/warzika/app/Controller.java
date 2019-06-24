@@ -34,8 +34,6 @@ public class Controller {
 		
 	System.out.println("Bem vindo ao Warzika");	
 	
-
-	//this.criarJog();
 	
 	this.territorios();
 	
@@ -43,9 +41,6 @@ public class Controller {
 	
 	this.distribuirTropas();
 	
-	//this.escolherordem();
-	
-	//this.mostrarseuspaises();
 	
 	}
 	

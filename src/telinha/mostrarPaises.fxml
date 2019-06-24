@@ -8,6 +8,7 @@
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <Label fx:id="l1" layoutX="14.0" layoutY="14.0" text="Alaska: Tropas : x, Jogador x" />
       <Label fx:id="l2" layoutX="3.0" layoutY="37.0" text="Mackenzie: Tropas : x, Jogador x" />
       <Label fx:id="l3" layoutX="5.0" layoutY="60.0" text="Vancouver: Tropas : x, Jogador x" />
@@ -50,6 +51,8 @@
             <Image url="@../imagens/flafla.png" />
          </image>
       </ImageView>
+=======
+>>>>>>> 10ac4e5749693a95bfd3b388997fceeb1a7d7429
       <Label layoutX="14.0" layoutY="14.0" text="Alaska: Tropas : x, Jogador x" />
       <Label layoutX="3.0" layoutY="37.0" text="Mackenzie: Tropas : x, Jogador x" />
       <Label layoutX="5.0" layoutY="60.0" text="Vancouver: Tropas : x, Jogador x" />

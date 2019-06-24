@@ -12,3 +12,9 @@ Tentar mover mais ou menos os botões pq quando eu tentava o scene builder deixa
 Provavelmente você já sabe mas como colocar valor de variável nas labels?
 
 
+Não pode criar jogador com nome nulo
+Não pode atacar um país que não faça fronteira com outro
+Não pode atacar com menos de 2 tropas
+
+
+

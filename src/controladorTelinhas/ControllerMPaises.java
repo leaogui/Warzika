@@ -1,5 +1,6 @@
 package controladorTelinhas;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -7,6 +8,7 @@ import geo.Pais;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 import warzika.funcs.Jogador;
 
 public class ControllerMPaises implements Initializable{
@@ -97,152 +99,429 @@ public class ControllerMPaises implements Initializable{
 	public Label l42;
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		if(IniciodoProcesso.controller.paisestj == 1) {
+		System.out.println(IniciodoProcesso.controller.paisestj );
+		if(IniciodoProcesso.controller.paisestj == 0) {
+			
 			total();
 		}
 		else {
-			
+			jogadores();
 		}
 	}
 	
 	public void jogadores() {
-		Jogador jog = IniciodoProcesso.controller.players.get(IniciodoProcesso.controller.jogador);
-		for(int i =0;i<jog.paises.size();i++) {
-			
-		}
-	}
-	
-	public void total() {
-		for(int i =0;i<IniciodoProcesso.controller.paisrep.size();i++) {
-			Pais pais = IniciodoProcesso.controller.paisrep.get(i);
+		Jogador jog = IniciodoProcesso.controller.players.get(IniciodoProcesso.controller.paisestj - 1);
+		
+		for(int i = 0;i < jog.quantpais || i < IniciodoProcesso.controller.paisrep.size(); i++) {
 			if(i == 0) {
-				l1.setText(pais.Nome);
-				}
+				l1.setText("");
+			}
 			if(i == 1) {
-				l2.setText(pais.Nome);
+				l2.setText("");
 				}
 			if(i == 2) {
-				l3.setText(pais.Nome);
+				l3.setText("");
 				}
 			if(i == 3) {
-				l4.setText(pais.Nome);
+				l4.setText("");
 				}
 			if(i == 4) {
-				l5.setText(pais.Nome);
+				l5.setText("");
 				}
 			if(i == 5) {
-				l6.setText(pais.Nome);
+				l6.setText("");
 				}
 			if(i == 6) {
-				l7.setText(pais.Nome);
+				l7.setText("");
 				}
 			if(i == 7) {
-				l8.setText(pais.Nome);
+				l8.setText("");
 				}
 			if(i == 8) {
-				l9.setText(pais.Nome);
+				l9.setText("");
 				}
 			if(i == 9) {
-				l10.setText(pais.Nome);
+				l10.setText("");
 				}
 			if(i == 10) {
-				l11.setText(pais.Nome);
+				l11.setText("");
 				}
 			if(i == 11) {
-				l12.setText(pais.Nome);
+				l12.setText("");
 				}
 			if(i == 12) {
-				l13.setText(pais.Nome);
+				l13.setText("");
 				}
 			if(i == 13) {
-				l14.setText(pais.Nome);
+				l14.setText("");
 				}
 			if(i == 14) {
-				l15.setText(pais.Nome);
+				l15.setText("");
 				}
 			if(i == 15) {
-				l16.setText(pais.Nome);
+				l16.setText("");
 				}
 			if(i == 16) {
-				l17.setText(pais.Nome);
+				l17.setText("");
 				}
 			if(i == 17) {
-				l18.setText(pais.Nome);
+				l18.setText("");
 				}
 			if(i == 18) {
-				l19.setText(pais.Nome);
+				l19.setText("");
 				}
 			if(i == 19) {
-				l20.setText(pais.Nome);
+				l20.setText("");
 				}
 			if(i == 20) {
-				l21.setText(pais.Nome);
+				l21.setText("");
 				}
 			if(i == 21) {
-				l22.setText(pais.Nome);
+				l22.setText("");
 				}
 			if(i == 22) {
-				l23.setText(pais.Nome);
+				l23.setText("");
 				}
 			if(i == 23) {
-				l24.setText(pais.Nome);
+				l24.setText("");
 				}
 			if(i == 24) {
-				l25.setText(pais.Nome);
+				l25.setText("");
 				}
 			if(i == 25) {
-				l26.setText(pais.Nome);
+				l26.setText("");
 				}
 			if(i == 26) {
-				l27.setText(pais.Nome);
+				l27.setText("");
 				}
 			if(i == 27) {
-				l28.setText(pais.Nome);
+				l28.setText("");
 				}
 			if(i == 28) {
-				l29.setText(pais.Nome);
+				l29.setText("");
 				}
 			if(i == 29) {
-				l30.setText(pais.Nome);
+				l30.setText("");
 				}
 			if(i == 30) {
-				l31.setText(pais.Nome);
+				l31.setText("");
 				}
 			if(i == 31) {
-				l32.setText(pais.Nome);
+				l32.setText("");
 				}
 			if(i == 32) {
-				l33.setText(pais.Nome);
+				l33.setText("");
 				}
 			if(i == 33) {
-				l34.setText(pais.Nome);
+				l34.setText("");
 				}
 			if(i == 34) {
-				l35.setText(pais.Nome);
+				l35.setText("");
 				}
 			if(i == 35) {
-				l36.setText(pais.Nome);
+				l36.setText("");
 				}
 			if(i == 36) {
-				l37.setText(pais.Nome);
+				l37.setText("");
 				}
 			if(i == 37) {
-				l38.setText(pais.Nome);
+				l38.setText("");
 				}
 			if(i == 38) {
-				l39.setText(pais.Nome);
+				l39.setText("");
 				}
 			if(i == 39) {
-				l40.setText(pais.Nome);
+				l40.setText("");
 				}
 			if(i == 40) {
-				l41.setText(pais.Nome);
+				l41.setText("");
 				}
 			if(i == 41) {
-				l42.setText(pais.Nome);
+				l42.setText("");
 				}
-			
+		}
+		for(int cont = 0; cont< IniciodoProcesso.controller.paisrep.size(); cont++) {
+			Pais pais = IniciodoProcesso.controller.paisrep.get(cont);
+		for(int i =0;i<jog.paises.size();i++) {
+			String pais1 = jog.getPaises(i);
+			if(pais.Nome.equals(pais1)) {
+				if(i == 0) {
+					l1.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 1) {
+				l2.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 2) {
+				l3.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 3) {
+				l4.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 4) {
+				l5.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 5) {
+				l6.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 6) {
+				l7.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 7) {
+				l8.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 8) {
+				l9.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 9) {
+				l10.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 10) {
+				l11.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 11) {
+				l12.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 12) {
+				l13.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 13) {
+				l14.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 14) {
+				l15.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 15) {
+				l16.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 16) {
+				l17.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 17) {
+				l18.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 18) {
+				l19.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 19) {
+				l20.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 20) {
+				l21.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 21) {
+				l22.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 22) {
+				l23.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 23) {
+				l24.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 24) {
+				l25.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 25) {
+				l26.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 26) {
+				l27.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 27) {
+				l28.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 28) {
+				l29.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 29) {
+				l30.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 30) {
+				l31.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 31) {
+				l32.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 32) {
+				l33.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 33) {
+				l34.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 34) {
+				l35.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 35) {
+				l36.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 36) {
+				l37.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 37) {
+				l38.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 38) {
+				l39.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 39) {
+				l40.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 40) {
+				l41.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+			if(i == 41) {
+				l42.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
+		}
+		}
+		}
+		}
+	
+	
+	public void total() {
+			for(int cont = 0; cont< IniciodoProcesso.controller.players.size();cont++) {
+				Jogador jog = IniciodoProcesso.controller.players.get(cont);
+			for(int a = 0; a < jog.quantpais; a++) {
+				for(int i =0;i<IniciodoProcesso.controller.paisrep.size();i++) {
+			Pais pais = IniciodoProcesso.controller.paisrep.get(i);
+			String npais = jog.getPaises(a);
+			if(npais.equals(pais.Nome)){
+				if(i == 0) {
+				l1.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 1) {
+			l2.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 2) {
+			l3.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 3) {
+			l4.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 4) {
+			l5.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 5) {
+			l6.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 6) {
+			l7.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 7) {
+			l8.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 8) {
+			l9.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 9) {
+			l10.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 10) {
+			l11.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 11) {
+			l12.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 12) {
+			l13.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 13) {
+			l14.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 14) {
+			l15.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 15) {
+			l16.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 16) {
+			l17.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 17) {
+			l18.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 18) {
+			l19.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 19) {
+			l20.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 20) {
+			l21.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 21) {
+			l22.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 22) {
+			l23.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 23) {
+			l24.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 24) {
+			l25.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 25) {
+			l26.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 26) {
+			l27.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 27) {
+			l28.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 28) {
+			l29.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 29) {
+			l30.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 30) {
+			l31.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 31) {
+			l32.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 32) {
+			l33.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 33) {
+			l34.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 34) {
+			l35.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 35) {
+			l36.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 36) {
+			l37.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 37) {
+			l38.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 38) {
+			l39.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 39) {
+			l40.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 40) {
+			l41.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		if(i == 41) {
+			l42.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+			}
+		}
 		}
 	}
+			}
 
+	}
+
+	public void Voltar() throws IOException {
+		Stage stage = (Stage) l1.getScene().getWindow();
+		telaMapaController isso =  new telaMapaController();
+		isso.atualizar();
+		stage.close();
+	}
 }

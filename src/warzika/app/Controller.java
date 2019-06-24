@@ -26,6 +26,7 @@ public class Controller {
 	public int dado2;
 	public Pais pais;
 	public int paisestj = 0;
+	public int jogadorp; // usar para ver a lista de paises de cada jogador
 	
 	public Stage stage;
 	
@@ -126,13 +127,13 @@ public class Controller {
 		if(turno == 1) {
 			for(int i = 0; i < numJogInt; i++) {
 				Jogador jog = players.get(i);
-				jog.exercito = jog.quantpais/2;
+				jog.exercito = jog.exercito + jog.quantpais/2;
 			}
 		}
 		else {
 			for(int i = 0; i < numJogInt; i++) {
 				Jogador jog = players.get(i);
-				jog.exercito = jog.quantpais/2;
+				jog.exercito = jog.exercito + jog.quantpais/2;
 			}
 		}
 	}

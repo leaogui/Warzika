@@ -67,6 +67,7 @@ public class telaMapaController implements Initializable {
 	public Label p5;
 	@FXML
 	public Label p6;
+	@FXML
 	public Button Brasil;
 	public Button Argentina;
 	public Button Venezuela;
@@ -112,6 +113,7 @@ public class telaMapaController implements Initializable {
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
+		Brasil.setText("Jogador 1");
 		try {
 			inicio();
 		} catch (IOException e) {
@@ -188,6 +190,8 @@ public class telaMapaController implements Initializable {
 		}
 		if(IniciodoProcesso.controller.jogador == (IniciodoProcesso.controller.numJogInt - 1)) {
 			IniciodoProcesso.controller.jogador = 0;
+			IniciodoProcesso.controller.turno +=1;
+			IniciodoProcesso.controller.distribuirTropas();
 		}
 		else {
 		IniciodoProcesso.controller.jogador+=1;
@@ -225,6 +229,20 @@ public class telaMapaController implements Initializable {
 	
 	public void listarPaisestotal(ActionEvent event) {
 		try {
+			IniciodoProcesso.controller.paisestj = 0;
+			Parent root = FXMLLoader.load(getClass().getResource("../telinha/mostrarPaises.fxml"));
+			Stage stage = new Stage();
+			Scene scene = new Scene(root);
+			stage.setScene(scene);
+			stage.show();
+
+			} catch (IOException e) {
+			e.printStackTrace();
+			}
+	}
+	
+	public void listaJogador1() {
+		try {
 			IniciodoProcesso.controller.paisestj = 1;
 			Parent root = FXMLLoader.load(getClass().getResource("../telinha/mostrarPaises.fxml"));
 			Stage stage = new Stage();
@@ -237,4 +255,30 @@ public class telaMapaController implements Initializable {
 			}
 	}
 
+	public void listaJogador2() {
+		try {
+			IniciodoProcesso.controller.paisestj = 2;
+			Parent root = FXMLLoader.load(getClass().getResource("../telinha/mostrarPaises.fxml"));
+			Stage stage = new Stage();
+			Scene scene = new Scene(root);
+			stage.setScene(scene);
+			stage.show();
+
+			} catch (IOException e) {
+			e.printStackTrace();
+			}
+		}
+	public void listaJogador3() {
+		try {
+			IniciodoProcesso.controller.paisestj = 3;
+			Parent root = FXMLLoader.load(getClass().getResource("../telinha/mostrarPaises.fxml"));
+			Stage stage = new Stage();
+			Scene scene = new Scene(root);
+			stage.setScene(scene);
+			stage.show();
+
+			} catch (IOException e) {
+			e.printStackTrace();
+			}
+	}
 }

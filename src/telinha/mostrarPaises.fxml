@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Alaska: Tropas : x, Jogador x" />
+      <Label layoutX="3.0" layoutY="37.0" text="Mackenzie: Tropas : x, Jogador x" />
+      <Label layoutX="5.0" layoutY="60.0" text="Vancouver: Tropas : x, Jogador x" />
+      <Label layoutX="14.0" layoutY="86.0" text="Ottawa: Tropas : x, Jogador x" />
+      <Label layoutX="8.0" layoutY="117.0" text="California: Tropas : x, Jogador x" />
+      <Label layoutX="5.0" layoutY="143.0" text="Nova York: Tropas : x, Jogador x" />
+      <Label layoutX="14.0" layoutY="193.0" text="México: Tropas : x, Jogador x" />
+      <Label layoutX="9.0" layoutY="217.0" text="Groenlandia: Tropas : x, Jogador x" />
+      <Label layoutX="19.0" layoutY="242.0" text="Brasil: Tropas : x, Jogador x" />
+      <Label layoutX="14.0" layoutY="273.0" text="Venezuela: Tropas : x, Jogador x" />
+      <Label layoutX="21.0" layoutY="298.0" prefHeight="17.0" prefWidth="138.0" text="Peru: Tropas : x, Jogador x" />
+      <Label layoutX="15.0" layoutY="326.0" text="Argentina: Tropas : x, Jogador x" />
+      <Label layoutX="21.0" layoutY="351.0" text="Islandia: Tropas : x, Jogador x" />
+      <Label layoutX="199.0" layoutY="14.0" text="Inglaterra: Tropas : x, Jogador x" />
+      <Label layoutX="206.0" layoutY="37.0" text="França: Tropas : x, Jogador x" />
+      <Label layoutX="205.0" layoutY="61.0" text="Alemanha: Tropas : x, Jogador x" />
+      <Label layoutX="209.0" layoutY="87.0" text="Italia: Tropas : x, Jogador x" />
+      <Label layoutX="207.0" layoutY="111.0" text="Suecia: Tropas : x, Jogador x" />
+      <Label layoutX="203.0" layoutY="137.0" text="Moscou: Tropas : x, Jogador x" />
+      <Label layoutX="205.0" layoutY="167.0" text="Polonia: Tropas : x, Jogador x" />
+      <Label layoutX="210.0" layoutY="193.0" text="Egito: Tropas : x, Jogador x" />
+      <Label layoutX="208.0" layoutY="217.0" text="Sudão: Tropas : x, Jogador x" />
+      <Label layoutX="207.0" layoutY="250.0" text="Congo: Tropas : x, Jogador x" />
+      <Label layoutX="191.0" layoutY="281.0" text="Africa do Sul: Tropas : x, Jogador x" />
+      <Label layoutX="193.0" layoutY="306.0" text="Madagascar: Tropas : x, Jogador x" />
+      <Label layoutX="193.0" layoutY="334.0" text="Oriente Medio: Tropas : x, Jogador x" />
+      <Label layoutX="214.0" layoutY="359.0" text="Aral: Tropas : x, Jogador x" />
+      <Label layoutX="15.0" layoutY="167.0" text="Labrador: Tropas : x, Jogador x" />
+      <Label layoutX="408.0" layoutY="23.0" text="Omsk: Tropas : x, Jogador x" />
+      <Label layoutX="402.0" layoutY="52.0" text="Dudinka: Tropas : x, Jogador x" />
+      <Label layoutX="405.0" layoutY="78.0" text="India: Tropas : x, Jogador x" />
+      <Label layoutX="403.0" layoutY="102.0" text="China: Tropas : x, Jogador x" />
+      <Label layoutX="389.0" layoutY="128.0" prefHeight="17.0" prefWidth="170.0" text="Mongolia: Tropas : x, Jogador x" />
+      <Label layoutX="402.0" layoutY="152.0" text="Tchita: Tropas : x, Jogador x" />
+      <Label layoutX="405.0" layoutY="176.0" text="Siberia: Tropas : x, Jogador x" />
+      <Label layoutX="392.0" layoutY="201.0" text="Vladivostok: Tropas : x, Jogador x" />
+      <Button layoutX="530.0" layoutY="366.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="59.0" text="Voltar" />
+      <Label layoutX="402.0" layoutY="225.0" text="Japão: Tropas : x, Jogador x" />
+      <Label layoutX="401.0" layoutY="250.0" text="Vietnã: Tropas : x, Jogador x" />
+      <Label layoutX="396.0" layoutY="272.0" text="Sumatra: Tropas : x, Jogador x" />
+      <Label layoutX="398.0" layoutY="297.0" text="Boreno: Tropas : x, Jogador x" />
+      <Label layoutX="392.0" layoutY="317.0" text="Nova Guiné: Tropas : x, Jogador x" />
+      <Label layoutX="400.0" layoutY="342.0" text="Australia: Tropas : x, Jogador x" />
+   </children>
+</Pane>

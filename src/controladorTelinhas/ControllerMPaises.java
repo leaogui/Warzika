@@ -100,22 +100,154 @@ public class ControllerMPaises implements Initializable{
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		System.out.println(IniciodoProcesso.controller.paisestj );
-		if(IniciodoProcesso.controller.paisestj == 1) {
+		if(IniciodoProcesso.controller.paisestj == 0) {
 			
 			total();
 		}
 		else {
-			
+			jogadores();
 		}
 	}
 	
-	public void jogadores() {// nn está funcionando
-		Jogador jog = IniciodoProcesso.controller.players.get(IniciodoProcesso.controller.jogador);
+	public void jogadores() {
+		Jogador jog = IniciodoProcesso.controller.players.get(IniciodoProcesso.controller.paisestj - 1);
+		
+		for(int i = 0;i < jog.quantpais || i < IniciodoProcesso.controller.paisrep.size(); i++) {
+			if(i == 0) {
+				l1.setText("");
+			}
+			if(i == 1) {
+				l2.setText("");
+				}
+			if(i == 2) {
+				l3.setText("");
+				}
+			if(i == 3) {
+				l4.setText("");
+				}
+			if(i == 4) {
+				l5.setText("");
+				}
+			if(i == 5) {
+				l6.setText("");
+				}
+			if(i == 6) {
+				l7.setText("");
+				}
+			if(i == 7) {
+				l8.setText("");
+				}
+			if(i == 8) {
+				l9.setText("");
+				}
+			if(i == 9) {
+				l10.setText("");
+				}
+			if(i == 10) {
+				l11.setText("");
+				}
+			if(i == 11) {
+				l12.setText("");
+				}
+			if(i == 12) {
+				l13.setText("");
+				}
+			if(i == 13) {
+				l14.setText("");
+				}
+			if(i == 14) {
+				l15.setText("");
+				}
+			if(i == 15) {
+				l16.setText("");
+				}
+			if(i == 16) {
+				l17.setText("");
+				}
+			if(i == 17) {
+				l18.setText("");
+				}
+			if(i == 18) {
+				l19.setText("");
+				}
+			if(i == 19) {
+				l20.setText("");
+				}
+			if(i == 20) {
+				l21.setText("");
+				}
+			if(i == 21) {
+				l22.setText("");
+				}
+			if(i == 22) {
+				l23.setText("");
+				}
+			if(i == 23) {
+				l24.setText("");
+				}
+			if(i == 24) {
+				l25.setText("");
+				}
+			if(i == 25) {
+				l26.setText("");
+				}
+			if(i == 26) {
+				l27.setText("");
+				}
+			if(i == 27) {
+				l28.setText("");
+				}
+			if(i == 28) {
+				l29.setText("");
+				}
+			if(i == 29) {
+				l30.setText("");
+				}
+			if(i == 30) {
+				l31.setText("");
+				}
+			if(i == 31) {
+				l32.setText("");
+				}
+			if(i == 32) {
+				l33.setText("");
+				}
+			if(i == 33) {
+				l34.setText("");
+				}
+			if(i == 34) {
+				l35.setText("");
+				}
+			if(i == 35) {
+				l36.setText("");
+				}
+			if(i == 36) {
+				l37.setText("");
+				}
+			if(i == 37) {
+				l38.setText("");
+				}
+			if(i == 38) {
+				l39.setText("");
+				}
+			if(i == 39) {
+				l40.setText("");
+				}
+			if(i == 40) {
+				l41.setText("");
+				}
+			if(i == 41) {
+				l42.setText("");
+				}
+		}
 		for(int cont = 0; cont< IniciodoProcesso.controller.paisrep.size(); cont++) {
 			Pais pais = IniciodoProcesso.controller.paisrep.get(cont);
 		for(int i =0;i<jog.paises.size();i++) {
 			String pais1 = jog.getPaises(i);
 			if(pais.Nome.equals(pais1)) {
+				if(i == 0) {
+					l1.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
+				}
 			if(i == 1) {
 				l2.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
 				}
@@ -240,8 +372,9 @@ public class ControllerMPaises implements Initializable{
 				l42.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
 				}
 		}
-		}}
-	}
+		}
+		}
+		}
 	
 	
 	public void total() {
@@ -252,6 +385,7 @@ public class ControllerMPaises implements Initializable{
 			Pais pais = IniciodoProcesso.controller.paisrep.get(i);
 			String npais = jog.getPaises(a);
 			if(npais.equals(pais.Nome)){
+				if(i == 0) {
 				l1.setText(pais.Nome + " exercito:" +pais.exercito + " nome:" + jog.nome);
 			}
 		if(i == 1) {
@@ -380,6 +514,7 @@ public class ControllerMPaises implements Initializable{
 		}
 		}
 	}
+			}
 
 	}
 

@@ -22,47 +22,47 @@
       <Label fx:id="p1" layoutX="99.0" layoutY="650.0" text="Países:" />
       <Label fx:id="p2" layoutX="267.0" layoutY="650.0" text="Países:" />
       <Label fx:id="p3" layoutX="411.0" layoutY="650.0" text="Países:" />
-      <Button fx:id="Alaska" layoutX="67.0" layoutY="46.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Alaska" />
-      <Button layoutX="158.0" layoutY="59.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Mackenzie" />
-      <Button layoutX="92.0" layoutY="93.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Vancouver" />
-      <Button layoutX="203.0" layoutY="111.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Ottawa" />
-      <Button layoutX="89.0" layoutY="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="California" />
-      <Button layoutX="125.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Nova York" />
-      <Button layoutX="69.0" layoutY="210.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="México" />
-      <Button layoutX="366.0" layoutY="46.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Groenlandia" />
-      <Button layoutX="271.0" layoutY="327.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Brasil" />
-      <Button layoutX="212.0" layoutY="261.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Venezuela" />
-      <Button layoutX="145.0" layoutY="298.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Peru" />
-      <Button layoutX="235.0" layoutY="384.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Argentina" />
-      <Button layoutX="480.0" layoutY="80.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Islandia" />
-      <Button layoutX="451.0" layoutY="118.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Inglaterra" />
-      <Button layoutX="513.0" layoutY="143.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="França" />
-      <Button layoutX="567.0" layoutY="111.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Alemanha" />
-      <Button layoutX="575.0" layoutY="60.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Suecia" />
-      <Button layoutX="677.0" layoutY="99.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Moscou" />
-      <Button layoutX="607.0" layoutY="150.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Polonia" />
-      <Button layoutX="629.0" layoutY="200.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Egito" />
-      <Button layoutX="660.0" layoutY="249.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Sudão" />
-      <Button layoutX="597.0" layoutY="302.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Congo" />
-      <Button layoutX="595.0" layoutY="372.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Africa do Sul" />
-      <Button layoutX="717.0" layoutY="360.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Madagascar" />
-      <Button layoutX="702.0" layoutY="210.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Oriente Medio" />
-      <Button layoutX="759.0" layoutY="143.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Aral" />
-      <Button layoutX="292.0" layoutY="106.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Labrador" />
-      <Button layoutX="766.0" layoutY="99.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Omsk" />
-      <Button layoutX="803.0" layoutY="34.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Dudinka" />
-      <Button layoutX="831.0" layoutY="210.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="India" />
-      <Button layoutX="960.0" layoutY="174.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="China" />
-      <Button layoutX="936.0" layoutY="138.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Mongolia" />
-      <Button layoutX="938.0" layoutY="99.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Tchita" />
-      <Button layoutX="907.0" layoutY="60.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Sibéria" />
-      <Button layoutX="1025.0" layoutY="60.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Vladivostok" />
-      <Button layoutX="1122.0" layoutY="156.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Japão" />
-      <Button layoutX="960.0" layoutY="236.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Vietna" />
-      <Button layoutX="928.0" layoutY="298.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Sumatra" />
-      <Button layoutX="1029.0" layoutY="302.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Borneo" />
-      <Button layoutX="1112.0" layoutY="340.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Nova Guine" />
-      <Button layoutX="1014.0" layoutY="403.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Australia" />
+  	  <Label fx:id="Alaska" layoutX="67.0" layoutY="46.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Alaska" />
+      <Label layoutX="158.0" layoutY="59.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Mackenzie" />
+      <Label layoutX="92.0" layoutY="93.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Vancouver" />
+      <Label layoutX="203.0" layoutY="111.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Ottawa" />
+      <Label layoutX="89.0" layoutY="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="California" />
+      <Label layoutX="125.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Nova York" />
+      <Label layoutX="69.0" layoutY="210.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="México" />
+      <Label layoutX="366.0" layoutY="46.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Groenlandia" />
+      <Label layoutX="271.0" layoutY="327.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Brasil" />
+      <Label layoutX="212.0" layoutY="261.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Venezuela" />
+      <Label layoutX="145.0" layoutY="298.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Peru" />
+      <Label layoutX="235.0" layoutY="384.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Argentina" />
+      <Label layoutX="480.0" layoutY="80.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Islandia" />
+      <Label layoutX="451.0" layoutY="118.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Inglaterra" />
+      <Label layoutX="513.0" layoutY="143.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="França" />
+      <Label layoutX="567.0" layoutY="111.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Alemanha" />
+      <Label layoutX="575.0" layoutY="60.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Suecia" />
+      <Label layoutX="677.0" layoutY="99.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Moscou" />
+      <Label layoutX="607.0" layoutY="150.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Polonia" />
+      <Label layoutX="629.0" layoutY="200.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Egito" />
+      <Label layoutX="660.0" layoutY="249.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Sudão" />
+      <Label layoutX="597.0" layoutY="298.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Congo" />
+      <Label layoutX="595.0" layoutY="372.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Africa do Sul" />
+      <Label layoutX="717.0" layoutY="360.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Madagascar" />
+      <Label layoutX="702.0" layoutY="210.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Oriente Medio" />
+      <Label layoutX="759.0" layoutY="143.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Aral" />
+      <Label layoutX="292.0" layoutY="106.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Labrador" />
+      <Label layoutX="766.0" layoutY="99.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Omsk" />
+      <Label layoutX="803.0" layoutY="34.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Dudinka" />
+      <Label layoutX="831.0" layoutY="210.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="India" />
+      <Label layoutX="960.0" layoutY="174.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="China" />
+      <Label layoutX="936.0" layoutY="138.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Mongolia" />
+      <Label layoutX="938.0" layoutY="99.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Tchita" />
+      <Label layoutX="907.0" layoutY="60.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Sibéria" />
+      <Label layoutX="1025.0" layoutY="60.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Vladivostok" />
+      <Label layoutX="1122.0" layoutY="156.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Japão" />
+      <Label layoutX="960.0" layoutY="236.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Vietna" />
+      <Label layoutX="928.0" layoutY="298.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Sumatra" />
+      <Label layoutX="1029.0" layoutY="302.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Borneo" />
+      <Label layoutX="1112.0" layoutY="340.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Nova Guine" />
+      <Label layoutX="1014.0" layoutY="403.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="65.0" text="Australia" />
       <ImageView fitHeight="60.0" fitWidth="78.0" layoutX="90.0" layoutY="510.0">
          <image>
             <Image url="@../imagens/Screenshot_73.png" />
@@ -88,7 +88,7 @@
       <Label fx:id="nome11" layoutX="97.0" layoutY="578.0" prefHeight="21.0" prefWidth="96.0" text="Jogador 1" />
       <Label fx:id="nome12" layoutX="259.0" layoutY="589.0" prefHeight="21.0" prefWidth="96.0" text="Jogador  2" />
       <Label fx:id="nome13" layoutX="409.0" layoutY="589.0" prefHeight="21.0" prefWidth="96.0" text="Jogador  3" />
-      <Button layoutX="506.0" layoutY="224.0" mnemonicParsing="false" text="Argélia" />
+      <Label layoutX="506.0" layoutY="224.0" mnemonicParsing="false" text="Argélia" />
       <ImageView fitHeight="72.0" fitWidth="85.0" layoutX="595.0" layoutY="514.0">
          <image>
             <Image url="@../imagens/Screenshot_70.png" />

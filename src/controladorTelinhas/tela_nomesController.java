@@ -30,7 +30,7 @@ public class tela_nomesController implements Initializable {
 		if(text1.getText().isEmpty()) {
 			Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
             dialogoInfo.setTitle("Diálogo de informação");
-            dialogoInfo.setHeaderText("Tem que ter um nome o jogador");
+            dialogoInfo.setHeaderText("O Jogador deve ter um nome.");
             dialogoInfo.showAndWait();
 		}
 		else {

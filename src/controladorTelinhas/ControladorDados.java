@@ -13,6 +13,10 @@ import warzika.funcs.Jogador;
 
 public class ControladorDados implements Initializable{
 	
+	int rolarataque;
+	
+	int rolardefesa;
+	
 	@FXML
 	public Label dadoataque;
 	
@@ -47,71 +51,83 @@ public class ControladorDados implements Initializable{
 	}
 	
 	public void rolar(ActionEvent event) {
-		int n = 3, flag, salve = 0;
-		int[] dado1;
-		dado1 = new int [3];
-			Random rand = new Random();
+		if(rolarataque == 1) {
 			
-			for(int i = 0; i < IniciodoProcesso.controller.dado1; i++) {
-				dado1[i] = rand.nextInt(6) + 1;
-				if(i==0) {
-					dadoataque.setText(Integer.toString(dado1[i]));
-				}
-				if(i==1) {
-					dadoataque1.setText(Integer.toString(dado1[i]));
-				}
-				if(i==2) {
-					dadoataque2.setText(Integer.toString(dado1[i]));
-				}
 			}
-			for(int i=0;i<n-1;i++){
-				flag = 0;
-				for(int j=0;j<n-1-i;j++){
-					if(dado1[j]<dado1[j+1]){
-						flag = 1;
-						salve = dado1[j];
-						dado1[j] = dado1[j+1];
-						dado1[j+1] = salve;
+		else {
+			int n = 3, flag, salve = 0;
+			int[] dado1;
+			dado1 = new int [3];
+				Random rand = new Random();
+				
+				for(int i = 0; i < IniciodoProcesso.controller.dado1; i++) {
+					dado1[i] = rand.nextInt(6) + 1;
+					if(i==0) {
+						dadoataque.setText(Integer.toString(dado1[i]));
+					}
+					if(i==1) {
+						dadoataque1.setText(Integer.toString(dado1[i]));
+					}
+					if(i==2) {
+						dadoataque2.setText(Integer.toString(dado1[i]));
 					}
 				}
-			if(flag==0){
-				break;
+				for(int i=0;i<n-1;i++){
+					flag = 0;
+					for(int j=0;j<n-1-i;j++){
+						if(dado1[j]<dado1[j+1]){
+							flag = 1;
+							salve = dado1[j];
+							dado1[j] = dado1[j+1];
+							dado1[j+1] = salve;
+						}
+					}
+				if(flag==0){
+					break;
+					}
 				}
-			}
+				rolarataque = 1;
+		}
 	}
 	
 	public void rolar1(ActionEvent event) {
-		int n = 3, flag, salve = 0;
-		int[] dado1;
-		dado1 = new int [3];
+		if(rolardefesa == 1) {
 			
-			Random rand = new Random();
-		
-			for(int i = 0; i < IniciodoProcesso.controller.dado2; i++) {
-				dado1[i] = rand.nextInt(6) + 1;
-				if(i==0) {
-					dadodefesa.setText(Integer.toString(dado1[i]));
-				}
-				if(i==1) {
-					dadodefesa1.setText(Integer.toString(dado1[i]));
-				}
-				if(i==2) {
-					dadodefesa2.setText(Integer.toString(dado1[i]));
-				}
-			}
-			for(int i=0;i<n-1;i++){
-				flag = 0;
-				for(int j=0;j<n-1-i;j++){
-					if(dado1[j]<dado1[j+1]){
-						flag = 1;
-						salve = dado1[j];
-						dado1[j] = dado1[j+1];
-						dado1[j+1] = salve;
+		}
+		else {
+			int n = 3, flag, salve = 0;
+			int[] dado1;
+			dado1 = new int [3];
+				
+				Random rand = new Random();
+			
+				for(int i = 0; i < IniciodoProcesso.controller.dado2; i++) {
+					dado1[i] = rand.nextInt(6) + 1;
+					if(i==0) {
+						dadodefesa.setText(Integer.toString(dado1[i]));
+					}
+					if(i==1) {
+						dadodefesa1.setText(Integer.toString(dado1[i]));
+					}
+					if(i==2) {
+						dadodefesa2.setText(Integer.toString(dado1[i]));
 					}
 				}
-			if(flag==0){
-				break;
+				for(int i=0;i<n-1;i++){
+					flag = 0;
+					for(int j=0;j<n-1-i;j++){
+						if(dado1[j]<dado1[j+1]){
+							flag = 1;
+							salve = dado1[j];
+							dado1[j] = dado1[j+1];
+							dado1[j+1] = salve;
+						}
+					}
+				if(flag==0){
+					break;
+					}
 				}
+				rolardefesa = 1;
 			}
 	}
 	

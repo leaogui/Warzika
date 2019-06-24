@@ -9,6 +9,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -26,6 +27,13 @@ public class tela_nomesController implements Initializable {
 	TextField text1;
 	
 	public void confirmar() throws IOException {
+		if(text1.getText().isEmpty()) {
+			Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
+            dialogoInfo.setTitle("Diálogo de informação");
+            dialogoInfo.setHeaderText("Tem que ter um nome o jogador");
+            dialogoInfo.showAndWait();
+		}
+		else {
 		Jogador jog = new Jogador(text1.getText(),cont);
 		IniciodoProcesso.controller.numJogInt = i;
 		IniciodoProcesso.controller.players.add(jog);
@@ -40,55 +48,31 @@ public class tela_nomesController implements Initializable {
 				mapas = new Scene(mapa3);
 				stage.setScene(mapas);
 				stage.show();
-				//FXMLLoader loader  = new FXMLLoader();
-//				Parent tres = loader.load(getClass().getResource("../telinha/tela_3jogadores.fxml").openStream());
-//				telaMapaController mapa = (telaMapaController)loader.getController();
-//				mapa.control = control;
-//				mapa.quantJog = i;
-//				Scene scene = new Scene(tres);
-//				stage.setScene(scene);
-//				stage.setResizable(false);
-//				stage.show();
 			}
 			if(i == 4) {
-//				IniciodoProcesso.controller.comeco();
-//				FXMLLoader loader  = new FXMLLoader();
-//				Parent quart = loader.load(getClass().getResource("../telinha/tela_4jogadores.fxml").openStream());
-//				telaMapaController mapa = (telaMapaController)loader.getController();
-//				mapa.control = IniciodoProcesso.controller;
-//				mapa.quantJog = i;
-//				Scene scene = new Scene(quart);
-//				stage.setScene(scene);
-//				stage.setResizable(false);
-//				stage.show();
+				IniciodoProcesso.controller.comeco();
+				Parent mapa4 = FXMLLoader.load(getClass().getResource("../telinha/tela_4jogadores.fxml"));
+				mapas = new Scene(mapa4);
+				stage.setScene(mapas);
+				stage.show();
 			}
 			if(i == 5) {
-//				IniciodoProcesso.controller.comeco();
-//				FXMLLoader loader  = new FXMLLoader();
-//				Parent cinco = loader.load(getClass().getResource("../telinha/tela_5jogadores.fxml").openStream());
-//				telaMapaController mapa = (telaMapaController)loader.getController();
-//				mapa.control = IniciodoProcesso.controller;
-//				mapa.quantJog = i;
-//				Scene scene = new Scene(cinco);
-//				stage.setScene(scene);
-//				stage.setResizable(false);
-//				stage.show();
+				IniciodoProcesso.controller.comeco();
+				Parent mapa5 = FXMLLoader.load(getClass().getResource("../telinha/tela_5jogadores.fxml"));
+				mapas = new Scene(mapa5);
+				stage.setScene(mapas);
+				stage.show();
 			}
 			if(i==6) {
-//				IniciodoProcesso.control.comeco();
-//				FXMLLoader loader  = new FXMLLoader();
-//				Parent seis = loader.load(getClass().getResource("../telinha/tela_6jogadores.fxml").openStream());
-//				telaMapaController mapa = (telaMapaController)loader.getController();
-//				mapa.control = IniciodoProcesso.control;
-//				mapa.quantJog = i;
-//				Scene scene = new Scene(seis);
-//				stage.setScene(scene);
-//				stage.setResizable(false);
-//				stage.show();
+				IniciodoProcesso.controller.comeco();
+				Parent mapa5 = FXMLLoader.load(getClass().getResource("../telinha/tela_6jogadores.fxml"));
+				mapas = new Scene(mapa5);
+				stage.setScene(mapas);
+				stage.show();
 			}
-			//IniciodoProcesso.ChangeScreen("");//tem que fazer mais telas
 		}
 		cont++;
+		}
 	}
 	
 	@Override

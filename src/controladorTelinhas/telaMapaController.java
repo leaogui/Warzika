@@ -23,7 +23,7 @@ import warzika.funcs.Jogador;
 public class telaMapaController implements Initializable {
 
 	
-	Scene atacar;
+	Scene vitoria;
 	
 	@FXML
 	public Label nome1;
@@ -162,7 +162,17 @@ public class telaMapaController implements Initializable {
 	}
 	
 	@FXML
-	protected void trocarTurno(ActionEvent event) {
+	protected void trocarTurno(ActionEvent event) throws IOException {
+		for(int i =0; i< IniciodoProcesso.controller.numJogInt; i++ ) {
+			Jogador jog = IniciodoProcesso.controller.players.get(i);
+			if(jog.quantpais == 42) {
+				Stage stage = (Stage) nome1.getScene().getWindow();
+				Parent dado = FXMLLoader.load(getClass().getResource("../telinha/tela_vitoria.fxml"));
+				vitoria= new Scene(dado);
+				stage.setScene(vitoria);
+				stage.show();
+			}
+		}
 		if(IniciodoProcesso.controller.jogador == (IniciodoProcesso.controller.numJogInt - 1)) {
 			IniciodoProcesso.controller.jogador = 0;
 		}
@@ -186,6 +196,5 @@ public class telaMapaController implements Initializable {
 			e.printStackTrace();
 			}
 	}
-
 
 }

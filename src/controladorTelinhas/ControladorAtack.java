@@ -57,8 +57,15 @@ public class ControladorAtack implements Initializable{
 				}
 			}
 		}
-		choice2.getItems().addAll(list1);
+		for(Pais isso: jog.paises) {
+				for(int cont = 0; cont < list1.size(); cont++) {
+					if(list1.get(cont).equals(isso.Nome)) {
+						list1.remove(cont);
+				}
 		}
+		}
+		choice2.getItems().addAll(list1);
+	}
 	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {

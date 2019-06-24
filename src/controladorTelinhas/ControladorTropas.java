@@ -70,12 +70,8 @@ public class ControladorTropas implements Initializable{
 		}
 		jog.exercito = jog.exercito - tropas;
 		Stage stage = (Stage) comb.getScene().getWindow();
-//		telaMapaController isso = null;
-//		isso.t1.setText(Integer.toString(jog.exercito));
-//		Parent mapas = FXMLLoader.load(getClass().getResource("../telinha/tela_3jogadores.fxml"));
-//		mapa = new Scene(mapas);
-//		stage.setScene(mapa);
-//		stage.show();
+//		telaMapaController isso =  new telaMapaController();
+//		isso.initialize(new Stage());
 		stage.close();
 		}
 	}

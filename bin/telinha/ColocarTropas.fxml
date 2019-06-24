@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="262.0" prefWidth="199.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorTelinhas.ControladorTropas">
+   <children>
+      <Pane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="258.0" prefWidth="202.0">
+         <children>
+            <TextArea editable="false" layoutX="-12.0" layoutY="-12.0" prefHeight="261.0" prefWidth="200.0" text="                País de Origem&#10;&#10;                    &#10;&#10;&#10;                     Tropas&#10;&#10;&#10;&#10;&#10;" />
+            <Button fx:id="colocar" layoutX="56.0" layoutY="152.0" mnemonicParsing="false" onAction="#colocarTropas" text="Colocar" />
+            <TextField fx:id="quantTropas" layoutX="14.0" layoutY="106.0" />
+            <ComboBox fx:id="comb" layoutX="13.0" layoutY="20.0" prefWidth="150.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

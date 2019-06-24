@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="338.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorTelinhas.tela_inicialController">
+   <children>
+      <ImageView fitHeight="349.0" fitWidth="600.0" layoutX="1.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../imagens/slide-war1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="116.0" layoutY="49.0" prefHeight="90.0" prefWidth="368.0" text="  " textFill="#f5f5f5">
+         <font>
+            <Font size="73.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+         <effect>
+            <Shadow blurType="ONE_PASS_BOX" />
+         </effect>
+      </Label>
+      <Button layoutX="197.0" layoutY="147.0" mnemonicParsing="false" onAction="#button1Action" prefHeight="44.0" prefWidth="207.0" text="Iniciar" />
+      <Button layoutX="197.0" layoutY="202.0" mnemonicParsing="false" onAction="#button2Action" prefHeight="44.0" prefWidth="207.0" text="Regras" />
+      <Button layoutX="197.0" layoutY="262.0" mnemonicParsing="false" onAction="#button3Action" prefHeight="44.0" prefWidth="207.0" text="Sair" />
+      <Label layoutX="7.0" layoutY="316.0" prefHeight="17.0" prefWidth="278.0" text="Feito por Gustavo Pereira Barbosa e Guilherme Leão" textFill="#f8f8f8" />
+      <Label layoutX="116.0" layoutY="49.0" prefHeight="90.0" prefWidth="368.0" text="      Warzika" textAlignment="CENTER" textFill="#d32323" textOverrun="LEADING_ELLIPSIS">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+         <effect>
+            <Blend mode="SOFT_LIGHT" />
+         </effect>
+         <font>
+            <Font name="Yu Gothic Regular" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorTelinhas.tela2Controller">
+   <children>
+      <ImageView fitHeight="413.0" fitWidth="614.0" layoutX="-7.0" layoutY="-8.0">
+         <image>
+            <Image url="@../imagens/fundoguerra.jpg" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="choice1" layoutX="134.0" layoutY="188.0" prefHeight="25.0" prefWidth="326.0" />
+      <Label layoutX="121.0" layoutY="114.0" text="Escolha quantidade de Jogadores" textFill="#d73b3b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="bt2" layoutX="476.0" layoutY="188.0" mnemonicParsing="false" onAction="#TrocaEvent" prefHeight="25.0" prefWidth="73.0" text="Confirmar" />
+      <Button fx:id="bt1" layoutX="36.0" layoutY="327.0" mnemonicParsing="false" onAction="#voltar" prefHeight="59.0" prefWidth="98.0" text="&lt; Voltar" />
+   </children>
+</AnchorPane>

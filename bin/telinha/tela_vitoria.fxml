@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="411.0" fitWidth="616.0" layoutX="-8.0" layoutY="-6.0">
+         <image>
+            <Image url="@../imagens/fundoguerra.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="104.0" layoutY="94.0" prefHeight="212.0" prefWidth="421.0" text="Jogador x venceu!" textFill="#da0d0d">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="227.0" layoutY="313.0" prefHeight="103.0" prefWidth="161.0" text="   WARZIKA" textFill="#da0e0e">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="252.0" layoutY="260.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="97.0" text="Início" />
+   </children>
+</AnchorPane>

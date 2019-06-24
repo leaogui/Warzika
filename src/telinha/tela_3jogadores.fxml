@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
@@ -88,5 +89,10 @@
       <Label fx:id="nome12" layoutX="578.0" layoutY="588.0" prefHeight="21.0" prefWidth="96.0" text="Jogador  2" />
       <Label fx:id="nome13" layoutX="933.0" layoutY="588.0" prefHeight="21.0" prefWidth="96.0" text="Jogador  3" />
       <Button layoutX="506.0" layoutY="224.0" mnemonicParsing="false" text="Argélia" />
+      <Label layoutX="215.0" layoutY="653.0" prefHeight="60.0" prefWidth="387.0" text="TURNO DO JOGADOR X">
+         <font>
+            <Font name="Bauhaus 93" size="30.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

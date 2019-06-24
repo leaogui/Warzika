@@ -72,6 +72,16 @@ public class Jogador {
 		paises.add(pais);
 	}
 	
+	public String getNome() {
+		
+		return this.nome;
+	}
+	
+	public int getId() {
+		
+		
+		return this.id;
+	}
 	
 	// metodo para adicionar varios paises (sobrecarga)
 	

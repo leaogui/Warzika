@@ -5,3 +5,6 @@
 /tela_nomesController.class
 /telaMapaController.class
 /tela_sobreController.class
+/ControladorAtack.class
+/ControladorDados.class
+/ControladorTropas.class

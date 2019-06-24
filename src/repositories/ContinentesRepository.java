@@ -7,6 +7,10 @@ import geo.Continente;
 
 public class ContinentesRepository {
 	
-	Set<Continente> listaConti = new HashSet<Continente>();
+	public Set<Continente> listaConti = new HashSet<Continente>();
 
+	
+	public Set<Continente> getContinentes() {
+		return listaConti;
+	}
 }

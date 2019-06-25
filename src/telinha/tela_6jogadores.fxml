@@ -78,9 +78,9 @@
             <Image url="@../imagens/Screenshot_71.png" />
          </image>
       </ImageView>
-      <Button layoutX="100.0" layoutY="670.0" mnemonicParsing="false" text="Ver Países" />
-      <Button layoutX="257.0" layoutY="670.0" mnemonicParsing="false" text="Ver Países" />
-      <Button layoutX="401.0" layoutY="670.0" mnemonicParsing="false" text="Ver Países" />
+      <Button layoutX="99.0" layoutY="677.0" mnemonicParsing="false" onAction="#listaJogador1" text="Ver Países" />
+      <Button layoutX="257.0" layoutY="670.0" mnemonicParsing="false" onAction="#listaJogador2" text="Ver Países" />
+      <Button layoutX="401.0" layoutY="670.0" mnemonicParsing="false" onAction="#listaJogador3" text="Ver Países" />
       <Button layoutX="1091.0" layoutY="606.0" mnemonicParsing="false" onAction="#trocarTurno" prefHeight="83.0" prefWidth="96.0" text=" Próximo turno" />
       <Button fx:id="atacar" layoutX="1091.0" layoutY="500.0" mnemonicParsing="false" onAction="#atacar" prefHeight="40.0" prefWidth="96.0" text="Atacar" />
       <Button fx:id="ctropas" layoutX="1091.0" layoutY="550.0" mnemonicParsing="false" onAction="#colocarTropas" prefHeight="48.0" prefWidth="96.0" text="Colocar tropas" />
@@ -98,7 +98,7 @@
       <Label fx:id="nome4" layoutX="603.0" layoutY="606.0" prefHeight="21.0" prefWidth="96.0" text="Jogador " />
       <Label fx:id="t4" layoutX="603.0" layoutY="629.0" text="Tropas:" />
       <Label fx:id="p4" layoutX="605.0" layoutY="650.0" prefHeight="11.0" prefWidth="35.0" text="Países:" />
-      <Button layoutX="594.0" layoutY="670.0" mnemonicParsing="false" text="Ver Países" />
+      <Button layoutX="594.0" layoutY="670.0" mnemonicParsing="false" onAction="#listaJogador4" text="Ver Países" />
       <ImageView fitHeight="72.0" fitWidth="85.0" layoutX="761.0" layoutY="514.0">
          <image>
             <Image url="@../imagens/Screenshot_1.png" />
@@ -108,7 +108,7 @@
       <Label fx:id="nome5" layoutX="766.0" layoutY="606.0" prefHeight="21.0" prefWidth="96.0" text="Jogador " />
       <Label fx:id="t5" layoutX="766.0" layoutY="629.0" text="Tropas:" />
       <Label fx:id="p5" layoutX="768.0" layoutY="650.0" prefHeight="11.0" prefWidth="35.0" text="Países:" />
-      <Button layoutX="763.0" layoutY="670.0" mnemonicParsing="false" text="Ver Países" />
+      <Button layoutX="763.0" layoutY="670.0" mnemonicParsing="false" onAction="#listaJogador5" text="Ver Países" />
       <ImageView fitHeight="72.0" fitWidth="85.0" layoutX="912.0" layoutY="509.0">
          <image>
             <Image url="@../imagens/Screenshot_2.png" />
@@ -118,8 +118,8 @@
       <Label fx:id="nome6" layoutX="923.0" layoutY="606.0" prefHeight="21.0" prefWidth="96.0" text="Jogador " />
       <Label fx:id="t6" layoutX="928.0" layoutY="629.0" text="Tropas:" />
       <Label fx:id="p6" layoutX="930.0" layoutY="650.0" prefHeight="11.0" prefWidth="35.0" text="Países:" />
-      <Button layoutX="913.0" layoutY="670.0" mnemonicParsing="false" text="Ver Países" />
-      <Label layoutX="414.0" layoutY="470.0" prefHeight="60.0" prefWidth="387.0" text="TURNO DO JOGADOR X">
+      <Button layoutX="913.0" layoutY="670.0" mnemonicParsing="false" onAction="#listaJogador6" text="Ver Países" />
+      <Label fx:id="tjogador" layoutX="414.0" layoutY="470.0" prefHeight="60.0" prefWidth="387.0" text="TURNO DO JOGADOR X">
          <font>
             <Font name="Bauhaus 93" size="30.0" />
          </font>

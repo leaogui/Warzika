@@ -521,7 +521,6 @@ public class ControllerMPaises implements Initializable{
 	public void Voltar() throws IOException {
 		Stage stage = (Stage) l1.getScene().getWindow();
 		TelaMapaController isso =  new TelaMapaController();
-		isso.atualizar();
 		stage.close();
 	}
 }

@@ -81,7 +81,6 @@ public class IniciodoProcesso extends Application{
 
 	public static void Fechar() {
 		stage.close();
-		//primaryStage.close();
 	}
 	
 }

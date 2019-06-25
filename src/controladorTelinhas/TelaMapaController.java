@@ -27,8 +27,6 @@ public class TelaMapaController implements Initializable {
 	
 	Scene atu;
 	
-	Stage stage;
-	
 	@FXML
 	public Button b22;
 	@FXML
@@ -67,6 +65,8 @@ public class TelaMapaController implements Initializable {
 	public Label p5;
 	@FXML
 	public Label p6;
+	@FXML
+	private Label tjogador;
 //	@FXML
 //	public Button Brasil;
 //	public Button Argentina;
@@ -159,17 +159,28 @@ public class TelaMapaController implements Initializable {
 				p6.setText("Paises:" + Integer.toString(jog.quantpais));
 			}
 		}
+		Jogador jog = IniciodoProcesso.controller.players.get(IniciodoProcesso.controller.jogador);
+		tjogador.setText("Jogador atual:	Jogador" + jog.id);
 	}
 
 	
 	@FXML
 	protected void atacar(ActionEvent event) throws IOException{//esse vai para a tela atacar sem fechar a anterior
 		try {
-
-			Parent root = FXMLLoader.load(getClass().getResource("../telinha/menu_atacar.fxml"));
+			
+//			Parent atack = FXMLLoader.load(getClass().getResource("../telinha/menu_atacar.fxml"));
+//			Stage stage1 = new Stage();
+//			Scene scene1 = new Scene(atack);
+//			stage1.setScene(scene1);
+//			stage1.show();
+			
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("../telinha/menu_atacar.fxml"));
+			Parent root = loader.load();
 			Stage stage = new Stage();
 			Scene scene = new Scene(root);
 			stage.setScene(scene);
+			ControladorAtack controller = loader.<ControladorAtack>getController();
+			controller.setBaseController(this);
 			stage.show();
 			} catch (IOException e) {
 			e.printStackTrace();
@@ -223,16 +234,6 @@ public class TelaMapaController implements Initializable {
 			}
 	}
 	
-	protected void atualizar() throws IOException {
-		//Stage stage = (Stage) nome1.getScene().getWindow();
-//		Parent atualizar = FXMLLoader.load(getClass().getResource("../telinha/tela_3jogadores.fxml"));
-//		Stage stage = new Stage();
-//		atu = new Scene(atualizar);
-//		stage.setScene(atu);
-//		stage.show();
-//		stage.close();
-	}
-	
 	public void listarPaisestotal(ActionEvent event) {
 		try {
 			IniciodoProcesso.controller.paisestj = 0;
@@ -281,6 +282,67 @@ public class TelaMapaController implements Initializable {
 			Stage stage = new Stage();
 			Scene scene = new Scene(root);
 			stage.setScene(scene);
+			stage.show();
+
+			} catch (IOException e) {
+			e.printStackTrace();
+			}
+	}
+	
+	public void listaJogador4() {
+		try {
+			IniciodoProcesso.controller.paisestj = 3;
+			Parent root = FXMLLoader.load(getClass().getResource("../telinha/mostrarPaises.fxml"));
+			Stage stage = new Stage();
+			Scene scene = new Scene(root);
+			stage.setScene(scene);
+			stage.show();
+
+			} catch (IOException e) {
+			e.printStackTrace();
+			}
+	}
+	
+	public void listaJogador5() {
+		try {
+			IniciodoProcesso.controller.paisestj = 3;
+			Parent root = FXMLLoader.load(getClass().getResource("../telinha/mostrarPaises.fxml"));
+			Stage stage = new Stage();
+			Scene scene = new Scene(root);
+			stage.setScene(scene);
+			stage.show();
+
+			} catch (IOException e) {
+			e.printStackTrace();
+			}
+	}
+	
+	public void listaJogador6() {
+		try {
+			IniciodoProcesso.controller.paisestj = 3;
+			Parent root = FXMLLoader.load(getClass().getResource("../telinha/mostrarPaises.fxml"));
+			Stage stage = new Stage();
+			Scene scene = new Scene(root);
+			stage.setScene(scene);
+			stage.show();
+
+			} catch (IOException e) {
+			e.printStackTrace();
+			}
+	}
+	
+	public void dado() {
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("../telinha/menu_rolardado.fxml"));
+			
+			Parent root = loader.load();
+			Stage stage = new Stage();
+			Scene scene = new Scene(root);
+			stage.setScene(scene);
+			
+			ControladorDados controller = loader.<ControladorDados>getController();
+			controller.setBaseController(this);
+			
 			stage.show();
 
 			} catch (IOException e) {

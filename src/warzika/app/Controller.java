@@ -24,9 +24,11 @@ public class Controller {
 	public int turno = 1;
 	public int dado1;
 	public int dado2;
-	public Pais pais;
+	public Pais paisorigin;
+	public String paisdest;
 	public int paisestj = 0;
 	public int jogadorp; // usar para ver a lista de paises de cada jogador
+	public int arrumar; // foi feito so para não dar bug entre a tela de atacar e rolar dado
 	
 	public Stage stage;
 	
@@ -88,6 +90,7 @@ public class Controller {
 			Jogador jog = players.get(i);
 			for(int cont = 0; cont < a; cont++) {
 				Pais pais = paisrep.get(cont1);
+				pais.exercito +=1;
 				jog.adicionarPais(pais);
 				jog.quantpais = cont;
 				cont1++;

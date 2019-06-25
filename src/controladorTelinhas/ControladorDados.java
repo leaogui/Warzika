@@ -1,5 +1,6 @@
 package controladorTelinhas;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.Random;
 import java.util.ResourceBundle;
@@ -10,13 +11,24 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 import warzika.funcs.Jogador;
 
 public class ControladorDados implements Initializable{
 	
-	int rolarataque;
+	int rolarataque = 0;
 	
-	int rolardefesa;
+	int rolardefesa = 0;
+	
+	int[] dado2;
+	
+	int[] dado1;
+	
+	private TelaMapaController controller;
+	
+	public void setBaseController(TelaMapaController controller) {
+		this.controller = controller;
+	}
 	
 	@FXML
 	public Label dadoataque;
@@ -44,9 +56,33 @@ public class ControladorDados implements Initializable{
 	
 	@FXML
 	public Button finalizar;
+	
+	@FXML
+	private Label atacaxdef;
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
+		System.out.println(IniciodoProcesso.controller.arrumar);
+		if(IniciodoProcesso.controller.arrumar == 1) {
+			System.out.println("oi");
+		String jogatack = null, jogdefesa = null;
+		for(int cont = 0; cont< IniciodoProcesso.quantJog ; cont++) {
+			Jogador jog = IniciodoProcesso.controller.players.get(cont);
+			for(int i = 0; i < jog.paises.size(); i++ ) {
+				for(Pais pais: jog.paises) {
+					if(IniciodoProcesso.controller.paisorigin.equals(pais)) {
+						jogatack = jog.nome;
+					}
+					if(IniciodoProcesso.controller.paisdest.equals(pais.Nome)) {
+						jogdefesa = jog.nome;
+						IniciodoProcesso.controller.dado2 = pais.exercito;
+					}
+				}
+			}
+		}
+		atacaxdef.setText(jogatack+" está atacando o jogador "+ jogdefesa);
+		IniciodoProcesso.controller.arrumar = 0;
+		}
 		// TODO Auto-generated method stub
 		
 	}
@@ -57,9 +93,22 @@ public class ControladorDados implements Initializable{
 			}
 		else {
 			int n = 3, flag, salve = 0;
-			int[] dado1;
 			dado1 = new int [3];
 				Random rand = new Random();
+				for(int i=0;i<n-1;i++){
+					flag = 0;
+					for(int j=0;j<n-1-i;j++){
+						if(dado1[j]<dado1[j+1]){
+							flag = 1;
+							salve = dado1[j];
+							dado1[j] = dado1[j+1];
+							dado1[j+1] = salve;
+						}
+					}
+				if(flag==0){
+					break;
+					}
+				}
 				
 				for(int i = 0; i < IniciodoProcesso.controller.dado1; i++) {
 					dado1[i] = rand.nextInt(6) + 1;
@@ -73,20 +122,6 @@ public class ControladorDados implements Initializable{
 						dadoataque2.setText(Integer.toString(dado1[i]));
 					}
 				}
-				for(int i=0;i<n-1;i++){
-					flag = 0;
-					for(int j=0;j<n-1-i;j++){
-						if(dado1[j]<dado1[j+1]){
-							flag = 1;
-							salve = dado1[j];
-							dado1[j] = dado1[j+1];
-							dado1[j+1] = salve;
-						}
-					}
-				if(flag==0){
-					break;
-					}
-				}
 				rolarataque = 1;
 		}
 	}
@@ -97,61 +132,64 @@ public class ControladorDados implements Initializable{
 		}
 		else {
 			int n = 3, flag, salve = 0;
-			int[] dado1;
-			dado1 = new int [3];
+			dado2 = new int [3];
 				
 				Random rand = new Random();
-			
-				for(int i = 0; i < IniciodoProcesso.controller.dado2; i++) {
-					dado1[i] = rand.nextInt(6) + 1;
-					if(i==0) {
-						dadodefesa.setText(Integer.toString(dado1[i]));
-					}
-					if(i==1) {
-						dadodefesa1.setText(Integer.toString(dado1[i]));
-					}
-					if(i==2) {
-						dadodefesa2.setText(Integer.toString(dado1[i]));
-					}
-				}
 				for(int i=0;i<n-1;i++){
 					flag = 0;
 					for(int j=0;j<n-1-i;j++){
-						if(dado1[j]<dado1[j+1]){
+						if(dado2[j]<dado2[j+1]){
 							flag = 1;
-							salve = dado1[j];
-							dado1[j] = dado1[j+1];
-							dado1[j+1] = salve;
+							salve = dado2[j];
+							dado2[j] = dado2[j+1];
+							dado2[j+1] = salve;
 						}
 					}
 				if(flag==0){
 					break;
 					}
 				}
+				for(int i = 0; i < IniciodoProcesso.controller.dado2; i++) {
+					dado2[i] = rand.nextInt(6) + 1;
+					if(i==0) {
+						dadodefesa.setText(Integer.toString(dado2[i]));
+					}
+					if(i==1) {
+						dadodefesa1.setText(Integer.toString(dado2[i]));
+					}
+					if(i==2) {
+						dadodefesa2.setText(Integer.toString(dado2[i]));
+					}
+				}
 				rolardefesa = 1;
 			}
 	}
 	
-	public void concluir() {
-		int win = 0, defeat = 0;
-		if(Integer.getInteger(dadodefesa.getText()) < Integer.getInteger(dadoataque.getText())) {
-			defeat++;
+	public void concluir() throws IOException {
+		int win = 0, defeat = 0;		
+//		System.out.println("oi");
+		for(int cont = 0; cont < 3; cont++) {
+			
+			if(dado1[cont] <= dado2[cont]) {
+				defeat++;
+			}
+			else {
+				win++;
+			}
+			if(dado1[cont] <= dado2[cont]) {
+				defeat++;
+			}
+			else {
+				win++;
+			}
+			if(dado1[cont] <= dado2[cont]) {
+				defeat++;
+			}
+			else {
+				win++;
+			}
 		}
-		else {
-			win++;
-		}
-		if(Integer.getInteger(dadodefesa1.getText()) < Integer.getInteger(dadoataque1.getText())) {
-			defeat++;
-		}
-		else {
-			win++;
-		}
-		if(Integer.getInteger(dadodefesa2.getText()) < Integer.getInteger(dadoataque2.getText())) {
-			defeat++;
-		}
-		else {
-			win++;
-		}
+		
 		if(defeat!=0) {
 			win = win - defeat;
 		}
@@ -159,16 +197,18 @@ public class ControladorDados implements Initializable{
 			for(int i = 0; i< IniciodoProcesso.controller.numJogInt;i++) {
 				Jogador jog = IniciodoProcesso.controller.players.get(IniciodoProcesso.controller.jogador);
 				for(Pais isso: jog.paises) {
-					if(isso.Nome.equals(IniciodoProcesso.controller.pais.Nome)) {
+					if(isso.Nome.equals(IniciodoProcesso.controller.paisorigin.Nome)) {
 						jog.retirarPais(isso);
 						Jogador jog1 = IniciodoProcesso.controller.players.get(IniciodoProcesso.controller.jogador);
 						jog1.adicionarPais(isso);
 					}
 				}
 			}
-			
 			//jog.adicionarPais(IniciodoProcesso.controller.pais);
 		}
+		Stage stage = (Stage) dadoataque.getScene().getWindow();
+		stage.close();
+		//controller.inicio();
 	}
 
 }

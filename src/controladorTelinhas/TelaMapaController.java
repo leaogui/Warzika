@@ -357,7 +357,7 @@ public class TelaMapaController implements Initializable {
 			Scene scene = new Scene(root);
 			stage.setScene(scene);
 			
-			ControladorTropas controller = loader.<ControladorTropas>getController();
+			mudarTropas controller = loader.<mudarTropas>getController();
 			controller.setBaseController(this);
 			
 			stage.show();

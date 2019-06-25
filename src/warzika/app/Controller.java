@@ -96,8 +96,14 @@ public class Controller {
 				cont1++;
 			}
 		}
-		if(cont1 != 42) { // quando não der para dividir igualmente os paises para os players vai ser feito isso
+		if(cont1 < 42) { // quando não der para dividir igualmente os paises para os players vai ser feito isso
 			System.out.println("vai ter "+ (cont1 - 42) + " de paises sem ser dado para os jogadores");
+			int nigual = cont1;
+			for(int cont = 0; cont < (nigual-42); cont++) {
+				Pais pais = paisrep.get(cont1);
+				pais.exercito +=10;
+				cont1++;
+			}
 		}
 	}
 	

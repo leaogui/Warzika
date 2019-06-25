@@ -48,8 +48,15 @@ public class Jogador {
 	
 	
 	// metodo para retirar e adicionar um país dele
-	public void retirarPais(Pais pais, Jogador jog) {
-		paises.remove(pais); // para se retirar seria um pais seria necessario algo parecido com isso
+	public void retirarPais(String npais) {
+		for(Pais pais: paises){
+			if(pais.Nome.equals(npais)) {
+				System.out.println("PQPQPQPQPQPPQQPPQQPQPQQP");
+				paises.remove(pais);
+			}
+		}
+		quantpais-=1;
+		// para se retirar seria um pais seria necessario algo parecido com isso
 			}
 	
 	public void adicionarPais(Pais pais) {

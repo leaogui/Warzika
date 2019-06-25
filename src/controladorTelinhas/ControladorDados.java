@@ -108,9 +108,9 @@ public class ControladorDados implements Initializable{
 			}
 			
 			int n = 3, flag, salve = 0;
-				for(int i=0;i<n-1;i++){
+				for(int i=0;i<=n-1;i++){
 					flag = 0;
-					for(int j=0;j<n-1-i;j++){
+					for(int j=0;j>n-1-i;j++){
 						if(dado1[j]<dado1[j+1]){
 							flag = 1;
 							salve = dado1[j];
@@ -148,9 +148,9 @@ public class ControladorDados implements Initializable{
 			
 			int n = 3, flag, salve = 0;
 				
-				for(int i=0;i<n-1;i++){
+				for(int i=0;i<=n-1;i++){
 					flag = 0;
-					for(int j=0;j<n-1-i;j++){
+					for(int j=0;j>n-1-i;j++){
 						if(dado2[j]<dado2[j+1]){
 							flag = 1;
 							salve = dado2[j];
@@ -251,13 +251,13 @@ public class ControladorDados implements Initializable{
 			}
 		}
 		if(win>defeat) {
+			System.out.println("poha");
 			for(int i = 0; i< IniciodoProcesso.controller.numJogInt;i++) {
 				Jogador jog = IniciodoProcesso.controller.players.get(IniciodoProcesso.controller.jogador);
-				for(int cont = 0; cont < ) {
-					if(isso.Nome.equals(IniciodoProcesso.controller.paisorigin.Nome)) {
-						jog.retirarPais(isso, jog);
-						Jogador jog1 = IniciodoProcesso.controller.players.get(IniciodoProcesso.controller.jogador);
-						jog1.adicionarPais(isso);
+				for(int cont = 0; cont < jog.quantpais; cont++) {
+					String npaisdel = jog.getPaises(cont);
+					if(npaisdel.equals(IniciodoProcesso.controller.paisdest)) {
+						jog.retirarPais(npaisdel);
 					}
 				}
 			}

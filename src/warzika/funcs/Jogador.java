@@ -46,12 +46,22 @@ public class Jogador {
 		return pais[i];
 	}
 	
+	public Pais getPais(int i) {
+		int cont = 0;
+		Pais[] pais1 = new Pais [42];
+		for(Pais a : paises) {
+			pais1[cont] = a;
+			cont++;
+		}
+		return pais1[i];
+	}
+	
 	
 	// metodo para retirar e adicionar um país dele
 	public void retirarPais(String npais) {
 		for(Pais pais: paises){
 			if(pais.Nome.equals(npais)) {
-				System.out.println("PQPQPQPQPQPPQQPPQQPQPQQP");
+				//System.out.println("PQPQPQPQPQPPQQPPQQPQPQQP");
 				paises.remove(pais);
 			}
 		}

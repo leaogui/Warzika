@@ -109,6 +109,8 @@ public class Pais {
 	
 	
 	
+	
+	
 //	pais.add(lpais);
 //    conti.adicionar(pais);
 		// usar o split() com ; para separar fronteiras e nome.

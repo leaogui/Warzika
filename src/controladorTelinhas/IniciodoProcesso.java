@@ -76,7 +76,7 @@ public class IniciodoProcesso extends Application{
 	public static void main(String[] args) {
 		launch(args);
 		FXMLLoader loader  = new FXMLLoader();
-		telaMapaController isso = (telaMapaController)loader.getController(); 
+		TelaMapaController isso = (TelaMapaController)loader.getController(); 
 	}
 
 	public static void Fechar() {

@@ -40,6 +40,12 @@ public class ControladorTropas implements Initializable{
 		
 	}
 	
+	private TelaMapaController controller;
+	
+	public void setBaseController(TelaMapaController controller) {
+		this.controller = controller;
+	}
+	
 	
 	public void valores_choiceBox2() {
 		list.removeAll();
@@ -69,10 +75,19 @@ public class ControladorTropas implements Initializable{
 			}
 		}
 		jog.exercito = jog.exercito - tropas;
+		
+		
 		Stage stage = (Stage) comb.getScene().getWindow();
-		telaMapaController isso =  new telaMapaController();
-		isso.atualizar();
+//		telaMapaController isso =  new telaMapaController();
+//		isso.atualizar();
+			
+		
+		controller.inicio();
+		
 		stage.close();
+		
+		
+		
 		}
 	}
 	

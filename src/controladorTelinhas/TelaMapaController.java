@@ -20,7 +20,7 @@ import javafx.stage.Stage;
 import warzika.app.Controller;
 import warzika.funcs.Jogador;
 
-public class telaMapaController implements Initializable {
+public class TelaMapaController implements Initializable {
 
 	
 	Scene vitoria;
@@ -67,53 +67,53 @@ public class telaMapaController implements Initializable {
 	public Label p5;
 	@FXML
 	public Label p6;
-	@FXML
-	public Button Brasil;
-	public Button Argentina;
-	public Button Venezuela;
-	public Button Peru;
-	public Button Mexico;
-	public Button California;
-	public Button Nova_York;
-	public Button Labrador;
-	public Button Ottawa;
-	public Button Vancouver;
-	public Button Mackenzie;
-	public Button Alaska;
-	public Button Groenlandia;
-	public Button Islandia;
-	public Button Inglaterra;
-	public Button Suecia;
-	public Button Alemanha;
-	public Button Franca;
-	public Button Polonia;
-	public Button Moscou;
-	public Button Argelia;
-	public Button Egito;
-	public Button Congo;
-	public Button Sudao;
-	public Button Madagascar;
-	public Button Africa_do_Sul;
-	public Button Oriente_Medio;
-	public Button Aral;
-	public Button OMSK;
-	public Button Dudinka;
-	public Button Siberia;
-	public Button Tchita;
-	public Button Mongolia;
-	public Button Vladivostok;
-	public Button China;
-	public Button India;
-	public Button Japao;
-	public Button Vietna;
-	public Button Borneo;
-	public Button Sumatra;
-	public Button Nova_Guine;
-	public Button Australia;
+//	@FXML
+//	public Button Brasil;
+//	public Button Argentina;
+//	public Button Venezuela;
+//	public Button Peru;
+//	public Button Mexico;
+//	public Button California;
+//	public Button Nova_York;
+//	public Button Labrador;
+//	public Button Ottawa;
+//	public Button Vancouver;
+//	public Button Mackenzie;
+//	public Button Alaska;
+//	public Button Groenlandia;
+//	public Button Islandia;
+//	public Button Inglaterra;
+//	public Button Suecia;
+//	public Button Alemanha;
+//	public Button Franca;
+//	public Button Polonia;
+//	public Button Moscou;
+//	public Button Argelia;
+//	public Button Egito;
+//	public Button Congo;
+//	public Button Sudao;
+//	public Button Madagascar;
+//	public Button Africa_do_Sul;
+//	public Button Oriente_Medio;
+//	public Button Aral;
+//	public Button OMSK;
+//	public Button Dudinka;
+//	public Button Siberia;
+//	public Button Tchita;
+//	public Button Mongolia;
+//	public Button Vladivostok;
+//	public Button China;
+//	public Button India;
+//	public Button Japao;
+//	public Button Vietna;
+//	public Button Borneo;
+//	public Button Sumatra;
+//	public Button Nova_Guine;
+//	public Button Australia;
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		Brasil.setText("Jogador 1");
+//		Brasil.setText("Jogador 1");
 		try {
 			inicio();
 		} catch (IOException e) {
@@ -206,10 +206,16 @@ public class telaMapaController implements Initializable {
 	@FXML
 	protected void colocarTropas(ActionEvent event)throws IOException {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("../telinha/ColocarTropas.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("../telinha/ColocarTropas.fxml"));
+			
+			Parent root = loader.load();
 			Stage stage = new Stage();
 			Scene scene = new Scene(root);
 			stage.setScene(scene);
+			
+			ControladorTropas controller = loader.<ControladorTropas>getController();
+			controller.setBaseController(this);
+			
 			stage.show();
 
 			} catch (IOException e) {

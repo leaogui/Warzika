@@ -92,9 +92,22 @@ public class ControladorDados implements Initializable{
 			
 			}
 		else {
-			int n = 3, flag, salve = 0;
 			dado1 = new int [3];
-				Random rand = new Random();
+			Random rand = new Random();
+			for(int i = 0; i < IniciodoProcesso.controller.dado1; i++) {
+				dado1[i] = rand.nextInt(6) + 1;
+				if(i==0) {
+					dadoataque.setText(Integer.toString(dado1[i]));
+				}
+				if(i==1) {
+					dadoataque1.setText(Integer.toString(dado1[i]));
+				}
+				if(i==2) {
+					dadoataque2.setText(Integer.toString(dado1[i]));
+				}
+			}
+			
+			int n = 3, flag, salve = 0;
 				for(int i=0;i<n-1;i++){
 					flag = 0;
 					for(int j=0;j<n-1-i;j++){
@@ -109,19 +122,6 @@ public class ControladorDados implements Initializable{
 					break;
 					}
 				}
-				
-				for(int i = 0; i < IniciodoProcesso.controller.dado1; i++) {
-					dado1[i] = rand.nextInt(6) + 1;
-					if(i==0) {
-						dadoataque.setText(Integer.toString(dado1[i]));
-					}
-					if(i==1) {
-						dadoataque1.setText(Integer.toString(dado1[i]));
-					}
-					if(i==2) {
-						dadoataque2.setText(Integer.toString(dado1[i]));
-					}
-				}
 				rolarataque = 1;
 		}
 	}
@@ -131,10 +131,23 @@ public class ControladorDados implements Initializable{
 			
 		}
 		else {
-			int n = 3, flag, salve = 0;
 			dado2 = new int [3];
+			Random rand = new Random();
+			for(int i = 0; i < IniciodoProcesso.controller.dado2; i++) {
+				dado2[i] = rand.nextInt(6) + 1;
+				if(i==0) {
+					dadodefesa.setText(Integer.toString(dado2[i]));
+				}
+				if(i==1) {
+					dadodefesa1.setText(Integer.toString(dado2[i]));
+				}
+				if(i==2) {
+					dadodefesa2.setText(Integer.toString(dado2[i]));
+				}
+			}
+			
+			int n = 3, flag, salve = 0;
 				
-				Random rand = new Random();
 				for(int i=0;i<n-1;i++){
 					flag = 0;
 					for(int j=0;j<n-1-i;j++){
@@ -149,56 +162,100 @@ public class ControladorDados implements Initializable{
 					break;
 					}
 				}
-				for(int i = 0; i < IniciodoProcesso.controller.dado2; i++) {
-					dado2[i] = rand.nextInt(6) + 1;
-					if(i==0) {
-						dadodefesa.setText(Integer.toString(dado2[i]));
-					}
-					if(i==1) {
-						dadodefesa1.setText(Integer.toString(dado2[i]));
-					}
-					if(i==2) {
-						dadodefesa2.setText(Integer.toString(dado2[i]));
-					}
-				}
 				rolardefesa = 1;
 			}
 	}
 	
 	public void concluir() throws IOException {
-		int win = 0, defeat = 0;		
-//		System.out.println("oi");
-		for(int cont = 0; cont < 3; cont++) {
+		int win = 0, defeat = 0, quantperdida = 0;
+		if(IniciodoProcesso.controller.dado1 == IniciodoProcesso.controller.dado2) {
+			for(int cont = 0; cont < 3; cont++) {
+				if(dado1[cont] <= dado2[cont] && cont == 0) {
+					defeat++;
+				}
+				else {
+					win++;
+				}
+				if(dado1[cont] <= dado2[cont] && cont == 1) {
+					defeat++;
+				}
+				else {
+					win++;
+				}
+				if(dado1[cont] <= dado2[cont] && cont == 2) {
+					defeat++;
+				}
+				else {
+					win++;
+				}
+			}
 			
-			if(dado1[cont] <= dado2[cont]) {
-				defeat++;
-			}
-			else {
-				win++;
-			}
-			if(dado1[cont] <= dado2[cont]) {
-				defeat++;
-			}
-			else {
-				win++;
-			}
-			if(dado1[cont] <= dado2[cont]) {
-				defeat++;
-			}
-			else {
-				win++;
+			if(defeat!=0) {
+				quantperdida = win - defeat;
 			}
 		}
 		
-		if(defeat!=0) {
-			win = win - defeat;
+		if(IniciodoProcesso.controller.dado1 < IniciodoProcesso.controller.dado2) {
+			for(int cont = 0; cont < IniciodoProcesso.controller.dado1; cont++) {
+				
+				if(dado1[cont] <= dado2[cont] && cont == 0) {
+					defeat++;
+				}
+				else {
+					win++;
+				}
+				if(dado1[cont] <= dado2[cont] && cont == 1) {
+					defeat++;
+				}
+				else {
+					win++;
+				}
+				if(dado1[cont] <= dado2[cont]&& cont == 2) {
+					defeat++;
+				}
+				else {
+					win++;
+				}
+			}
+			
+			if(defeat!=0) {
+				quantperdida = win - defeat;
+			}
+		}
+		
+		if(IniciodoProcesso.controller.dado1 > IniciodoProcesso.controller.dado2) {
+			for(int cont = 0; cont <IniciodoProcesso.controller.dado2 ; cont++) {
+				
+				if(dado1[cont] <= dado2[cont] && cont == 0) {
+					defeat++;
+				}
+				else {
+					win++;
+				}
+				if(dado1[cont] <= dado2[cont] && cont == 1) {
+					defeat++;
+				}
+				else {
+					win++;
+				}
+				if(dado1[cont] <= dado2[cont]&& cont == 2) {
+					defeat++;
+				}
+				else {
+					win++;
+				}
+			}
+			
+			if(defeat!=0) {
+				quantperdida = win - defeat;
+			}
 		}
 		if(win>defeat) {
 			for(int i = 0; i< IniciodoProcesso.controller.numJogInt;i++) {
 				Jogador jog = IniciodoProcesso.controller.players.get(IniciodoProcesso.controller.jogador);
-				for(Pais isso: jog.paises) {
+				for(int cont = 0; cont < ) {
 					if(isso.Nome.equals(IniciodoProcesso.controller.paisorigin.Nome)) {
-						jog.retirarPais(isso);
+						jog.retirarPais(isso, jog);
 						Jogador jog1 = IniciodoProcesso.controller.players.get(IniciodoProcesso.controller.jogador);
 						jog1.adicionarPais(isso);
 					}
@@ -208,7 +265,7 @@ public class ControladorDados implements Initializable{
 		}
 		Stage stage = (Stage) dadoataque.getScene().getWindow();
 		stage.close();
-		//controller.inicio();
+		controller.inicio();
 	}
 
 }

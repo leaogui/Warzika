@@ -97,7 +97,7 @@ public class Controller {
 			}
 		}
 		if(cont1 != 42) { // quando não der para dividir igualmente os paises para os players vai ser feito isso
-			System.out.println("vai ter"+ (cont1 - 42) + "de paises sem ser dado para os jogadores");
+			System.out.println("vai ter "+ (cont1 - 42) + " de paises sem ser dado para os jogadores");
 		}
 	}
 	

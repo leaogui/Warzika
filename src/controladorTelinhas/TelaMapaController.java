@@ -126,9 +126,6 @@ public class TelaMapaController implements Initializable {
 		for(int i = 0; i< IniciodoProcesso.quantJog; i++) {
 			Jogador jog = IniciodoProcesso.getPlayers(i);
 			if(i==0) {
-				System.out.println("Nome:" + jog.nome);
-				System.out.println("Exercito:"+Integer.toString(jog.exercito));
-				System.out.println("Paises:" + Integer.toString(jog.quantpais));
 				nome1.setText("Nome:" + jog.nome);
 				t1.setText("Exercito:"+Integer.toString(jog.exercito));
 				p1.setText("Paises:" + Integer.toString(jog.quantpais));
@@ -211,6 +208,7 @@ public class TelaMapaController implements Initializable {
 		}
 		System.out.println(IniciodoProcesso.controller.jogador);
 		}
+		mover();
 		inicio();
 	}
 	
@@ -341,6 +339,25 @@ public class TelaMapaController implements Initializable {
 			stage.setScene(scene);
 			
 			ControladorDados controller = loader.<ControladorDados>getController();
+			controller.setBaseController(this);
+			
+			stage.show();
+
+			} catch (IOException e) {
+			e.printStackTrace();
+			}
+	}
+	
+	public void mover() { // metodo para mover tropas
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("../telinha/finalturno.fxml"));
+			
+			Parent root = loader.load();
+			Stage stage = new Stage();
+			Scene scene = new Scene(root);
+			stage.setScene(scene);
+			
+			ControladorTropas controller = loader.<ControladorTropas>getController();
 			controller.setBaseController(this);
 			
 			stage.show();

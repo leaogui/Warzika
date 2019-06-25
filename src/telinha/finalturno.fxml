@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="138.0" layoutY="41.0" text="Gostaria de mover alguma tropa?">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="215.0" layoutY="153.0" prefWidth="150.0" />
+      <ChoiceBox layoutX="215.0" layoutY="233.0" prefWidth="150.0" />
+      <Button layoutX="305.0" layoutY="361.0" mnemonicParsing="false" text="Finalizar" />
+      <Button layoutX="226.0" layoutY="361.0" mnemonicParsing="false" text="Mover" />
+      <TextField layoutX="216.0" layoutY="310.0" />
+      <Label layoutX="277.0" layoutY="122.0" text="De" />
+      <Label layoutX="276.0" layoutY="200.0" text="Para" />
+      <Label layoutX="261.0" layoutY="286.0" text="Quantidade" />
+   </children>
+</AnchorPane>

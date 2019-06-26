@@ -63,7 +63,7 @@ public class Jogador {
 		int cont = 0;
 		for(Pais a: paises){ //Pais a: paises
 			if(a.equals(npais)) {
-//				paises.remove(cont);
+				paises.remove(cont);
 			}
 			cont++;
 		}

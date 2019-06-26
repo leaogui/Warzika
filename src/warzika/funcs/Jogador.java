@@ -66,8 +66,8 @@ public class Jogador {
 		for(Pais o: paises){ //Pais a: paises
 			
 			if(o.equals(npais)) {
-				
-			//	paises.remove(i);
+			
+		//	paises.remove(i);
 				
 			}
 			

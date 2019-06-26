@@ -3,6 +3,7 @@ package warzika.funcs;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
 import geo.Pais;
@@ -11,7 +12,7 @@ import warzika.app.Creator;
 
 public class Jogador {
 	
-	public Set<Pais> paises = new HashSet<Pais>();
+	public ArrayList<Pais> paises = new ArrayList<Pais>();
 	
 	Creator criador = new Creator();
 	
@@ -58,19 +59,20 @@ public class Jogador {
 	
 	
 	// metodo para retirar e adicionar um país dele
-	public void retirarPais(String npais) {
-		for(Pais pais: paises){
-			if(pais.Nome.equals(npais)) {
-				//System.out.println("PQPQPQPQPQPPQQPPQQPQPQQP");
-				paises.remove(pais);
+	public void retirarPais(Pais npais) {
+		int cont = 0;
+		for(Pais a: paises){ //Pais a: paises
+			if(a.equals(npais)) {
+//				paises.remove(cont);
 			}
+			cont++;
 		}
 		quantpais-=1;
-		// para se retirar seria um pais seria necessario algo parecido com isso
 			}
 	
 	public void adicionarPais(Pais pais) {
 		paises.add(pais);
+		quantpais +=1;
 	}
 	
 	public String getNome() {

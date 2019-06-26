@@ -92,7 +92,7 @@ public class Controller {
 				Pais pais = paisrep.get(cont1);
 				pais.exercito +=1;
 				jog.adicionarPais(pais);
-				jog.quantpais = cont;
+				jog.quantpais = cont + 1;
 				cont1++;
 			}
 		}

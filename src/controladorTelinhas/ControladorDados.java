@@ -107,7 +107,7 @@ public class ControladorDados implements Initializable{
 				}
 			}
 			
-			int n = 3, flag, salve = 0;
+			int n = IniciodoProcesso.controller.dado1, flag, salve = 0;
 			for(int cont = 0; cont < 2; cont++) {
 				for(int i=0;i<n-1;i++){
 					flag = 0;
@@ -148,7 +148,7 @@ public class ControladorDados implements Initializable{
 				}
 			}
 			
-			int n = 3, flag, salve = 0;
+			int n = IniciodoProcesso.controller.dado2, flag, salve = 0;
 				for(int cont = 0; cont < 2; cont++) {
 				for(int i=0;i>n-1;i++){
 					flag = 0;
@@ -250,22 +250,28 @@ public class ControladorDados implements Initializable{
 				}
 			}
 			
-			if(defeat!=0) {
+			if(defeat!=0 && win> defeat) {
 				quantperdida = win - defeat;
+				Pais pais = IniciodoProcesso.controller.paisorigin;
+				pais.exercito = pais.exercito - IniciodoProcesso.controller.dado1;
 			}
 		}
 		if(win>defeat) {
-			for(int i = 0; i< IniciodoProcesso.controller.numJogInt;i++) {
-				Jogador jog = IniciodoProcesso.controller.players.get(IniciodoProcesso.controller.jogador);
-				for(int cont = 0; cont < jog.quantpais; cont++) {
-					String npaisdel = jog.getPaises(cont);
-					if(IniciodoProcesso.controller.paisdest.equals(npaisdel)) {
-						System.out.println(IniciodoProcesso.controller.paisdest);
-						jog.retirarPais(npaisdel);
+			for(int i = 0; i< IniciodoProcesso.quantJog;i++) {
+				Jogador jog = IniciodoProcesso.controller.players.get(i);
+				for(Pais pais: jog.paises) {
+					if(pais.Nome.equals(IniciodoProcesso.controller.paisdest)) {
+						jog.retirarPais(pais);
+						Jogador jog1 =IniciodoProcesso.controller.players.get(IniciodoProcesso.controller.jogador);
+						jog1.adicionarPais(pais);
 					}
 				}
 			}
-			//jog.adicionarPais(IniciodoProcesso.controller.pais);
+			
+		}
+		if(win == 0) {
+			Pais pais = IniciodoProcesso.controller.paisorigin;
+			pais.exercito = pais.exercito - IniciodoProcesso.controller.dado1;
 		}
 		Stage stage = (Stage) dadoataque.getScene().getWindow();
 		stage.close();

@@ -87,7 +87,7 @@ public class Jogador {
 			
 			if (i.equals(pais)){
 				
-				paises.remove(x);
+	//			paises.remove(x);
 				
 			}
 			

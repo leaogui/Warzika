@@ -58,25 +58,47 @@ public class Jogador {
 	}
 	
 	
-	// metodo para retirar e adicionar um país dele
-	public void retirarPais(Pais npais) {
+//	// metodo para retirar e adicionar um país dele
+//	public void retirarPais(Pais npais) {
+//		
+//		int i = 0;
+//		
+//	for(Pais o: paises){ //Pais a: paises
+//			
+//			if(o.equals(npais)) {
+//			
+//			paises.remove(i);
+//				
+//			}
+//			
+//			i++;
+//		}
+//		
+//		quantpais-=1;
+//		
+//			}
+	
+	
+	public void retirarPais(Pais pais){
 		
-		int i = 0;
+		int x=0;
 		
-	//	for(Pais o: paises){ //Pais a: paises
+		for(Pais i: paises) {
 			
-			if(o.equals(npais)) {
-			
-			paises.remove(i);
+			if (i.equals(pais)){
+				
+				paises.remove(x);
 				
 			}
 			
-			i++;
-//		}
+			x++;
+		} 
+		
 		
 		quantpais-=1;
 		
-			}
+	}	
+	
 	
 	public void adicionarPais(Pais pais) {
 		paises.add(pais);

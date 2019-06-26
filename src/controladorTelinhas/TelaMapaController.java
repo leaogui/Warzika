@@ -67,57 +67,15 @@ public class TelaMapaController implements Initializable {
 	public Label p6;
 	@FXML
 	private Label tjogador;
-//	@FXML
-//	public Button Brasil;
-//	public Button Argentina;
-//	public Button Venezuela;
-//	public Button Peru;
-//	public Button Mexico;
-//	public Button California;
-//	public Button Nova_York;
-//	public Button Labrador;
-//	public Button Ottawa;
-//	public Button Vancouver;
-//	public Button Mackenzie;
-//	public Button Alaska;
-//	public Button Groenlandia;
-//	public Button Islandia;
-//	public Button Inglaterra;
-//	public Button Suecia;
-//	public Button Alemanha;
-//	public Button Franca;
-//	public Button Polonia;
-//	public Button Moscou;
-//	public Button Argelia;
-//	public Button Egito;
-//	public Button Congo;
-//	public Button Sudao;
-//	public Button Madagascar;
-//	public Button Africa_do_Sul;
-//	public Button Oriente_Medio;
-//	public Button Aral;
-//	public Button OMSK;
-//	public Button Dudinka;
-//	public Button Siberia;
-//	public Button Tchita;
-//	public Button Mongolia;
-//	public Button Vladivostok;
-//	public Button China;
-//	public Button India;
-//	public Button Japao;
-//	public Button Vietna;
-//	public Button Borneo;
-//	public Button Sumatra;
-//	public Button Nova_Guine;
-//	public Button Australia;
+
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-//		Brasil.setText("Jogador 1");
+
 		try {
 			inicio();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 	}
@@ -165,11 +123,7 @@ public class TelaMapaController implements Initializable {
 	protected void atacar(ActionEvent event) throws IOException{//esse vai para a tela atacar sem fechar a anterior
 		try {
 			
-//			Parent atack = FXMLLoader.load(getClass().getResource("../telinha/menu_atacar.fxml"));
-//			Stage stage1 = new Stage();
-//			Scene scene1 = new Scene(atack);
-//			stage1.setScene(scene1);
-//			stage1.show();
+
 			
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("../telinha/menu_atacar.fxml"));
 			Parent root = loader.load();
@@ -348,7 +302,7 @@ public class TelaMapaController implements Initializable {
 			}
 	}
 	
-	public void mover() { // metodo para mover tropas
+	public void mover() {
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("../telinha/finalturno.fxml"));
 			

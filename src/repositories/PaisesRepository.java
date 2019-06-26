@@ -12,10 +12,6 @@ public class PaisesRepository {
 	 public Set<Pais> listaPaises = new HashSet<Pais>();
 
 	 
-//	 public void addPaises(Pais pais) {
-//		listaPaises.add(pais);
-//	 }
-	 
 	 public Set<Pais> getPaises() {
 			return listaPaises;
 		}

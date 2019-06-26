@@ -18,7 +18,7 @@ public class Jogador {
 	
 	public int id;
 	
-	public int exercito; // todo jogador começa com o mesmo número de tropas? -- teria que começar com o mesmo numero e escolher aonde colocar, em quais paises
+	public int exercito;
 	
 	public String nome;
 	
@@ -32,10 +32,6 @@ public class Jogador {
 		this.nome = Nome;
 	}
 	
-	
-
-	
-	// metodo para retornar os países que ele possui
 	
 	public  String getPaises(int i) {
 		int cont = 0;
@@ -57,26 +53,6 @@ public class Jogador {
 		return pais1[i];
 	}
 	
-	
-//	// metodo para retirar e adicionar um país dele
-//	public void retirarPais(Pais npais) {
-//		
-//		int i = 0;
-//		
-//	for(Pais o: paises){ //Pais a: paises
-//			
-//			if(o.equals(npais)) {
-//			
-//			paises.remove(i);
-//				
-//			}
-//			
-//			i++;
-//		}
-//		
-//		quantpais-=1;
-//		
-//			}
 	
 	
 	public void retirarPais(Pais pais){
@@ -115,11 +91,7 @@ public class Jogador {
 		
 		return this.id;
 	}
-	
-	// metodo para adicionar varios paises (sobrecarga)
-	
-	// provavelmente passar de set para hashmap, provavelmente ajudaria a transpor (provavelmente = talvez)
-	
+
 	
 	
 }

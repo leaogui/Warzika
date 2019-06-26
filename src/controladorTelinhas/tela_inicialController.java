@@ -35,7 +35,6 @@ public class tela_inicialController implements Initializable {
 	
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
-		// TODO Auto-generated method stub
 	}
 	
 	

@@ -1,8 +1,4 @@
-/.classpath
-/.project
-/controladorTelinhas/
-/geo/
-/imagens/
-/repositories/
-/telinha/
 /warzika/
+/repositories/
+/geo/
+/controladorTelinhas/

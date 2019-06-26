@@ -42,7 +42,6 @@ public class tela2Controller implements Initializable{
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
 		valores_choiceBox();
 		choice1.setValue("3");
 	}
@@ -56,15 +55,6 @@ public class tela2Controller implements Initializable{
 		stage.setScene(nome);
 		stage.show();
 		
-//		Stage stage = (Stage) choice1.getScene().getWindow();
-//		FXMLLoader loader  = new FXMLLoader();
-//		Pane root = loader.load(getClass().getResource("../telinha/NomeJogador.fxml").openStream());
-//		tela_nomesController nome = (tela_nomesController)loader.getController();
-//		nome.i = Integer.parseInt(choice1.getValue());
-//		Scene scene = new Scene(root);
-//		stage.setScene(scene);
-//		stage.setResizable(false);
-//		stage.show();
 	}
 	
 	public void voltar(ActionEvent event) throws IOException {
@@ -74,13 +64,7 @@ public class tela2Controller implements Initializable{
 		pritela = new Scene(main);
 		stage.setScene(pritela);
 		stage.show();
-//		
-//		Stage stage = (Stage) choice1.getScene().getWindow();
-//		Parent voltar = FXMLLoader.load(getClass().getResource("../telinha/tela_inicial.fxml"));
-//		Scene scene = new Scene(voltar);
-//		stage.setScene(scene);
-//		stage.setResizable(false);
-//		stage.show();
+
 	}
 
 

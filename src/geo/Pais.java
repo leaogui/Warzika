@@ -21,7 +21,7 @@ public class Pais {
 	}
 	
 	
-	public void fronteiras(String lpais) {	// falar as fronteiras que tem em cada pais
+	public void fronteiras(String lpais) {
 		
 		String[] array = lpais.split("[|]");
 	    Nome = array[0];
@@ -108,10 +108,4 @@ public class Pais {
 	}
 	
 	
-	
-	
-	
-//	pais.add(lpais);
-//    conti.adicionar(pais);
-		// usar o split() com ; para separar fronteiras e nome.
 }

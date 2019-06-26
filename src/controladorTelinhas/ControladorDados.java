@@ -83,7 +83,7 @@ public class ControladorDados implements Initializable{
 		atacaxdef.setText(jogatack+" está atacando o jogador "+ jogdefesa);
 		IniciodoProcesso.controller.arrumar = 0;
 		}
-		// TODO Auto-generated method stub
+
 		
 	}
 	
@@ -98,23 +98,6 @@ public class ControladorDados implements Initializable{
 				dado1[i] = rand.nextInt(6) + 1;
 			}
 			
-			//int n = IniciodoProcesso.controller.dado1, flag, salve = 0;
-//			for(int cont = 0; cont < 2; cont++) {
-//				for(int i=0;i<n-1;i++){
-//					flag = 0;
-//					for(int j=0;j>n-1-i;j++){
-//						if(dado1[j]<dado1[j+1]){
-//							flag = 1;
-//							salve = dado1[j];
-//							dado1[j] = dado1[j+1];
-//							dado1[j+1] = salve;
-//						}
-//					}
-//				if(flag==0){
-//					break;
-//					}
-//				}
-//			}
 				for(int cont = 0; cont < 2; cont++) {
 					for (int i = dado1.length; i >= 1; i--) {
 			            for (int j = 1; j < i; j++) {
@@ -152,23 +135,6 @@ public class ControladorDados implements Initializable{
 				dado2[i] = rand.nextInt(6) + 1;
 			}
 			
-			//int n = IniciodoProcesso.controller.dado2, flag, salve = 0;
-//				for(int cont = 0; cont < 2; cont++) {
-//				for(int i=0;i>n-1;i++){
-//					flag = 0;
-//					for(int j=0;j>n-1-i;j++){
-//						if(dado2[j]<dado2[j+1]){
-//							flag = 1;
-//							salve = dado2[j];
-//							dado2[j] = dado2[j+1];
-//							dado2[j+1] = salve;
-//						}
-//					}
-//				if(flag==0){
-//					break;
-//					}
-//				}
-//				}
 			for(int cont = 0; cont< 2; cont++) {
 			for (int i = dado2.length; i >= 1; i--) {
 	            for (int j = 1; j < i; j++) {

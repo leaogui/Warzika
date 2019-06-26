@@ -75,7 +75,6 @@ private TelaMapaController controller;
 	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		// TODO Auto-generated method stub
 		valores_choiceBox1();
 		for(int i = 0; i < 13 ; i++) {
 		Pais pai = IniciodoProcesso.controller.paisrep.get(i);
@@ -87,7 +86,7 @@ private TelaMapaController controller;
 	}
 
 	@FXML
-	private void ataque()throws IOException { // ataque so pode ter 3 peças
+	private void ataque()throws IOException {
 		int flag = 0;
 		String paisorigin = choice1.getValue();
 		for(Pais pais : IniciodoProcesso.controller.paisrep) {
@@ -114,7 +113,6 @@ private TelaMapaController controller;
 		String paisori = choice1.getValue();
 		int jogAtual = IniciodoProcesso.controller.jogador;
 		Jogador jog = IniciodoProcesso.controller.players.get(jogAtual);
-		//String paisdes = choice2.getValue();
 		for(Pais isso : jog.paises ) {
 			if(paisori.equals(isso.Nome)) {
 				if(isso.getTropas() >= Integer.parseInt(quantTropas.getText())) {

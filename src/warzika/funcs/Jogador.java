@@ -60,14 +60,22 @@ public class Jogador {
 	
 	// metodo para retirar e adicionar um país dele
 	public void retirarPais(Pais npais) {
-		int cont = 0;
-		for(Pais a: paises){ //Pais a: paises
-			if(a.equals(npais)) {
-//				paises.remove(cont);
+		
+		int i = 0;
+		
+		for(Pais o: paises){ //Pais a: paises
+			
+			if(o.equals(npais)) {
+				
+			//	paises.remove(i);
+				
 			}
-			cont++;
+			
+			i++;
 		}
+		
 		quantpais-=1;
+		
 			}
 	
 	public void adicionarPais(Pais pais) {

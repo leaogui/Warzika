@@ -63,16 +63,16 @@ public class Jogador {
 		
 		int i = 0;
 		
-		for(Pais o: paises){ //Pais a: paises
+	//	for(Pais o: paises){ //Pais a: paises
 			
 			if(o.equals(npais)) {
 			
-		//	paises.remove(i);
+			paises.remove(i);
 				
 			}
 			
 			i++;
-		}
+//		}
 		
 		quantpais-=1;
 		

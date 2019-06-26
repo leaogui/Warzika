@@ -88,6 +88,20 @@ private TelaMapaController controller;
 
 	@FXML
 	private void ataque()throws IOException { // ataque so pode ter 3 peças
+		int flag = 0;
+		String paisorigin = choice1.getValue();
+		for(Pais pais : IniciodoProcesso.controller.paisrep) {
+			if(pais.Nome.equals(paisorigin)) {
+				if((pais.exercito - Integer.parseInt(quantTropas.getText()) < 1)) {
+					Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
+		            dialogoInfo.setTitle("Diálogo de informação");
+		            dialogoInfo.setHeaderText("Precisa ter uma tropa de ocupação no pais");
+		            dialogoInfo.showAndWait();
+		            flag = 1;
+				}
+			}
+		}
+		if(flag != 1) {
 		if(Integer.parseInt(quantTropas.getText()) > 3) {
 			Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
             dialogoInfo.setTitle("Diálogo de informação");
@@ -109,20 +123,7 @@ private TelaMapaController controller;
 				IniciodoProcesso.controller.arrumar = 1;
 				Stage stage = (Stage) choice2.getScene().getWindow();
 				stage.close();
-//				Parent dado = FXMLLoader.load(getClass().getResource("../telinha/menu_rolardado.fxml"));
-//				dados = new Scene(dado);
-//				stage.setScene(dados);
-//				stage.show();
-				
-				
-//				FXMLLoader loader = new FXMLLoader(getClass().getResource("../telinha/menu_rolardado.fxml"));
-//				Parent root = loader.load();
-//				Stage stage = new Stage();
-//				Scene scene = new Scene(root);
-//				stage.setScene(scene);
 				controller.dado();
-//				ControladorDados controller = loader.<ControladorDados>getController();
-//				controller.setBaseController(TelaMapaController controller);
 				break;
 			}
 				else {
@@ -134,7 +135,7 @@ private TelaMapaController controller;
 		}
 		}
 		}
-		//System.out.println("Esta bugado" +IniciodoProcesso.controller.arrumar);
+	}
 	}
 	
 

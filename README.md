@@ -1,6 +1,9 @@
 ﻿# Warzika
 Programa para a disciplina LP1A3, jogo War em java.
 
+Guilherme Leão - SP3013243
+Gustavo Barbosa - SP3013324
+
 # Como jogar
 
 Para jogar, os jogadores devem colocar o número de pessoas presentes, e logo após colocar seu nome.
